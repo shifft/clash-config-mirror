@@ -1,0 +1,17 @@
+{
+  "name": "clash-config-mirror",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "iSayme <isaymeorg@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.28.0",
+    "@types/node": "^18.11.9"
+  },
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}

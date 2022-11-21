@@ -1,0 +1,191 @@
+log-level: debug
+
+# HTTP 代理端口
+port: 1087
+
+# socks5 代理端口
+socks-port: 1080
+
+# 混合代理端口
+# mixed-port: 7890
+
+# 允许来自局域网的连接
+allow-lan: true
+
+# 暴露 restful API
+external-controller: :9090
+
+# Rule 模式
+mode: Rule
+
+proxy-providers:
+  nodefreeorg:
+    type: http
+    url: 'https://ghproxy.com/https://github.com/isayme/clash-config-mirror/raw/gh-pages/nodefreeorg.yaml'
+    interval: 3600
+    path: ./nodefreeorg.yaml
+    health-check:
+      enable: true
+      interval: 600
+      # lazy: true
+      url: http://www.gstatic.com/generate_204
+
+  clashnodecom:
+    type: http
+    url: 'https://ghproxy.com/https://github.com/isayme/clash-config-mirror/raw/gh-pages/clashnodecom.yaml'
+    interval: 3600
+    path: ./clashnodecom.yaml
+    health-check:
+      enable: true
+      interval: 600
+      # lazy: true
+      url: http://www.gstatic.com/generate_204
+
+proxy-groups:
+  - name: clashnodecom
+    type: url-test
+    use:
+      - clashnodecom
+  - name: nodefreeorg
+    type: url-test
+    use:
+      - nodefreeorg
+  - name: 自动选择最佳代理
+    type: url-test
+    proxies:
+      - clashnodecom
+      - nodefreeorg
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+  - name: PROXY
+    type: select
+    proxies:
+      - 自动选择最佳代理
+      - clashnodecom
+      - nodefreeorg
+  - name: 默认规则
+    type: select
+    proxies:
+      - DIRECT
+      - 自动选择最佳代理
+
+rule-providers:
+  apple:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/apple.txt'
+    path: ./ruleset/apple.yaml
+    interval: 36000
+
+  applications:
+    type: http
+    behavior: classical
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/applications.txt'
+    path: ./ruleset/applications.yaml
+    interval: 36000
+
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt'
+    path: ./ruleset/cncidr.yaml
+    interval: 36000
+
+  direct:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt'
+    path: ./ruleset/direct.yaml
+    interval: 36000
+
+  gfw:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt'
+    path: ./ruleset/direct.yaml
+    interval: 36000
+
+  google:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt'
+    path: ./ruleset/google.yaml
+    interval: 36000
+
+  greatfire:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/greatfire.txt'
+    path: ./ruleset/reject.yaml
+    interval: 36000
+
+  icloud:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/icloud.txt'
+    path: ./ruleset/icloud.yaml
+    interval: 36000
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt'
+    path: ./ruleset/lancidr.yaml
+    interval: 36000
+
+  private:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt'
+    path: ./ruleset/private.yaml
+    interval: 36000
+
+  proxy:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt'
+    path: ./ruleset/proxy.yaml
+    interval: 36000
+
+  reject:
+    type: http
+    behavior: domain
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt'
+    path: ./ruleset/reject.yaml
+    interval: 36000
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt'
+    path: ./ruleset/telegramcidr.yaml
+    interval: 36000
+
+  tld-not-cn:
+    type: http
+    behavior: ipcidr
+    url: 'https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/tld-not-cn.txt'
+    path: ./ruleset/telegramcidr.yaml
+    interval: 36000
+
+rules:
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,lancidr,DIRECT
+
+  - RULE-SET,apple,PROXY
+  - RULE-SET,google,PROXY
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,telegramcidr,PROXY
+  - RULE-SET,gfw,PROXY
+  - RULE-SET,greatfire,PROXY
+  - RULE-SET,tld-not-cn,PROXY
+
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,direct,DIRECT
+
+  - RULE-SET,reject,REJECT
+
+  - GEOIP,CN,DIRECT
+  - MATCH,默认规则
