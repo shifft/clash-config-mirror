@@ -15,8 +15,12 @@ test('freenode.me', async ({ page }) => {
     .innerText()
 
   const matchResult = postContent.match(
-    /(https\:\/\/freenode\.me\[a-z-\/0-9]+.yaml)/,
+    /(https\:\/\/freenode\.me\/[a-zA-Z-\/0-9]+.yaml)/,
   )
+
+  if (!matchResult) {
+    console.log(postContent)
+  }
 
   await expect(matchResult).not.toBeNull()
 

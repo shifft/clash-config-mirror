@@ -13,8 +13,11 @@ test('nodefree.org', async ({ page }) => {
   const postContent = await page.locator('.entry-content >> nth=0').innerText()
 
   const matchResult = postContent.match(
-    /(https\:\/\/nodefree\.org\/[a-z-\/0-9]+.yaml)/,
+    /(https\:\/\/nodefree\.org\/[a-zA-Z-\/0-9]+.yaml)/,
   )
+  if (!matchResult) {
+    console.log(postContent)
+  }
 
   await expect(matchResult).not.toBeNull()
 
