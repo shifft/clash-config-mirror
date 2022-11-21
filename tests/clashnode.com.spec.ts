@@ -15,7 +15,7 @@ test('clashnode.com', async ({ page }) => {
     .innerText()
 
   const matchResult = postContent.match(
-    /(https\:\/\/clashnode\.com\/[a-z\/0-9]+.yaml)/,
+    /(https\:\/\/clashnode\.com\/[a-z-\/0-9]+.yaml)/,
   )
 
   await expect(matchResult).not.toBeNull()
