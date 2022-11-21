@@ -5,10 +5,15 @@ import * as fs from 'fs'
 test('nodefree.org', async ({ page }) => {
   await page.goto('https://nodefree.org/f/freenode', {
     waitUntil: 'domcontentloaded',
-    timeout: 0,
   })
 
-  await page.locator('.post-loop >> li >> nth=0 >> h2 >> a').click()
+  const locator = await page.locator('.post-loop >> li >> nth=0 >> h2 >> a')
+  const detailUrl = await locator.getAttribute('href')
+
+  await expect(detailUrl).not.toBeNull()
+  await page.goto(detailUrl, {
+    waitUntil: 'domcontentloaded',
+  })
 
   const postContent = await page.locator('.entry-content >> nth=0').innerText()
 

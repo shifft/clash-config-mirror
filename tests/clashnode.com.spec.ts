@@ -5,10 +5,15 @@ import * as fs from 'fs'
 test('clashnode.com', async ({ page }) => {
   await page.goto('https://clashnode.com/f/freenode', {
     waitUntil: 'domcontentloaded',
-    timeout: 0,
   })
 
-  await page.locator('.post-list >> li >> nth=0 >> h2 >> a').click()
+  const locator = await page.locator('.post-list >> li >> nth=0 >> h2 >> a')
+  const detailUrl = await locator.getAttribute('href')
+
+  await expect(detailUrl).not.toBeNull()
+  await page.goto(detailUrl, {
+    waitUntil: 'domcontentloaded',
+  })
 
   const postContent = await page
     .locator('.post-content-content >> nth=0')
