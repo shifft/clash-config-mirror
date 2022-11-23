@@ -41,6 +41,17 @@ proxy-providers:
       # lazy: true
       url: http://www.gstatic.com/generate_204
 
+  freenodeme:
+    type: http
+    url: 'https://ghproxy.com/https://github.com/isayme/clash-config-mirror/raw/gh-pages/freenodeme.yaml'
+    interval: 3600
+    path: ./freenodeme.yaml
+    health-check:
+      enable: true
+      interval: 600
+      # lazy: true
+      url: http://www.gstatic.com/generate_204
+
 proxy-groups:
   - name: clashnodecom
     type: url-test
@@ -50,9 +61,14 @@ proxy-groups:
     type: url-test
     use:
       - nodefreeorg
+  - name: freenodeme
+    type: url-test
+    use:
+      - freenodeme
   - name: 自动选择最佳代理
     type: url-test
     proxies:
+      - freenodeme
       - clashnodecom
       - nodefreeorg
     url: 'http://www.gstatic.com/generate_204'
@@ -61,6 +77,7 @@ proxy-groups:
     type: select
     proxies:
       - 自动选择最佳代理
+      - freenodeme
       - clashnodecom
       - nodefreeorg
   - name: 默认规则
