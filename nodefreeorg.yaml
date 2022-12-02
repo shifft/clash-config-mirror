@@ -4,110 +4,46 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 _HK_香港, server: imgU140111366548.hk.huawei-cacahe.com, port: 20224, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: imgU140111366548.hk.huawei-cacahe.com}}}
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港, server: p1.bxy-fun3.com, port: 23100, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇰🇷 _KR_韩国, server: 152.70.89.67, port: 44631, type: vmess, uuid: 198d8957-377e-4a06-d9ea-414cc0067de4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: myjp.brucean.cn, port: 443, type: vmess, uuid: e093b2a2-a8f3-4fca-bfe9-00583387e767, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: myjp.brucean.cn}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: p1.bxy-fun3.com, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇯🇵 _JP_日本, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国, server: 203.30.190.190, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦, server: hnt.cndns.shop, port: 27762, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 2, server: hnt.cndns.shop, port: 27765, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 3, server: hnt.cndns.shop, port: 27764, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
+  - {name: 🇸🇬 _SG_新加坡, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇯🇵 _JP_日本, server: trs17.bolab.net, port: 22, type: trojan, password: 40c89b10235c40321e7a3cef82b53a03, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国, server: 47.87.199.91, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: 15fb9e4ea7}
+  - {name: _CN_中国, server: hnt.cndns.shop, port: 27761, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
+  - {name: 🇺🇸 _AM_亚美尼亚->🇺🇸_US_美国, server: 185.162.228.229, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
+  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦, server: hnt.cndns.shop, port: 27766, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
   - {name: 🇯🇵 _JP_日本 2, server: 85.208.108.60, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 4, server: hnt.cndns.shop, port: 27761, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 5, server: hnt.cndns.shop, port: 27763, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
-  - {name: 🇰🇷 _KR_韩国 2, server: 13.125.24.153, port: 42517, type: vmess, uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: default_name, server: 104.16.207.183, port: 443, type: vmess, uuid: 27410ab6-c09d-4705-9f1a-00c31bbaa4bd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hlz.loyou.me}}}
-  - {name: 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国 2, server: 203.30.188.188, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 6, server: hnt.cndns.shop, port: 27766, type: ss, cipher: chacha20-ietf-poly1305, password: 31347057-7af5-4562-b912-f1c217c4c160}
-  - {name: 🇭🇰 _HK_香港 2, server: 47.242.30.73, port: 57194, type: vmess, uuid: 190f9f72-0144-40c2-862b-8c7fbe7fc34a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ca.0112233.xyz}}}
-  - {name: 🇹🇼 _CN_中国->🇹🇼_TW_台湾, server: p1.bxy-fun3.com, port: 23106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db}
-  - {name: 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国, server: 203.30.188.120, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}}
-  - {name: 🇯🇵 _JP_日本 3, server: jpgithub.edgehelper.com, port: 53900, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false}
-  - {name: 🇬🇧 _CN_中国->🇬🇧_GB_英国, server: 20002.purefast2.com, port: 20002, type: trojan, password: ed3ccb1e-7057-3d40-b794-630ef18fb7d2, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国, server: powerservice.com, port: 443, type: vmess, uuid: 0764a598-82c4-4b41-ba10-551a625beed5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: uk2.v2rayserv.com}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 3, server: bp.i809.ml, port: 12083, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国, server: 172.64.154.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: 🇭🇰 _HK_香港->🇩🇪_DE_德国, server: 219.76.13.180, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇨🇭 _IR_伊朗->🇨🇭_CH_瑞士, server: samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: jinajina123}
+  - {name: 🇯🇵 _JP_日本 3, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 _SG_新加坡
       - 🇯🇵 _JP_日本
-      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 3
-      - 🇯🇵 _JP_日本 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 5
-      - 🇰🇷 _KR_韩国 2
-      - default_name
-      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 6
-      - 🇭🇰 _HK_香港 2
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国
-      - 🇯🇵 _JP_日本 3
-      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇺🇸 _US_美国
-      - 🇭🇰 _HK_香港->🇩🇪_DE_德国
+      - _CN_中国
+      - 🇺🇸 _AM_亚美尼亚->🇺🇸_US_美国
+      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 _JP_日本 2
+      - 🇨🇭 _IR_伊朗->🇨🇭_CH_瑞士
+      - 🇯🇵 _JP_日本 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 _SG_新加坡
       - 🇯🇵 _JP_日本
-      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 3
-      - 🇯🇵 _JP_日本 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 5
-      - 🇰🇷 _KR_韩国 2
-      - default_name
-      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 6
-      - 🇭🇰 _HK_香港 2
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国
-      - 🇯🇵 _JP_日本 3
-      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇺🇸 _US_美国
-      - 🇭🇰 _HK_香港->🇩🇪_DE_德国
+      - _CN_中国
+      - 🇺🇸 _AM_亚美尼亚->🇺🇸_US_美国
+      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 _JP_日本 2
+      - 🇨🇭 _IR_伊朗->🇨🇭_CH_瑞士
+      - 🇯🇵 _JP_日本 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,33 +61,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇸🇬 _SG_新加坡
       - 🇯🇵 _JP_日本
-      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 3
-      - 🇯🇵 _JP_日本 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 4
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 5
-      - 🇰🇷 _KR_韩国 2
-      - default_name
-      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国 2
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦 6
-      - 🇭🇰 _HK_香港 2
-      - 🇺🇸 _US_美国->🇷🇴_RO_罗马尼亚
-      - 🇹🇼 _CN_中国->🇹🇼_TW_台湾
-      - 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国
-      - 🇯🇵 _JP_日本 3
-      - 🇬🇧 _CN_中国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇫🇷_FR_法国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
       - 🇺🇸 _US_美国
-      - 🇭🇰 _HK_香港->🇩🇪_DE_德国
+      - _CN_中国
+      - 🇺🇸 _AM_亚美尼亚->🇺🇸_US_美国
+      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
+      - 🇯🇵 _JP_日本 2
+      - 🇨🇭 _IR_伊朗->🇨🇭_CH_瑞士
+      - 🇯🇵 _JP_日本 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
