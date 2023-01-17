@@ -17,14 +17,8 @@ jobs:
         run: npm i -g pnpm && pnpm install
       - name: Install Playwright Browsers
         run: npx playwright install chromium --with-deps
-      - name: Run Playwright tests
-        run: npx playwright test
-      - uses: actions/upload-artifact@v3
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 7
+      - name: Download Clash Configs
+        run: pnpm run download-clash-config
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: always()

@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "download-clash-config": "ts-node main.ts"
+  },
   "keywords": [],
   "author": "iSayme <isaymeorg@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.28.0",
-    "@types/node": "^18.11.9"
+    "@types/node": "^18.11.9",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
   },
   "dependencies": {
-    "axios": "^1.1.3"
+    "axios": "^1.1.3",
+    "playwright": "^1.29.2"
   }
 }

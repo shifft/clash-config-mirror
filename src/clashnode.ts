@@ -1,8 +1,12 @@
-import { expect, test } from '@playwright/test'
 import axios from 'axios'
-import * as fs from 'fs'
+import { writeFileSync } from 'fs'
+import { Browser } from 'playwright'
 
-test('clashnode.com', async ({ page }) => {
+export async function downloadLatestClashConfig(browser: Browser) {
+  console.log('start download clash config from clashnode.com')
+
+  const page = await browser.newPage()
+
   await page.goto('https://clashnode.com/f/freenode', {
     waitUntil: 'domcontentloaded',
   })
@@ -10,7 +14,11 @@ test('clashnode.com', async ({ page }) => {
   const locator = await page.locator('.post-list >> li >> nth=0 >> h2 >> a')
   const detailUrl = await locator.getAttribute('href')
 
-  await expect(detailUrl).not.toBeNull()
+  if (!detailUrl) {
+    console.log('get latest post failed')
+    return
+  }
+
   await page.goto(detailUrl, {
     waitUntil: 'domcontentloaded',
   })
@@ -22,12 +30,10 @@ test('clashnode.com', async ({ page }) => {
   const matchResult = postContent.match(
     /(https\:\/\/clashnode\.com\/[a-zA-Z-\/0-9]+.yaml)/,
   )
-
   if (!matchResult) {
-    console.log(postContent)
+    console.log('match clash config fail')
+    return
   }
-
-  await expect(matchResult).not.toBeNull()
 
   const url = matchResult[1]
   console.log(url)
@@ -36,7 +42,5 @@ test('clashnode.com', async ({ page }) => {
     responseType: 'blob',
   })
 
-  await expect(response.status).toEqual(200)
-
-  fs.writeFileSync('./public/clashnodecom.yaml', response.data)
-})
+  writeFileSync('./public/clashnodecom.yaml', response.data)
+}

@@ -1,8 +1,12 @@
-import { expect, test } from '@playwright/test'
 import axios from 'axios'
-import * as fs from 'fs'
+import { writeFileSync } from 'fs'
+import { Browser } from 'playwright'
 
-test('nodefree.org', async ({ page }) => {
+export async function downloadLatestClashConfig(browser: Browser) {
+  console.log('start download clash config from nodefree.org')
+
+  const page = await browser.newPage()
+
   await page.goto('https://nodefree.org/f/freenode', {
     waitUntil: 'domcontentloaded',
   })
@@ -10,7 +14,11 @@ test('nodefree.org', async ({ page }) => {
   const locator = await page.locator('.post-loop >> li >> nth=0 >> h2 >> a')
   const detailUrl = await locator.getAttribute('href')
 
-  await expect(detailUrl).not.toBeNull()
+  if (!detailUrl) {
+    console.log('get latest post failed')
+    return
+  }
+
   await page.goto(detailUrl, {
     waitUntil: 'domcontentloaded',
   })
@@ -21,10 +29,9 @@ test('nodefree.org', async ({ page }) => {
     /(https\:\/\/nodefree\.org\/[a-zA-Z-\/0-9]+.yaml)/,
   )
   if (!matchResult) {
-    console.log(postContent)
+    console.log('match clash config fail')
+    return
   }
-
-  await expect(matchResult).not.toBeNull()
 
   const url = matchResult[1]
   console.log(url)
@@ -33,7 +40,5 @@ test('nodefree.org', async ({ page }) => {
     responseType: 'blob',
   })
 
-  await expect(response.status).toEqual(200)
-
-  fs.writeFileSync('./public/nodefreeorg.yaml', response.data)
-})
+  writeFileSync('./public/nodefreeorg.yaml', response.data)
+}
