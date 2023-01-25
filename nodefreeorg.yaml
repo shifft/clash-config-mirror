@@ -4,179 +4,169 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-dns:
-  enabled: true
-  nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-  fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
 proxies:
-  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港, server: 183.240.60.119, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港, server: 16.163.95.127, port: 32825, type: vmess, uuid: 4cd69f52-4441-44eb-d4f4-faa977d6d476, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 _SG_新加坡, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win}
-  - {name: 🇸🇬 _CN_中国->🇸🇬_SG_新加坡, server: 206.bgynd.xyz, port: 26206, type: vmess, uuid: 9688b470-0404-30ea-a895-742efbd15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 _JP_日本, server: 45.78.57.151, port: 19198, type: vmess, uuid: f6d65c6b-0a10-4887-8541-b86d85c31d09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 _SG_新加坡, server: 52.77.219.236, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇸🇬 _CN_中国->🇸🇬_SG_新加坡, server: gzct.xn--dlq110j6ul.cc, port: 44389, type: vmess, uuid: 06d2d0c0-05ab-45cc-9dfe-e1e8f0c8fbfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzct.xn--dlq110j6ul.cc}}}
+  - {name: 🇸🇬 _SG_新加坡->🇮🇳_IN_印度, server: sg-cdn.iqyun.zone, port: 22277, type: vmess, uuid: 3628ca8d-6371-45df-879c-2d3e5d110b51, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: sg-cdn.iqyun.zone}
+  - {name: 🇯🇵 _JP_日本 2, server: university.lele233.com, port: 443, type: trojan, password: 3628ca8d-6371-45df-879c-2d3e5d110b51, skip-cert-verify: false}
   - {name: _CN_中国, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 _JP_日本, server: 140.83.82.156, port: 80, type: vmess, uuid: c287c071-d7f5-4f3a-db0e-0fb647186ae1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 _JP_日本 2, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 _US_美国, server: 23.105.199.160, port: 37584, type: vmess, uuid: 61914893-393a-4685-fc2d-13328bd8e491, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 _KR_韩国, server: 43.201.59.23, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇰🇷 _KR_韩国 2, server: 43.200.255.91, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 _US_美国 2, server: 23.105.199.160, port: 23903, type: vmess, uuid: 60b6c1a6-6306-4e28-91d9-8d2be2449ae8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国, server: 146.70.87.79, port: 26034, type: vmess, uuid: eb7232f3-47ae-4fe3-d8a3-4b25f09f11c3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 2, server: ovh-3.555530.xyz, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
   - {name: 🇯🇵 _JP_日本 3, server: 138.2.39.67, port: 80, type: vmess, uuid: ab335c88-d14a-4e67-b52c-54ed8be80c48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 138.2.39.67}}}
-  - {name: 🇯🇵 _JP_日本 4, server: 85.208.108.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国 3, server: 23.105.199.160, port: 27317, type: vmess, uuid: 01832c71-50ac-4891-ae37-1dea8f42ae2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 4, server: 45.45.177.203, port: 10020, type: trojan, password: 512027a1-ce9b-4662-900f-487f9d75a042, sni: cn2.usa1.ridefullspeed.com, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 5, server: ovh-3.555530.xyz, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: 🇭🇰 _HK_香港 2, server: 47.242.203.73, port: 61652, type: vmess, uuid: 3ca2c716-801f-4385-9948-4bc58903ac49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 47.242.203.73, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇭🇰 _HK_香港 3, server: 47.242.173.99, port: 61808, type: vmess, uuid: 7b9c6aa6-f4a4-486c-b763-7ffdf3493d4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 47.242.173.99, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _US_美国 6, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}}
+  - {name: 🇺🇸 _US_美国 3, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: buyvm-lv.sharecentre.online}}}
+  - {name: 🇯🇵 _JP_日本 4, server: 140.83.87.4, port: 80, type: vmess, uuid: 04852071-6116-41ed-8455-2b04543f3c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /6546}}
+  - {name: 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国, server: 203.30.189.190, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
+  - {name: 🇯🇵 _JP_日本 5, server: 138.2.35.81, port: 80, type: vmess, uuid: a0733fc9-457e-498d-c363-9ec774a74946, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jun}}
+  - {name: 🇺🇸 _CY_塞浦路斯->🇺🇸_US_美国, server: 203.24.108.8, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
+  - {name: 🇯🇵 _JP_日本 6, server: jp-direct.sub-zrj.com, port: 443, type: trojan, password: ec8d725c-6c59-4b33-9b13-ff150f2d2969, sni: streaming.sub-zrj.com, skip-cert-verify: false}
+  - {name: 🇭🇰 _CN_中国->🇭🇰_HK_香港, server: shct.xn--dlq110j6ul.cc, port: 38318, type: vmess, uuid: 0422275a-255d-460e-a9d2-c9e1ec26cebc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shct.xn--dlq110j6ul.cc}}}
+  - {name: 🇳🇱 _NL_荷兰, server: c81s5.jjvip8.com, port: 19198, type: vmess, uuid: f6d65c6b-0a10-4887-8541-b86d85c31d09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: c81s5.jjvip8.com}
+  - {name: 🇺🇸 _CR_哥斯达黎加->🇺🇸_US_美国, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
+  - {name: 🇸🇬 _SG_新加坡 2, server: 129.150.44.226, port: 24972, type: vmess, uuid: 851b9a0f-b257-464b-d2cb-1f22afc16a9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /kimi}}
+  - {name: 🇺🇸 _US_美国 4, server: get.tech, port: 80, type: vmess, uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shared, headers: {Host: lv.awsbest.com}}}
+  - {name: 🇭🇰 _HK_香港, server: yw.zemzoh.cf, port: 443, type: vmess, uuid: 44ea4a19-b9e3-44b0-bd64-3d60cfc8b86a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: yw.zemzoh.cf, network: ws, ws-opts: {path: /, headers: {Host: yw.zemzoh.cf}}}
+  - {name: 🇫🇷 _FR_法国, server: 129.151.234.26, port: 38701, type: vmess, uuid: 01baf0d5-605a-4e54-d1d2-9e3b3a165f0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /01baf0d5-605a-4e54-d1d2-9e3b3a165f0e}}
+  - {name: 🇸🇬 _SG_新加坡 3, server: 168.138.173.158, port: 443, type: trojan, password: 2ab56f70-39e3-4422-bb2e-dbfe59cb01f8, sni: wx.qq.com, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: 🇦🇹 _AT_奥地利, server: 185.126.236.226, port: 36606, type: vmess, uuid: fee0d9c2-e4ff-40a0-b615-32dcc2a2518a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇳 _CN_中国->🇹🇼_TW_台湾, server: shct.xn--dlq110j6ul.cc, port: 48640, type: vmess, uuid: 9f76a364-be5a-4d84-8784-f7c236c9b39a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shct.xn--dlq110j6ul.cc}}}
   - {name: _CN_中国 2, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _CA_加拿大->🇺🇸_US_美国, server: 23.227.38.39, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
-  - {name: 🇰🇷 _KR_韩国 3, server: 43.200.2.173, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇨🇦 _CA_加拿大, server: 193.203.203.53, port: 28364, type: vmess, uuid: c14b9faa-b2ff-4f2b-80c5-499bbdb9b886, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇸🇬 _SG_新加坡 4, server: 13.214.212.124, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇺🇸 _US_美国 5, server: xjp4h.mayaa.ml, port: 443, type: vmess, uuid: 82d5ea73-8002-4319-cd3c-29d1560bd290, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: xjp4h.mayaa.ml, network: ws, ws-opts: {path: /dsadsa1dsadsa33434, headers: {Host: xjp4h.mayaa.ml}}}
+  - {name: 🇯🇵 _JP_日本 7, server: 45.76.49.237, port: 443, type: vmess, uuid: 2ab56f70-39e3-4422-bb2e-dbfe59cb01f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇬🇧 _GB_英国, server: content-provider4.cdn-delivery.akamaicd.com, port: 443, type: trojan, password: shefelnak, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 6, server: 18.219.97.13, port: 31989, type: vmess, uuid: e7bf8b12-8fa7-4a40-9be6-55d26cf985ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇱🇺 _LU_卢森堡, server: st.3wcdn.xyz, port: 443, type: vmess, uuid: 8467a939-b0c2-4444-cd72-aed162ea8c09, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: st.3wcdn.xyz, network: ws, ws-opts: {path: /gogo, headers: {Host: st.3wcdn.xyz}}}
   - {name: 🇺🇸 _US_美国 7, server: cacerts.digicert.com, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
-  - {name: 🇯🇵 _JP_日本 5, server: 43.207.74.249, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦, server: 208.bgynd.xyz, port: 26208, type: vmess, uuid: 9688b470-0404-30ea-a895-742efbd15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇸🇬 _SG_新加坡 2, server: 138.2.83.217, port: 43863, type: vmess, uuid: ca984457-b017-46e5-d973-42a3c3fdc292, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇳🇱 _NL_荷兰, server: 104.248.80.35, port: 33008, type: vmess, uuid: b7d3f4c7-7f6d-4238-8760-58c3dfad53e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dev}}
-  - {name: 🇯🇵 _JP_日本 6, server: 43.206.228.223, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇰🇷 _KR_韩国 4, server: 43.201.59.236, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: _CN_中国 3, server: 101.bgynd.xyz, port: 26101, type: vmess, uuid: 9688b470-0404-30ea-a895-742efbd15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇰🇷 _KR_韩国 5, server: 43.201.48.212, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 _SG_新加坡 3, server: xw.zemzoh.cf, port: 443, type: vmess, uuid: e0c38549-84f8-455a-a63f-beaef6fa2160, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: xw.zemzoh.cf, network: ws, ws-opts: {path: /ray, headers: {Host: xw.zemzoh.cf}}}
-  - {name: 🇯🇵 _JP_日本 7, server: 43.206.236.83, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本, server: 42.157.195.246, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 42.157.195.231, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA}
-  - {name: 🇺🇸 _US_美国 8, server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: 🇫🇷 _RU_俄罗斯联邦->🇫🇷_FR_法国, server: v10a.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: v10a.toddns.tk, network: ws, ws-opts: {path: /fr-unlimitxxx, headers: {Host: v10a.toddns.tk}}}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: 42.157.195.241, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0}
-  - {name: 🇺🇸 _US_美国 9, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 3, server: 42.157.195.229, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0}
-  - {name: 🇯🇵 _JP_日本 8, server: 43.206.224.222, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇸🇬 _SG_新加坡 4, server: bgroup.node3.s.nodelist-gfwairport1.download, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 9f0ae767-0156-460c-acd6-67cb3000faf1}
-  - {name: 🇸🇬 _MO_澳门->🇸🇬_SG_新加坡, server: 45.64.22.56, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 4, server: v29.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}}
-  - {name: 🇯🇵 _JP_日本 9, server: huanyu2.xyz, port: 18602, type: vmess, uuid: 21f754aa-72dd-45a7-8735-e42229c2b7af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 10, server: 20-66-19-98.ipv4.rush.ml, port: 8443, type: trojan, password: cf4295378e209e70d12c5bdd017144dfd1c772d3, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港 4, server: 8.210.0.37, port: 36442, type: vmess, uuid: 85802212-5189-4301-9010-3180f65345b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇸🇬 _SG_新加坡 5, server: supsig.xiaohouzi.club, port: 10102, type: trojan, password: f52e6827-d087-3fd0-9c66-ef87874c69ba, skip-cert-verify: false}
-  - {name: 🇭🇰 _HK_香港 5, server: 47.242.151.173, port: 65360, type: vmess, uuid: b99e4d05-4a31-4095-b11e-f10cfe1f122e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 47.242.151.173, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇺🇸 _US_美国 11, server: jdosg.nmsl.pics, port: 8443, type: vmess, uuid: e6dad59a-4557-4fe2-eb21-ba270f9778fc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jdosg.nmsl.pics}}}
+  - {name: 🇺🇸 _US_美国 8, server: v29.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, servername: v29.heduian.online, network: ws, ws-opts: {path: /oooo, headers: {Host: v29.heduian.online}}}
+  - {name: 🇨🇳 _TW_台湾, server: 34.80.64.94, port: 44561, type: ss, cipher: chacha20-ietf-poly1305, password: GePUPvF9rfP7b1rlIHkXxE}
+  - {name: 🇺🇸 _US_美国 9, server: cacerts.digicert.com, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: 223.167.208.67, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇯🇵 _JP_日本 8, server: zzjp01.fuqiangren.com, port: 20221, type: trojan, password: 82658519-81c7-4153-9071-0df90ae77e57, sni: zzjp01.fuqiangren.com, skip-cert-verify: false}
+  - {name: 🇮🇩 _ID_印度尼西亚, server: 103.8.79.138, port: 30055, type: vmess, uuid: 55fae79c-d1f7-4ab4-f3eb-e125976cda37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇸🇬 _US_美国->🇸🇬_SG_新加坡, server: jdosg.nmsl.pics, port: 8443, type: vmess, uuid: e6dad59a-4557-4fe2-eb21-ba270f9778fc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jdosg.nmsl.pics}}}
+  - {name: 🇹🇷 _TR_土耳其, server: 77.92.154.172, port: 20240, type: vmess, uuid: d0491ebb-f705-4b8c-a074-607e0f800b21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国 2, server: shct.xn--dlq110j6ul.cc, port: 44195, type: vmess, uuid: 9f76a364-be5a-4d84-8784-f7c236c9b39a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shct.xn--dlq110j6ul.cc}}}
+  - {name: 🇫🇷 _FR_法国 2, server: 141.94.59.192, port: 16655, type: vmess, uuid: 7255e891-a2d3-4d83-deb7-67813864ad49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇬🇧 _GB_英国 2, server: 88.150.137.177, port: 443, type: trojan, password: shefelnak, sni: content-provider4.cdn-delivery.akamaicd.com, skip-cert-verify: false}
+  - {name: 🇭🇰 _HK_香港 2, server: 8.210.152.157, port: 38672, type: vmess, uuid: d639802c-cc15-451d-a2d5-aab561d8ca9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 8.210.152.157, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇵🇱 _PL_波兰, server: 77.91.102.27, port: 2082, type: vmess, uuid: f32ddc47-ff49-4756-9e93-240a670831ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}}
+  - {name: 🇭🇰 _HK_香港 3, server: 47.243.30.150, port: 61338, type: vmess, uuid: 88db38e9-83c7-4bf1-af64-94830a62b205, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 47.243.30.150, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇰🇷 _KR_韩国, server: 43.201.48.212, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇭🇰 _HK_香港
+      - 🇯🇵 _JP_日本
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国
-      - 🇯🇵 _JP_日本
+      - 🇸🇬 _SG_新加坡->🇮🇳_IN_印度
       - 🇯🇵 _JP_日本 2
+      - _CN_中国
       - 🇺🇸 _US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国 2
       - 🇺🇸 _US_美国 2
       - 🇯🇵 _JP_日本 3
-      - 🇯🇵 _JP_日本 4
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇺🇸 _US_美国 6
-      - _CN_中国 2
-      - 🇺🇸 _CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国 3
-      - 🇺🇸 _US_美国 7
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国
       - 🇯🇵 _JP_日本 5
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇸🇬 _SG_新加坡 2
-      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _CY_塞浦路斯->🇺🇸_US_美国
       - 🇯🇵 _JP_日本 6
-      - 🇰🇷 _KR_韩国 4
-      - _CN_中国 3
-      - 🇰🇷 _KR_韩国 5
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _CR_哥斯达黎加->🇺🇸_US_美国
+      - 🇸🇬 _SG_新加坡 2
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 _HK_香港
+      - 🇫🇷 _FR_法国
       - 🇸🇬 _SG_新加坡 3
-      - 🇯🇵 _JP_日本 7
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 8
-      - 🇫🇷 _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇯🇵 _JP_日本 8
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇦🇹 _AT_奥地利
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国 2
+      - 🇨🇦 _CA_加拿大
       - 🇸🇬 _SG_新加坡 4
-      - 🇸🇬 _MO_澳门->🇸🇬_SG_新加坡
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇯🇵 _JP_日本 9
-      - 🇺🇸 _US_美国 10
-      - 🇭🇰 _HK_香港 4
-      - 🇸🇬 _SG_新加坡 5
-      - 🇭🇰 _HK_香港 5
-      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 5
+      - 🇯🇵 _JP_日本 7
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国 6
+      - 🇱🇺 _LU_卢森堡
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
+      - 🇨🇳 _TW_台湾
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本 8
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇹🇷 _TR_土耳其
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _FR_法国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇭🇰 _HK_香港 2
+      - 🇵🇱 _PL_波兰
+      - 🇭🇰 _HK_香港 3
+      - 🇰🇷 _KR_韩国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇭🇰 _HK_香港
+      - 🇯🇵 _JP_日本
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国
-      - 🇯🇵 _JP_日本
+      - 🇸🇬 _SG_新加坡->🇮🇳_IN_印度
       - 🇯🇵 _JP_日本 2
+      - _CN_中国
       - 🇺🇸 _US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国 2
       - 🇺🇸 _US_美国 2
       - 🇯🇵 _JP_日本 3
-      - 🇯🇵 _JP_日本 4
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇺🇸 _US_美国 6
-      - _CN_中国 2
-      - 🇺🇸 _CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国 3
-      - 🇺🇸 _US_美国 7
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国
       - 🇯🇵 _JP_日本 5
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇸🇬 _SG_新加坡 2
-      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _CY_塞浦路斯->🇺🇸_US_美国
       - 🇯🇵 _JP_日本 6
-      - 🇰🇷 _KR_韩国 4
-      - _CN_中国 3
-      - 🇰🇷 _KR_韩国 5
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _CR_哥斯达黎加->🇺🇸_US_美国
+      - 🇸🇬 _SG_新加坡 2
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 _HK_香港
+      - 🇫🇷 _FR_法国
       - 🇸🇬 _SG_新加坡 3
-      - 🇯🇵 _JP_日本 7
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 8
-      - 🇫🇷 _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇯🇵 _JP_日本 8
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇦🇹 _AT_奥地利
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国 2
+      - 🇨🇦 _CA_加拿大
       - 🇸🇬 _SG_新加坡 4
-      - 🇸🇬 _MO_澳门->🇸🇬_SG_新加坡
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇯🇵 _JP_日本 9
-      - 🇺🇸 _US_美国 10
-      - 🇭🇰 _HK_香港 4
-      - 🇸🇬 _SG_新加坡 5
-      - 🇭🇰 _HK_香港 5
-      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 5
+      - 🇯🇵 _JP_日本 7
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国 6
+      - 🇱🇺 _LU_卢森堡
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
+      - 🇨🇳 _TW_台湾
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本 8
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇹🇷 _TR_土耳其
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _FR_法国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇭🇰 _HK_香港 2
+      - 🇵🇱 _PL_波兰
+      - 🇭🇰 _HK_香港 3
+      - 🇰🇷 _KR_韩国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -194,56 +184,56 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
-      - 🇭🇰 _HK_香港
+      - 🇯🇵 _JP_日本
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _CN_中国->🇸🇬_SG_新加坡
-      - _CN_中国
-      - 🇯🇵 _JP_日本
+      - 🇸🇬 _SG_新加坡->🇮🇳_IN_印度
       - 🇯🇵 _JP_日本 2
+      - _CN_中国
       - 🇺🇸 _US_美国
-      - 🇰🇷 _KR_韩国
-      - 🇰🇷 _KR_韩国 2
       - 🇺🇸 _US_美国 2
       - 🇯🇵 _JP_日本 3
-      - 🇯🇵 _JP_日本 4
       - 🇺🇸 _US_美国 3
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国 5
-      - 🇭🇰 _HK_香港 2
-      - 🇭🇰 _HK_香港 3
-      - 🇺🇸 _US_美国 6
-      - _CN_中国 2
-      - 🇺🇸 _CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国 3
-      - 🇺🇸 _US_美国 7
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇸 _BZ_伯利兹->🇺🇸_US_美国
       - 🇯🇵 _JP_日本 5
-      - 🇷🇺 _CN_中国->🇷🇺_RU_俄罗斯联邦
-      - 🇸🇬 _SG_新加坡 2
-      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _CY_塞浦路斯->🇺🇸_US_美国
       - 🇯🇵 _JP_日本 6
-      - 🇰🇷 _KR_韩国 4
-      - _CN_中国 3
-      - 🇰🇷 _KR_韩国 5
+      - 🇭🇰 _CN_中国->🇭🇰_HK_香港
+      - 🇳🇱 _NL_荷兰
+      - 🇺🇸 _CR_哥斯达黎加->🇺🇸_US_美国
+      - 🇸🇬 _SG_新加坡 2
+      - 🇺🇸 _US_美国 4
+      - 🇭🇰 _HK_香港
+      - 🇫🇷 _FR_法国
       - 🇸🇬 _SG_新加坡 3
-      - 🇯🇵 _JP_日本 7
-      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国 8
-      - 🇫🇷 _RU_俄罗斯联邦->🇫🇷_FR_法国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 3
-      - 🇯🇵 _JP_日本 8
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国
+      - 🇦🇹 _AT_奥地利
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - _CN_中国 2
+      - 🇨🇦 _CA_加拿大
       - 🇸🇬 _SG_新加坡 4
-      - 🇸🇬 _MO_澳门->🇸🇬_SG_新加坡
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国 4
-      - 🇯🇵 _JP_日本 9
-      - 🇺🇸 _US_美国 10
-      - 🇭🇰 _HK_香港 4
-      - 🇸🇬 _SG_新加坡 5
-      - 🇭🇰 _HK_香港 5
-      - 🇺🇸 _US_美国 11
+      - 🇺🇸 _US_美国 5
+      - 🇯🇵 _JP_日本 7
+      - 🇬🇧 _GB_英国
+      - 🇺🇸 _US_美国 6
+      - 🇱🇺 _LU_卢森堡
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
+      - 🇨🇳 _TW_台湾
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本 8
+      - 🇮🇩 _ID_印度尼西亚
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇹🇷 _TR_土耳其
+      - 🇺🇸 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _FR_法国 2
+      - 🇬🇧 _GB_英国 2
+      - 🇭🇰 _HK_香港 2
+      - 🇵🇱 _PL_波兰
+      - 🇭🇰 _HK_香港 3
+      - 🇰🇷 _KR_韩国
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
