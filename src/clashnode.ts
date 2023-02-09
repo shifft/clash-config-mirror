@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { writeFileSync } from 'fs'
 import { Browser } from 'playwright'
+import { filterCN } from './clashconfig'
 
 export async function downloadLatestClashConfig(browser: Browser) {
   console.log('start download clash config from clashnode.com')
@@ -42,5 +43,6 @@ export async function downloadLatestClashConfig(browser: Browser) {
     responseType: 'blob',
   })
 
-  writeFileSync('./public/clashnodecom.yaml', response.data)
+  let configData = filterCN(response.data)
+  writeFileSync('./public/clashnodecom.yaml', configData)
 }
