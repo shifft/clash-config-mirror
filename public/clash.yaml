@@ -19,17 +19,6 @@ external-controller: :9090
 mode: Rule
 
 proxy-providers:
-  nodefreeorg:
-    type: http
-    url: 'https://ghproxy.com/https://github.com/isayme/clash-config-mirror/raw/gh-pages/nodefreeorg.yaml'
-    interval: 3600
-    path: ./nodefreeorg.yaml
-    health-check:
-      enable: true
-      interval: 600
-      # lazy: true
-      url: http://www.gstatic.com/generate_204
-
   clashnodecom:
     type: http
     url: 'https://ghproxy.com/https://github.com/isayme/clash-config-mirror/raw/gh-pages/clashnodecom.yaml'
@@ -53,32 +42,20 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
 
 proxy-groups:
-  - name: clashnodecom
-    type: url-test
-    use:
-      - clashnodecom
-  - name: nodefreeorg
-    type: url-test
-    use:
-      - nodefreeorg
-  - name: freenodeme
-    type: url-test
-    use:
-      - freenodeme
   - name: 自动选择最佳代理
     type: url-test
-    proxies:
+    use:
       - clashnodecom
-      - nodefreeorg
       - freenodeme
     url: 'http://www.gstatic.com/generate_204'
     interval: 300
   - name: PROXY
     type: select
     proxies:
+      - DIRECT
       - 自动选择最佳代理
+    use:
       - clashnodecom
-      - nodefreeorg
       - freenodeme
   - name: 默认规则
     type: select
