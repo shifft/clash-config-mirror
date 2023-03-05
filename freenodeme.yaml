@@ -5,492 +5,435 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: HK_FreeNode.me_1, server: awshk5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 9b5d62ea-1174-4072-b248-a6b472032b25, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_2, server: 103.45.78.147, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_FreeNode.me_3, server: 45.59.187.42, port: 80, type: vmess, uuid: 761cf552-a1c3-4fc2-f2dd-a90897105412, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: US_FreeNode.me_4, server: 141.193.213.21, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: US_FreeNode.me_5, server: 4559186168.xhtk.cc, port: 443, type: vmess, uuid: e1da11a9-6ab7-e0c3-3ca0-92ad364db204, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /lklcvws, headers: {Host: 4559186168.xhtk.cc}}}
-  - {name: CN_FreeNode.me_6, server: 103.45.78.187, port: 3230, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_FreeNode.me_7, server: 172.67.137.72, port: 443, type: vmess, uuid: db39ef95-4245-418a-84c0-14c202f29bc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /videnset, headers: {Host: khvwycch.cymlr.xyz}}}
-  - {name: BZ_FreeNode.me_8, server: 203.30.191.6, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: BZ_FreeNode.me_9, server: 203.30.188.121, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_10, server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_12, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $$$siga03.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_13, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}}
-  - {name: CN_FreeNode.me_14, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_15, server: shcu01.xc188.net, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: BZ_FreeNode.me_16, server: 203.30.191.2, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CA_FreeNode.me_18, server: 23.227.38.23, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CA_FreeNode.me_19, server: 23.227.38.24, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: DE_FreeNode.me_20, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}}
-  - {name: US_FreeNode.me_21, server: quiz.vidio.com, port: 8080, type: vmess, uuid: 397489e0-a0b4-11ed-b443-1577c1651679, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg-ovh2.1server.co}}}
-  - {name: KR_FreeNode.me_22, server: petal.tk, port: 443, type: vmess, uuid: b7718dc4-8c46-483b-d347-dd5d8209e023, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /jjpwvws, headers: {Host: petal.tk}}}
-  - {name: CN_FreeNode.me_23, server: 223.111.202.139, port: 63086, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}}
-  - {name: UN_FreeNode.me_24, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxfra.fovi.tk}}}
-  - {name: CN_FreeNode.me_25, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $$siga03.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_26, server: 172.67.148.203, port: 443, type: vmess, uuid: 44ceb389-4cea-4ea1-eef9-11ce6f3effe6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.wanwusheng.me}}}
-  - {name: CA_FreeNode.me_27, server: shopify.com, port: 443, type: vmess, uuid: 9f7566ff-ef75-4b10-88fc-ec31c6eda5a4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /sbga, headers: {Host: vc-ca1.misakano.ml}}}
-  - {name: US_FreeNode.me_28, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}}
-  - {name: US_FreeNode.me_29, server: uk.718398.xyz, port: 8080, type: vmess, uuid: 2ddcf12d-52fa-4e09-b4f1-c52d5cbee69b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aaahax02, headers: {Host: uk.718398.xyz}}}
-  - {name: CN_FreeNode.me_30, server: hn.xiaohouzi.club, port: 51054, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_31, server: cdn.chigua.tk, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}}
-  - {name: US_FreeNode.me_32, server: dnschecker.org, port: 8880, type: vmess, uuid: d8079ead-07ab-4914-b2a9-0f6565feae08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: lin.d.sg.wyhkaa0.gq}}}
-  - {name: AU_FreeNode.me_33, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: US_FreeNode.me_34, server: 172.64.150.150, port: 443, type: vmess, uuid: 70cacc93-34b3-4fb9-8a92-b0224e72db4e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp01.cctvvip.ml}}}
-  - {name: US_FreeNode.me_35, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: US_FreeNode.me_36, server: 172.67.74.132, port: 2083, type: vmess, uuid: edf00848-7a37-4954-ea41-4276793d6cc6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /loiyutf, headers: {Host: test.linlin.gq}}}
-  - {name: CN_FreeNode.me_37, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: 25.v2-ray.cyou, headers: {Host: 25.v2-ray.cyou}}}
-  - {name: CN_FreeNode.me_38, server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_39, server: haxus3.janechiu.icu, port: 443, type: vmess, uuid: 0df258cb-a376-4b8e-a378-a556a4658aeb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: haxus3.janechiu.icu}}}
-  - {name: CN_FreeNode.me_40, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $au02.xiaohouzi.club, skip-cert-verify: false}
-  - {name: UN_FreeNode.me_41, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol2.fovi.tk}}}
-  - {name: US_FreeNode.me_42, server: arsalan.arsalanv3.sbs, port: 2095, type: vmess, uuid: c219b33f-f3c3-4f70-9e12-79b4618a210e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: arsalan.arsalanv3.sbs}}}
-  - {name: CN_FreeNode.me_43, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_44, server: cs1.bbcloud.life, port: 17127, type: vmess, uuid: b25693cd-1173-42f3-e609-51062d1c65c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@abcdefghijk147, headers: {Host: cs1.bbcloud.life}}}
-  - {name: CN_FreeNode.me_45, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_FreeNode.me_46, server: vuk1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk1.0bad.com}}}
-  - {name: US_FreeNode.me_47, server: 172.64.153.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: CA_FreeNode.me_48, server: 23.227.38.20, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_49, server: hn.xiaohouzi.club, port: 18439, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $avas04.xiaohouzi.club, skip-cert-verify: false}
-  - {name: UN_FreeNode.me_50, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol3.fovi.tk}}}
-  - {name: US_FreeNode.me_51, server: 108.162.196.204, port: 443, type: vmess, uuid: e42fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}}
-  - {name: CN_FreeNode.me_52, server: hn.xiaohouzi.club, port: 51054, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $aru03.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_53, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus5.0bad.com}}}
-  - {name: CN_FreeNode.me_54, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_55, server: hn.xiaohouzi.club, port: 18456, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $aru01.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_56, server: 172.67.230.76, port: 443, type: vmess, uuid: e42fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}}
-  - {name: US_FreeNode.me_57, server: cf-yd-dns.sharecentre.online, port: 443, type: vmess, uuid: af2251e1-8fe3-416b-f670-af781dedb2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: kr01.cctvvip.ml}}}
-  - {name: US_FreeNode.me_58, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
-  - {name: US_FreeNode.me_59, server: 172.64.150.150, port: 443, type: vmess, uuid: 32177089-0502-48ab-f493-5e0f663a700c, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: us06.cctvvip.ml}}}
-  - {name: US_FreeNode.me_60, server: 172.67.82.52, port: 443, type: vmess, uuid: e42fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}}
-  - {name: US_FreeNode.me_61, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_62, server: hn.xiaohouzi.club, port: 28456, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $douk01.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_63, server: cf-lt.sharecentre.online, port: 8880, type: vmess, uuid: e59bd762-dacd-445c-8e2a-e1c5812949cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}}
-  - {name: US_FreeNode.me_64, server: v125.toddns.tk, port: 80, type: vmess, uuid: a25881f3-967f-3265-bc7f-9e66857b016b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /usv125N93nz, headers: {Host: v125.toddns.tk}}}
-  - {name: CN_FreeNode.me_65, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_66, server: hnm.xiaohouzi.club, port: 36305, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: UN_FreeNode.me_67, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}}
-  - {name: AM_FreeNode.me_68, server: 185.162.228.110, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: ID_FreeNode.me_69, server: asia1.oceis.net, port: 443, type: trojan, password: cf2af470-b8f1-11ed-b133-205c6d5f5d78, skip-cert-verify: false}
-  - {name: US_FreeNode.me_70, server: vc-usa.181227.xyz, port: 443, type: vmess, uuid: 2ddcf12d-52fa-4e09-b4f1-c52d5cbee69b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vcus, headers: {Host: vc-usa.181227.xyz}}}
-  - {name: US_FreeNode.me_72, server: 13.35.15.12, port: 80, type: vmess, uuid: 979dc33f-444c-4d3d-fdbe-eb080f4281e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /trfytckloihyyfd, headers: {Host: d1gx4bw7kv9g7w.cloudfront.net}}}
-  - {name: US_FreeNode.me_73, server: 108.162.192.153, port: 443, type: vmess, uuid: e42fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}}
-  - {name: US_FreeNode.me_74, server: no.aries.ovh, port: 8880, type: vmess, uuid: e59bd762-dacd-445c-8e2a-e1c5812949cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}}
-  - {name: CN_FreeNode.me_75, server: cs1.bbcloud.life, port: 35459, type: vmess, uuid: 026056ab-a315-4eb9-babf-f95d473e621c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cs1.bbcloud.life}}}
-  - {name: US_FreeNode.me_76, server: 172.64.150.150, port: 443, type: vmess, uuid: e42fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}}
-  - {name: CN_FreeNode.me_77, server: 103.45.78.209, port: 3240, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_FreeNode.me_78, server: 172.67.185.121, port: 443, type: vmess, uuid: 26b5fbcf-d199-407e-e8bf-96d7489d247d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: en1.wanwushenghua.me}}}
-  - {name: US_FreeNode.me_79, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
-  - {name: US_FreeNode.me_80, server: 172.66.41.99, port: 443, type: vmess, uuid: 80e6f8a9-6620-4b63-a254-994381d99ca3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmessws, headers: {Host: 1.239000.xyz}}}
-  - {name: US_FreeNode.me_82, server: 172.67.164.125, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_83, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
-  - {name: CN_FreeNode.me_84, server: hn.xiaohouzi.club, port: 16013, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $$tcjp01.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_85, server: 103.21.244.173, port: 80, type: vmess, uuid: f7738290-ba04-4dd1-b4f3-e6863a9e1c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zzsg.nmsl.pics}}}
-  - {name: CN_FreeNode.me_87, server: hn01.xiaohouzi.club, port: 16081, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $timotw.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_88, server: hn.xiaohouzi.club, port: 48434, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $ajpn04.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_89, server: wvvww.com, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_90, server: hnm.xiaohouzi.club, port: 49353, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $a89.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_91, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_92, server: 172.67.169.131, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_93, server: hn.xiaohouzi.club, port: 19024, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_94, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_95, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
-  - {name: BZ_FreeNode.me_96, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: CN_FreeNode.me_97, server: hnm.xiaohouzi.club, port: 18831, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: avas01.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_98, server: hnm.xiaohouzi.club, port: 36872, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: freeus.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_100, server: bia-to.paraphdev.click, port: 80, type: vmess, uuid: e46a7588-f18b-4d08-deaa-835047bd2895, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: bia-to.paraphdev.click}}}
-  - {name: AM_FreeNode.me_101, server: 185.162.228.229, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_102, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: ajpn05.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_103, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: US_FreeNode.me_104, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: CN_FreeNode.me_105, server: 103.45.78.187, port: 3230, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CA_FreeNode.me_106, server: 23.227.38.26, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_107, server: 172.64.153.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: US_FreeNode.me_108, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_109, server: hn.xiaohouzi.club, port: 18463, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_111, server: hax.smely.eu.org, port: 80, type: vmess, uuid: a6dfb50f-75bb-48e0-b56a-1edeb62b5a49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hax02, headers: {Host: hax.smely.eu.org}}}
-  - {name: US_FreeNode.me_112, server: 172.64.153.158, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: AU_FreeNode.me_113, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: US_FreeNode.me_114, server: 172.64.150.150, port: 443, type: vmess, uuid: f98fcad6-32cd-4bbb-9247-421878e0c7bd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: us01.cctvvip.ml}}}
-  - {name: CN_FreeNode.me_115, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CA_FreeNode.me_116, server: 23.227.38.38, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_117, server: 172.64.150.150, port: 443, type: vmess, uuid: 6aefde30-51e7-4bbe-a8f6-9c1834b66c8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: us03.cctvvip.ml}}}
-  - {name: US_FreeNode.me_118, server: www.yuyu96.cf, port: 59124, type: vmess, uuid: 4677ccaf-c430-415f-d91f-c6afc0f66829, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /yuyu96, headers: {Host: www.yuyu96.cf}}}
-  - {name: GB_FreeNode.me_119, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
-  - {name: DE_FreeNode.me_120, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}}
-  - {name: CN_FreeNode.me_121, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_122, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: avas04.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_123, server: hn.xiaohouzi.club, port: 18459, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_124, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_125, server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: nh-hinet06.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_126, server: gdyd.aikun.online, port: 27507, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3}
-  - {name: CN_FreeNode.me_127, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_128, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}}
-  - {name: BZ_FreeNode.me_129, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: CN_FreeNode.me_130, server: 223.111.202.139, port: 63087, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: sg-balancer.tencent.best}}}
-  - {name: CN_FreeNode.me_131, server: iplc.xiaohouzi.club, port: 20039, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $azhk02.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_132, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 25.v2-ray.cyou}}}
-  - {name: CN_FreeNode.me_133, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 25.v2-ray.cyou}}}
-  - {name: CN_FreeNode.me_134, server: hnm.xiaohouzi.club, port: 16082, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_135, server: hn.xiaohouzi.club, port: 48462, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $vuus02.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_136, server: 172.67.147.100, port: 443, type: vmess, uuid: e42fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}}
-  - {name: CN_FreeNode.me_137, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga03.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_138, server: 172.64.150.150, port: 443, type: vmess, uuid: 21ec1b67-6301-4775-f8cd-260f9a3098a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp04.cctvvip.ml}}}
-  - {name: US_FreeNode.me_139, server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
-  - {name: CN_FreeNode.me_140, server: shcu01.xc188.net, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_141, server: gdyd.aikun.online, port: 19573, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3}
-  - {name: US_FreeNode.me_142, server: 172.67.132.15, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: ming2.kiwireich.com}}}
-  - {name: US_FreeNode.me_143, server: 172.67.185.133, port: 443, type: vmess, uuid: 44ceb389-4cea-4ea1-eef9-11ce6f3effe6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.wanwusheng.me}}}
-  - {name: US_FreeNode.me_144, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus5.0bad.com}}}
-  - {name: CN_FreeNode.me_145, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $hk-b.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_146, server: 103.45.78.251, port: 10004, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: US_FreeNode.me_147, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}}
-  - {name: CA_FreeNode.me_148, server: 23.227.38.27, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_149, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CN_FreeNode.me_150, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_151, server: hn.xiaohouzi.club, port: 61003, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_152, server: hn.xiaohouzi.club, port: 18443, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $vutnkr03.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CA_FreeNode.me_153, server: 23.227.38.21, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_154, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
-  - {name: US_FreeNode.me_155, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
-  - {name: US_FreeNode.me_156, server: haxus3.janechiu.icu, port: 443, type: vmess, uuid: 0df258cb-a376-4b8e-a378-a556a4658aeb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: haxus3.janechiu.icu}}}
-  - {name: US_FreeNode.me_157, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: CN_FreeNode.me_158, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_159, server: www.yuyu96.cf, port: 41002, type: trojan, password: jIrQY10cG1, skip-cert-verify: false}
-  - {name: US_FreeNode.me_160, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}}
-  - {name: US_FreeNode.me_161, server: news.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: CN_FreeNode.me_162, server: hnm.xiaohouzi.club, port: 47651, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $taiguo.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_163, server: 172.64.150.150, port: 443, type: vmess, uuid: e42fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}}
-  - {name: US_FreeNode.me_164, server: 172.67.164.123, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: CA_FreeNode.me_165, server: 23.227.38.25, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: US_FreeNode.me_1, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}}
+  - {name: BZ_FreeNode.me_2, server: 203.30.188.121, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: CN_FreeNode.me_3, server: 223.111.202.139, port: 63087, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: sg-balancer.tencent.best}}}
+  - {name: US_FreeNode.me_4, server: 4559186168.xhtk.cc, port: 443, type: vmess, uuid: e1da11a9-6ab7-e0c3-3ca0-92ad364db204, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /lklcvws, headers: {Host: 4559186168.xhtk.cc}}}
+  - {name: CN_FreeNode.me_5, server: hn.xiaohouzi.club, port: 18581, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_6, server: hn.xiaohouzi.club, port: 18443, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $vutnkr03.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_7, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
+  - {name: CN_FreeNode.me_8, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: ajpn05.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_9, server: 172.67.147.152, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chcara, headers: {Host: v2fly.samrta.website}}}
+  - {name: US_FreeNode.me_10, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
+  - {name: US_FreeNode.me_11, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
+  - {name: CA_FreeNode.me_12, server: 23.227.38.27, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: US_FreeNode.me_13, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: US_FreeNode.me_14, server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
+  - {name: CN_FreeNode.me_15, server: cs1.bbcloud.life, port: 35459, type: vmess, uuid: 026056ab-a315-4eb9-babf-f95d473e621c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cs1.bbcloud.life}}}
+  - {name: US_FreeNode.me_16, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}}
+  - {name: CN_FreeNode.me_17, server: hn.xiaohouzi.club, port: 18463, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_18, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ee.cloudflare.quest}}}
+  - {name: US_FreeNode.me_19, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
+  - {name: US_FreeNode.me_20, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: scw.cloudflare.quest}}}
+  - {name: US_FreeNode.me_21, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
+  - {name: CN_FreeNode.me_22, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_23, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}}
+  - {name: US_FreeNode.me_24, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}}
+  - {name: US_FreeNode.me_25, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: US_FreeNode.me_26, server: 172.67.185.133, port: 443, type: vmess, uuid: 44ceb389-4cea-4ea1-eef9-11ce6f3effe6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.wanwusheng.me}}}
+  - {name: US_FreeNode.me_27, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}}
+  - {name: US_FreeNode.me_28, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/sg2?ed=2048", headers: {Host: sg2.pqjc.buzz}}}
+  - {name: CN_FreeNode.me_29, server: hn01.xiaohouzi.club, port: 16081, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $timotw.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_30, server: hnm.xiaohouzi.club, port: 36305, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_31, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/jp3?ed=2048", headers: {Host: jp3.pqjc.buzz}}}
+  - {name: US_FreeNode.me_32, server: srfre-mehdi2.vahidtoni.life, port: 443, type: vmess, uuid: 7f33840f-40e5-47bf-b50f-5907e43bea7a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: srfre-mehdi2.vahidtoni.life}}}
+  - {name: US_FreeNode.me_33, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: CN_FreeNode.me_34, server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_36, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}}
+  - {name: US_FreeNode.me_37, server: 103.21.244.173, port: 80, type: vmess, uuid: f7738290-ba04-4dd1-b4f3-e6863a9e1c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zzsg.nmsl.pics}}}
+  - {name: CN_FreeNode.me_38, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $$siga03.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_39, server: 172.67.164.123, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: CN_FreeNode.me_40, server: hn.xiaohouzi.club, port: 28456, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $douk01.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_41, server: 148.59.74.216, port: 443, type: trojan, password: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, sni: vzwzasc.cn, skip-cert-verify: false}
+  - {name: US_FreeNode.me_42, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 1f8fdfd4-2df2-4d16-88c4-02666ae72416, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
+  - {name: CN_FreeNode.me_43, server: hn.xiaohouzi.club, port: 48462, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $vuus02.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_44, server: cdn.chigua.tk, port: 443, type: vmess, uuid: ffffffff-ffff-ffff-ffff-ffffffffffff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: v2.chigua.tk}}}
+  - {name: CN_FreeNode.me_45, server: 103.45.78.187, port: 3230, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_46, server: 103.45.78.185, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: UN_FreeNode.me_47, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}}
+  - {name: CN_FreeNode.me_48, server: hn.xiaohouzi.club, port: 51054, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $aru03.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_49, server: hax.smely.eu.org, port: 80, type: vmess, uuid: a6dfb50f-75bb-48e0-b56a-1edeb62b5a49, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hax02, headers: {Host: hax.smely.eu.org}}}
+  - {name: US_FreeNode.me_50, server: 45.59.187.42, port: 80, type: vmess, uuid: 761cf552-a1c3-4fc2-f2dd-a90897105412, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: US_FreeNode.me_51, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo.cloudflare.quest}}}
+  - {name: CN_FreeNode.me_52, server: shcu01.xc188.net, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_53, server: hn.xiaohouzi.club, port: 18456, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $aru01.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_54, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
+  - {name: US_FreeNode.me_55, server: 172.67.201.14, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: CA_FreeNode.me_56, server: 23.227.38.20, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: US_FreeNode.me_57, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: uk.cloudflare.quest}}}
+  - {name: US_FreeNode.me_58, server: 172.64.153.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: JP_FreeNode.me_59, server: dj.svip8.cn, port: 10000, type: vmess, uuid: d89ccf42-e9e9-4a0d-8230-8bee621f970e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_FreeNode.me_60, server: 141.193.213.21, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: CA_FreeNode.me_61, server: 23.227.38.23, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: US_FreeNode.me_63, server: vc-usa.181227.xyz, port: 443, type: vmess, uuid: 6a091996-d012-4e5e-8448-8abe681eab99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vcus, headers: {Host: vc-usa.181227.xyz}}}
+  - {name: CN_FreeNode.me_64, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $$$siga03.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_65, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
+  - {name: US_FreeNode.me_66, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}}
+  - {name: CA_FreeNode.me_67, server: 23.227.38.22, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: US_FreeNode.me_68, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: sg2.sharecentrepro.com}}}
+  - {name: CN_FreeNode.me_69, server: cs1.bbcloud.life, port: 17127, type: vmess, uuid: b25693cd-1173-42f3-e609-51062d1c65c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@abcdefghijk147, headers: {Host: cs1.bbcloud.life}}}
+  - {name: CN_FreeNode.me_70, server: hn.xiaohouzi.club, port: 51054, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_72, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $hnm.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_73, server: england1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: england1.yj2022.ga}}}
+  - {name: US_FreeNode.me_74, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: CN_FreeNode.me_75, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 25.v2-ray.cyou}}}
+  - {name: US_FreeNode.me_76, server: news.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: US_FreeNode.me_77, server: no.aries.ovh, port: 8080, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: awsusa.cloudflare.quest}}}
+  - {name: CN_FreeNode.me_78, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga03.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_79, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
+  - {name: US_FreeNode.me_80, server: vuk1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk1.0bad.com}}}
+  - {name: BZ_FreeNode.me_81, server: 203.30.191.2, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: CA_FreeNode.me_82, server: 23.227.38.38, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: CN_FreeNode.me_83, server: hnm.xiaohouzi.club, port: 36872, type: trojan, password: a3278882-3614-39cf-a3d6-faefa8c910ab, sni: freeus.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_84, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_85, server: 172.64.153.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: US_FreeNode.me_86, server: 172.64.154.103, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: SG_FreeNode.me_87, server: v41.gaowosiquanjia.top, port: 80, type: vmess, uuid: dcc43c72-b4ae-4c6d-9454-78650144f33c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
+  - {name: US_FreeNode.me_88, server: 172.67.72.219, port: 443, type: vmess, uuid: 90ea24f6-4b7f-4b4e-a9c1-de7d77b67e45, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /m1, headers: {Host: de-2.heima-bot.tech}}}
+  - {name: US_FreeNode.me_89, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: france.cloudflare.quest}}}
+  - {name: US_FreeNode.me_90, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
+  - {name: CN_FreeNode.me_91, server: iplc.xiaohouzi.club, port: 20039, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $azhk02.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_92, server: 172.64.153.158, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: US_FreeNode.me_93, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: US_FreeNode.me_94, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/sg1?ed=2048", headers: {Host: sg1.pqjc.buzz}}}
+  - {name: CN_FreeNode.me_95, server: hnm.xiaohouzi.club, port: 47555, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $au02.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_96, server: shcu01.xc188.net, port: 10005, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: US_FreeNode.me_97, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: netherlands.cloudflare.quest}}}
+  - {name: US_FreeNode.me_98, server: 172.67.185.121, port: 443, type: vmess, uuid: 26b5fbcf-d199-407e-e8bf-96d7489d247d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /123, headers: {Host: en1.wanwushenghua.me}}}
+  - {name: US_FreeNode.me_99, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}}
+  - {name: US_FreeNode.me_100, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
+  - {name: US_FreeNode.me_101, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: US_FreeNode.me_102, server: cf-lt.sharecentre.online, port: 8880, type: vmess, uuid: e59bd762-dacd-445c-8e2a-e1c5812949cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}}
+  - {name: US_FreeNode.me_104, server: 172.66.41.99, port: 443, type: vmess, uuid: 80e6f8a9-6620-4b63-a254-994381d99ca3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmessws, headers: {Host: 1.239000.xyz}}}
+  - {name: US_FreeNode.me_105, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: CN_FreeNode.me_107, server: gdyd.aikun.online, port: 36253, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3}
+  - {name: BZ_FreeNode.me_108, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: US_FreeNode.me_109, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/jp2?ed=2048", headers: {Host: jp2.pqjc.buzz}}}
+  - {name: BZ_FreeNode.me_110, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: US_FreeNode.me_111, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bc08be42-471a-4149-b622-06df0862734d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}}
+  - {name: US_FreeNode.me_112, server: vc-usa.181227.xyz, port: 443, type: vmess, uuid: 2ddcf12d-52fa-4e09-b4f1-c52d5cbee69b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vcus, headers: {Host: vc-usa.181227.xyz}}}
+  - {name: US_FreeNode.me_113, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: US_FreeNode.me_114, server: no.aries.ovh, port: 8880, type: vmess, uuid: e59bd762-dacd-445c-8e2a-e1c5812949cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}}
+  - {name: CN_FreeNode.me_115, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_116, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}}
+  - {name: US_FreeNode.me_117, server: 172.67.148.203, port: 443, type: vmess, uuid: 44ceb389-4cea-4ea1-eef9-11ce6f3effe6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.wanwusheng.me}}}
+  - {name: CN_FreeNode.me_118, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_119, server: hn.xiaohouzi.club, port: 61003, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_120, server: 223.111.202.139, port: 63086, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}}
+  - {name: CN_FreeNode.me_121, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_122, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: sg2.sharecentrepro.com}}}
+  - {name: US_FreeNode.me_123, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}}
+  - {name: CN_FreeNode.me_124, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: avas04.xiaohouzi.club, skip-cert-verify: false}
+  - {name: US_FreeNode.me_125, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}}
+  - {name: UN_FreeNode.me_126, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxfra.fovi.tk}}}
+  - {name: AM_FreeNode.me_127, server: 185.162.228.110, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: NL_FreeNode.me_128, server: 172.99.188.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: CN_FreeNode.me_129, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 25.v2-ray.cyou}}}
+  - {name: CN_FreeNode.me_130, server: 223.111.202.139, port: 63088, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /mugua, headers: {Host: tw-load-balancer.myn1des.com}}}
+  - {name: US_FreeNode.me_131, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: US_FreeNode.me_132, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: US_FreeNode.me_133, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}}
+  - {name: US_FreeNode.me_134, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ru.cloudflare.quest}}}
+  - {name: US_FreeNode.me_135, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
+  - {name: US_FreeNode.me_136, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}}
+  - {name: US_FreeNode.me_137, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bf599b4b-0330-4626-9f69-41e62681a052, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}}
+  - {name: US_FreeNode.me_138, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}}
+  - {name: US_FreeNode.me_139, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
+  - {name: US_FreeNode.me_140, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}}
+  - {name: US_FreeNode.me_141, server: england1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: england1.yj2022.ga}}}
+  - {name: CN_FreeNode.me_143, server: hn.xiaohouzi.club, port: 16013, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $$tcjp01.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_144, server: hnm.xiaohouzi.club, port: 49353, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $a89.xiaohouzi.club, skip-cert-verify: false}
+  - {name: CN_FreeNode.me_145, server: hnm.xiaohouzi.club, port: 49363, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - HK_FreeNode.me_1
-      - CN_FreeNode.me_2
-      - US_FreeNode.me_3
+      - US_FreeNode.me_1
+      - BZ_FreeNode.me_2
+      - CN_FreeNode.me_3
       - US_FreeNode.me_4
-      - US_FreeNode.me_5
+      - CN_FreeNode.me_5
       - CN_FreeNode.me_6
       - US_FreeNode.me_7
-      - BZ_FreeNode.me_8
-      - BZ_FreeNode.me_9
-      - CN_FreeNode.me_10
-      - CN_FreeNode.me_12
+      - CN_FreeNode.me_8
+      - US_FreeNode.me_9
+      - US_FreeNode.me_10
+      - US_FreeNode.me_11
+      - CA_FreeNode.me_12
       - US_FreeNode.me_13
-      - CN_FreeNode.me_14
+      - US_FreeNode.me_14
       - CN_FreeNode.me_15
-      - BZ_FreeNode.me_16
-      - CA_FreeNode.me_18
-      - CA_FreeNode.me_19
-      - DE_FreeNode.me_20
+      - US_FreeNode.me_16
+      - CN_FreeNode.me_17
+      - US_FreeNode.me_18
+      - US_FreeNode.me_19
+      - US_FreeNode.me_20
       - US_FreeNode.me_21
-      - KR_FreeNode.me_22
-      - CN_FreeNode.me_23
-      - UN_FreeNode.me_24
-      - CN_FreeNode.me_25
+      - CN_FreeNode.me_22
+      - US_FreeNode.me_23
+      - US_FreeNode.me_24
+      - US_FreeNode.me_25
       - US_FreeNode.me_26
-      - CA_FreeNode.me_27
+      - US_FreeNode.me_27
       - US_FreeNode.me_28
-      - US_FreeNode.me_29
+      - CN_FreeNode.me_29
       - CN_FreeNode.me_30
       - US_FreeNode.me_31
       - US_FreeNode.me_32
-      - AU_FreeNode.me_33
-      - US_FreeNode.me_34
-      - US_FreeNode.me_35
+      - US_FreeNode.me_33
+      - CN_FreeNode.me_34
       - US_FreeNode.me_36
-      - CN_FreeNode.me_37
+      - US_FreeNode.me_37
       - CN_FreeNode.me_38
       - US_FreeNode.me_39
       - CN_FreeNode.me_40
-      - UN_FreeNode.me_41
+      - US_FreeNode.me_41
       - US_FreeNode.me_42
       - CN_FreeNode.me_43
-      - CN_FreeNode.me_44
+      - US_FreeNode.me_44
       - CN_FreeNode.me_45
-      - US_FreeNode.me_46
-      - US_FreeNode.me_47
-      - CA_FreeNode.me_48
-      - CN_FreeNode.me_49
-      - UN_FreeNode.me_50
+      - CN_FreeNode.me_46
+      - UN_FreeNode.me_47
+      - CN_FreeNode.me_48
+      - US_FreeNode.me_49
+      - US_FreeNode.me_50
       - US_FreeNode.me_51
       - CN_FreeNode.me_52
-      - US_FreeNode.me_53
-      - CN_FreeNode.me_54
-      - CN_FreeNode.me_55
-      - US_FreeNode.me_56
+      - CN_FreeNode.me_53
+      - US_FreeNode.me_54
+      - US_FreeNode.me_55
+      - CA_FreeNode.me_56
       - US_FreeNode.me_57
       - US_FreeNode.me_58
-      - US_FreeNode.me_59
+      - JP_FreeNode.me_59
       - US_FreeNode.me_60
-      - US_FreeNode.me_61
-      - CN_FreeNode.me_62
+      - CA_FreeNode.me_61
       - US_FreeNode.me_63
-      - US_FreeNode.me_64
-      - CN_FreeNode.me_65
-      - CN_FreeNode.me_66
-      - UN_FreeNode.me_67
-      - AM_FreeNode.me_68
-      - ID_FreeNode.me_69
-      - US_FreeNode.me_70
-      - US_FreeNode.me_72
+      - CN_FreeNode.me_64
+      - US_FreeNode.me_65
+      - US_FreeNode.me_66
+      - CA_FreeNode.me_67
+      - US_FreeNode.me_68
+      - CN_FreeNode.me_69
+      - CN_FreeNode.me_70
+      - CN_FreeNode.me_72
       - US_FreeNode.me_73
       - US_FreeNode.me_74
       - CN_FreeNode.me_75
       - US_FreeNode.me_76
-      - CN_FreeNode.me_77
-      - US_FreeNode.me_78
+      - US_FreeNode.me_77
+      - CN_FreeNode.me_78
       - US_FreeNode.me_79
       - US_FreeNode.me_80
-      - US_FreeNode.me_82
-      - US_FreeNode.me_83
+      - BZ_FreeNode.me_81
+      - CA_FreeNode.me_82
+      - CN_FreeNode.me_83
       - CN_FreeNode.me_84
       - US_FreeNode.me_85
-      - CN_FreeNode.me_87
-      - CN_FreeNode.me_88
+      - US_FreeNode.me_86
+      - SG_FreeNode.me_87
+      - US_FreeNode.me_88
       - US_FreeNode.me_89
-      - CN_FreeNode.me_90
-      - US_FreeNode.me_91
+      - US_FreeNode.me_90
+      - CN_FreeNode.me_91
       - US_FreeNode.me_92
-      - CN_FreeNode.me_93
-      - CN_FreeNode.me_94
-      - US_FreeNode.me_95
-      - BZ_FreeNode.me_96
-      - CN_FreeNode.me_97
-      - CN_FreeNode.me_98
+      - US_FreeNode.me_93
+      - US_FreeNode.me_94
+      - CN_FreeNode.me_95
+      - CN_FreeNode.me_96
+      - US_FreeNode.me_97
+      - US_FreeNode.me_98
+      - US_FreeNode.me_99
       - US_FreeNode.me_100
-      - AM_FreeNode.me_101
-      - CN_FreeNode.me_102
-      - US_FreeNode.me_103
+      - US_FreeNode.me_101
+      - US_FreeNode.me_102
       - US_FreeNode.me_104
-      - CN_FreeNode.me_105
-      - CA_FreeNode.me_106
-      - US_FreeNode.me_107
-      - US_FreeNode.me_108
-      - CN_FreeNode.me_109
+      - US_FreeNode.me_105
+      - CN_FreeNode.me_107
+      - BZ_FreeNode.me_108
+      - US_FreeNode.me_109
+      - BZ_FreeNode.me_110
       - US_FreeNode.me_111
       - US_FreeNode.me_112
-      - AU_FreeNode.me_113
+      - US_FreeNode.me_113
       - US_FreeNode.me_114
       - CN_FreeNode.me_115
-      - CA_FreeNode.me_116
+      - US_FreeNode.me_116
       - US_FreeNode.me_117
-      - US_FreeNode.me_118
-      - GB_FreeNode.me_119
-      - DE_FreeNode.me_120
+      - CN_FreeNode.me_118
+      - CN_FreeNode.me_119
+      - CN_FreeNode.me_120
       - CN_FreeNode.me_121
-      - CN_FreeNode.me_122
-      - CN_FreeNode.me_123
+      - US_FreeNode.me_122
+      - US_FreeNode.me_123
       - CN_FreeNode.me_124
-      - CN_FreeNode.me_125
-      - CN_FreeNode.me_126
-      - CN_FreeNode.me_127
-      - CN_FreeNode.me_128
-      - BZ_FreeNode.me_129
+      - US_FreeNode.me_125
+      - UN_FreeNode.me_126
+      - AM_FreeNode.me_127
+      - NL_FreeNode.me_128
+      - CN_FreeNode.me_129
       - CN_FreeNode.me_130
-      - CN_FreeNode.me_131
-      - CN_FreeNode.me_132
-      - CN_FreeNode.me_133
-      - CN_FreeNode.me_134
-      - CN_FreeNode.me_135
+      - US_FreeNode.me_131
+      - US_FreeNode.me_132
+      - US_FreeNode.me_133
+      - US_FreeNode.me_134
+      - US_FreeNode.me_135
       - US_FreeNode.me_136
-      - CN_FreeNode.me_137
+      - US_FreeNode.me_137
       - US_FreeNode.me_138
       - US_FreeNode.me_139
-      - CN_FreeNode.me_140
-      - CN_FreeNode.me_141
-      - US_FreeNode.me_142
-      - US_FreeNode.me_143
-      - US_FreeNode.me_144
+      - US_FreeNode.me_140
+      - US_FreeNode.me_141
+      - CN_FreeNode.me_143
+      - CN_FreeNode.me_144
       - CN_FreeNode.me_145
-      - CN_FreeNode.me_146
-      - US_FreeNode.me_147
-      - CA_FreeNode.me_148
-      - US_FreeNode.me_149
-      - CN_FreeNode.me_150
-      - CN_FreeNode.me_151
-      - CN_FreeNode.me_152
-      - CA_FreeNode.me_153
-      - US_FreeNode.me_154
-      - US_FreeNode.me_155
-      - US_FreeNode.me_156
-      - US_FreeNode.me_157
-      - CN_FreeNode.me_158
-      - US_FreeNode.me_159
-      - US_FreeNode.me_160
-      - US_FreeNode.me_161
-      - CN_FreeNode.me_162
-      - US_FreeNode.me_163
-      - US_FreeNode.me_164
-      - CA_FreeNode.me_165
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - HK_FreeNode.me_1
-      - CN_FreeNode.me_2
-      - US_FreeNode.me_3
+      - US_FreeNode.me_1
+      - BZ_FreeNode.me_2
+      - CN_FreeNode.me_3
       - US_FreeNode.me_4
-      - US_FreeNode.me_5
+      - CN_FreeNode.me_5
       - CN_FreeNode.me_6
       - US_FreeNode.me_7
-      - BZ_FreeNode.me_8
-      - BZ_FreeNode.me_9
-      - CN_FreeNode.me_10
-      - CN_FreeNode.me_12
+      - CN_FreeNode.me_8
+      - US_FreeNode.me_9
+      - US_FreeNode.me_10
+      - US_FreeNode.me_11
+      - CA_FreeNode.me_12
       - US_FreeNode.me_13
-      - CN_FreeNode.me_14
+      - US_FreeNode.me_14
       - CN_FreeNode.me_15
-      - BZ_FreeNode.me_16
-      - CA_FreeNode.me_18
-      - CA_FreeNode.me_19
-      - DE_FreeNode.me_20
+      - US_FreeNode.me_16
+      - CN_FreeNode.me_17
+      - US_FreeNode.me_18
+      - US_FreeNode.me_19
+      - US_FreeNode.me_20
       - US_FreeNode.me_21
-      - KR_FreeNode.me_22
-      - CN_FreeNode.me_23
-      - UN_FreeNode.me_24
-      - CN_FreeNode.me_25
+      - CN_FreeNode.me_22
+      - US_FreeNode.me_23
+      - US_FreeNode.me_24
+      - US_FreeNode.me_25
       - US_FreeNode.me_26
-      - CA_FreeNode.me_27
+      - US_FreeNode.me_27
       - US_FreeNode.me_28
-      - US_FreeNode.me_29
+      - CN_FreeNode.me_29
       - CN_FreeNode.me_30
       - US_FreeNode.me_31
       - US_FreeNode.me_32
-      - AU_FreeNode.me_33
-      - US_FreeNode.me_34
-      - US_FreeNode.me_35
+      - US_FreeNode.me_33
+      - CN_FreeNode.me_34
       - US_FreeNode.me_36
-      - CN_FreeNode.me_37
+      - US_FreeNode.me_37
       - CN_FreeNode.me_38
       - US_FreeNode.me_39
       - CN_FreeNode.me_40
-      - UN_FreeNode.me_41
+      - US_FreeNode.me_41
       - US_FreeNode.me_42
       - CN_FreeNode.me_43
-      - CN_FreeNode.me_44
+      - US_FreeNode.me_44
       - CN_FreeNode.me_45
-      - US_FreeNode.me_46
-      - US_FreeNode.me_47
-      - CA_FreeNode.me_48
-      - CN_FreeNode.me_49
-      - UN_FreeNode.me_50
+      - CN_FreeNode.me_46
+      - UN_FreeNode.me_47
+      - CN_FreeNode.me_48
+      - US_FreeNode.me_49
+      - US_FreeNode.me_50
       - US_FreeNode.me_51
       - CN_FreeNode.me_52
-      - US_FreeNode.me_53
-      - CN_FreeNode.me_54
-      - CN_FreeNode.me_55
-      - US_FreeNode.me_56
+      - CN_FreeNode.me_53
+      - US_FreeNode.me_54
+      - US_FreeNode.me_55
+      - CA_FreeNode.me_56
       - US_FreeNode.me_57
       - US_FreeNode.me_58
-      - US_FreeNode.me_59
+      - JP_FreeNode.me_59
       - US_FreeNode.me_60
-      - US_FreeNode.me_61
-      - CN_FreeNode.me_62
+      - CA_FreeNode.me_61
       - US_FreeNode.me_63
-      - US_FreeNode.me_64
-      - CN_FreeNode.me_65
-      - CN_FreeNode.me_66
-      - UN_FreeNode.me_67
-      - AM_FreeNode.me_68
-      - ID_FreeNode.me_69
-      - US_FreeNode.me_70
-      - US_FreeNode.me_72
+      - CN_FreeNode.me_64
+      - US_FreeNode.me_65
+      - US_FreeNode.me_66
+      - CA_FreeNode.me_67
+      - US_FreeNode.me_68
+      - CN_FreeNode.me_69
+      - CN_FreeNode.me_70
+      - CN_FreeNode.me_72
       - US_FreeNode.me_73
       - US_FreeNode.me_74
       - CN_FreeNode.me_75
       - US_FreeNode.me_76
-      - CN_FreeNode.me_77
-      - US_FreeNode.me_78
+      - US_FreeNode.me_77
+      - CN_FreeNode.me_78
       - US_FreeNode.me_79
       - US_FreeNode.me_80
-      - US_FreeNode.me_82
-      - US_FreeNode.me_83
+      - BZ_FreeNode.me_81
+      - CA_FreeNode.me_82
+      - CN_FreeNode.me_83
       - CN_FreeNode.me_84
       - US_FreeNode.me_85
-      - CN_FreeNode.me_87
-      - CN_FreeNode.me_88
+      - US_FreeNode.me_86
+      - SG_FreeNode.me_87
+      - US_FreeNode.me_88
       - US_FreeNode.me_89
-      - CN_FreeNode.me_90
-      - US_FreeNode.me_91
+      - US_FreeNode.me_90
+      - CN_FreeNode.me_91
       - US_FreeNode.me_92
-      - CN_FreeNode.me_93
-      - CN_FreeNode.me_94
-      - US_FreeNode.me_95
-      - BZ_FreeNode.me_96
-      - CN_FreeNode.me_97
-      - CN_FreeNode.me_98
+      - US_FreeNode.me_93
+      - US_FreeNode.me_94
+      - CN_FreeNode.me_95
+      - CN_FreeNode.me_96
+      - US_FreeNode.me_97
+      - US_FreeNode.me_98
+      - US_FreeNode.me_99
       - US_FreeNode.me_100
-      - AM_FreeNode.me_101
-      - CN_FreeNode.me_102
-      - US_FreeNode.me_103
+      - US_FreeNode.me_101
+      - US_FreeNode.me_102
       - US_FreeNode.me_104
-      - CN_FreeNode.me_105
-      - CA_FreeNode.me_106
-      - US_FreeNode.me_107
-      - US_FreeNode.me_108
-      - CN_FreeNode.me_109
+      - US_FreeNode.me_105
+      - CN_FreeNode.me_107
+      - BZ_FreeNode.me_108
+      - US_FreeNode.me_109
+      - BZ_FreeNode.me_110
       - US_FreeNode.me_111
       - US_FreeNode.me_112
-      - AU_FreeNode.me_113
+      - US_FreeNode.me_113
       - US_FreeNode.me_114
       - CN_FreeNode.me_115
-      - CA_FreeNode.me_116
+      - US_FreeNode.me_116
       - US_FreeNode.me_117
-      - US_FreeNode.me_118
-      - GB_FreeNode.me_119
-      - DE_FreeNode.me_120
+      - CN_FreeNode.me_118
+      - CN_FreeNode.me_119
+      - CN_FreeNode.me_120
       - CN_FreeNode.me_121
-      - CN_FreeNode.me_122
-      - CN_FreeNode.me_123
+      - US_FreeNode.me_122
+      - US_FreeNode.me_123
       - CN_FreeNode.me_124
-      - CN_FreeNode.me_125
-      - CN_FreeNode.me_126
-      - CN_FreeNode.me_127
-      - CN_FreeNode.me_128
-      - BZ_FreeNode.me_129
+      - US_FreeNode.me_125
+      - UN_FreeNode.me_126
+      - AM_FreeNode.me_127
+      - NL_FreeNode.me_128
+      - CN_FreeNode.me_129
       - CN_FreeNode.me_130
-      - CN_FreeNode.me_131
-      - CN_FreeNode.me_132
-      - CN_FreeNode.me_133
-      - CN_FreeNode.me_134
-      - CN_FreeNode.me_135
+      - US_FreeNode.me_131
+      - US_FreeNode.me_132
+      - US_FreeNode.me_133
+      - US_FreeNode.me_134
+      - US_FreeNode.me_135
       - US_FreeNode.me_136
-      - CN_FreeNode.me_137
+      - US_FreeNode.me_137
       - US_FreeNode.me_138
       - US_FreeNode.me_139
-      - CN_FreeNode.me_140
-      - CN_FreeNode.me_141
-      - US_FreeNode.me_142
-      - US_FreeNode.me_143
-      - US_FreeNode.me_144
+      - US_FreeNode.me_140
+      - US_FreeNode.me_141
+      - CN_FreeNode.me_143
+      - CN_FreeNode.me_144
       - CN_FreeNode.me_145
-      - CN_FreeNode.me_146
-      - US_FreeNode.me_147
-      - CA_FreeNode.me_148
-      - US_FreeNode.me_149
-      - CN_FreeNode.me_150
-      - CN_FreeNode.me_151
-      - CN_FreeNode.me_152
-      - CA_FreeNode.me_153
-      - US_FreeNode.me_154
-      - US_FreeNode.me_155
-      - US_FreeNode.me_156
-      - US_FreeNode.me_157
-      - CN_FreeNode.me_158
-      - US_FreeNode.me_159
-      - US_FreeNode.me_160
-      - US_FreeNode.me_161
-      - CN_FreeNode.me_162
-      - US_FreeNode.me_163
-      - US_FreeNode.me_164
-      - CA_FreeNode.me_165
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -508,164 +451,145 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - HK_FreeNode.me_1
-      - CN_FreeNode.me_2
-      - US_FreeNode.me_3
+      - US_FreeNode.me_1
+      - BZ_FreeNode.me_2
+      - CN_FreeNode.me_3
       - US_FreeNode.me_4
-      - US_FreeNode.me_5
+      - CN_FreeNode.me_5
       - CN_FreeNode.me_6
       - US_FreeNode.me_7
-      - BZ_FreeNode.me_8
-      - BZ_FreeNode.me_9
-      - CN_FreeNode.me_10
-      - CN_FreeNode.me_12
+      - CN_FreeNode.me_8
+      - US_FreeNode.me_9
+      - US_FreeNode.me_10
+      - US_FreeNode.me_11
+      - CA_FreeNode.me_12
       - US_FreeNode.me_13
-      - CN_FreeNode.me_14
+      - US_FreeNode.me_14
       - CN_FreeNode.me_15
-      - BZ_FreeNode.me_16
-      - CA_FreeNode.me_18
-      - CA_FreeNode.me_19
-      - DE_FreeNode.me_20
+      - US_FreeNode.me_16
+      - CN_FreeNode.me_17
+      - US_FreeNode.me_18
+      - US_FreeNode.me_19
+      - US_FreeNode.me_20
       - US_FreeNode.me_21
-      - KR_FreeNode.me_22
-      - CN_FreeNode.me_23
-      - UN_FreeNode.me_24
-      - CN_FreeNode.me_25
+      - CN_FreeNode.me_22
+      - US_FreeNode.me_23
+      - US_FreeNode.me_24
+      - US_FreeNode.me_25
       - US_FreeNode.me_26
-      - CA_FreeNode.me_27
+      - US_FreeNode.me_27
       - US_FreeNode.me_28
-      - US_FreeNode.me_29
+      - CN_FreeNode.me_29
       - CN_FreeNode.me_30
       - US_FreeNode.me_31
       - US_FreeNode.me_32
-      - AU_FreeNode.me_33
-      - US_FreeNode.me_34
-      - US_FreeNode.me_35
+      - US_FreeNode.me_33
+      - CN_FreeNode.me_34
       - US_FreeNode.me_36
-      - CN_FreeNode.me_37
+      - US_FreeNode.me_37
       - CN_FreeNode.me_38
       - US_FreeNode.me_39
       - CN_FreeNode.me_40
-      - UN_FreeNode.me_41
+      - US_FreeNode.me_41
       - US_FreeNode.me_42
       - CN_FreeNode.me_43
-      - CN_FreeNode.me_44
+      - US_FreeNode.me_44
       - CN_FreeNode.me_45
-      - US_FreeNode.me_46
-      - US_FreeNode.me_47
-      - CA_FreeNode.me_48
-      - CN_FreeNode.me_49
-      - UN_FreeNode.me_50
+      - CN_FreeNode.me_46
+      - UN_FreeNode.me_47
+      - CN_FreeNode.me_48
+      - US_FreeNode.me_49
+      - US_FreeNode.me_50
       - US_FreeNode.me_51
       - CN_FreeNode.me_52
-      - US_FreeNode.me_53
-      - CN_FreeNode.me_54
-      - CN_FreeNode.me_55
-      - US_FreeNode.me_56
+      - CN_FreeNode.me_53
+      - US_FreeNode.me_54
+      - US_FreeNode.me_55
+      - CA_FreeNode.me_56
       - US_FreeNode.me_57
       - US_FreeNode.me_58
-      - US_FreeNode.me_59
+      - JP_FreeNode.me_59
       - US_FreeNode.me_60
-      - US_FreeNode.me_61
-      - CN_FreeNode.me_62
+      - CA_FreeNode.me_61
       - US_FreeNode.me_63
-      - US_FreeNode.me_64
-      - CN_FreeNode.me_65
-      - CN_FreeNode.me_66
-      - UN_FreeNode.me_67
-      - AM_FreeNode.me_68
-      - ID_FreeNode.me_69
-      - US_FreeNode.me_70
-      - US_FreeNode.me_72
+      - CN_FreeNode.me_64
+      - US_FreeNode.me_65
+      - US_FreeNode.me_66
+      - CA_FreeNode.me_67
+      - US_FreeNode.me_68
+      - CN_FreeNode.me_69
+      - CN_FreeNode.me_70
+      - CN_FreeNode.me_72
       - US_FreeNode.me_73
       - US_FreeNode.me_74
       - CN_FreeNode.me_75
       - US_FreeNode.me_76
-      - CN_FreeNode.me_77
-      - US_FreeNode.me_78
+      - US_FreeNode.me_77
+      - CN_FreeNode.me_78
       - US_FreeNode.me_79
       - US_FreeNode.me_80
-      - US_FreeNode.me_82
-      - US_FreeNode.me_83
+      - BZ_FreeNode.me_81
+      - CA_FreeNode.me_82
+      - CN_FreeNode.me_83
       - CN_FreeNode.me_84
       - US_FreeNode.me_85
-      - CN_FreeNode.me_87
-      - CN_FreeNode.me_88
+      - US_FreeNode.me_86
+      - SG_FreeNode.me_87
+      - US_FreeNode.me_88
       - US_FreeNode.me_89
-      - CN_FreeNode.me_90
-      - US_FreeNode.me_91
+      - US_FreeNode.me_90
+      - CN_FreeNode.me_91
       - US_FreeNode.me_92
-      - CN_FreeNode.me_93
-      - CN_FreeNode.me_94
-      - US_FreeNode.me_95
-      - BZ_FreeNode.me_96
-      - CN_FreeNode.me_97
-      - CN_FreeNode.me_98
+      - US_FreeNode.me_93
+      - US_FreeNode.me_94
+      - CN_FreeNode.me_95
+      - CN_FreeNode.me_96
+      - US_FreeNode.me_97
+      - US_FreeNode.me_98
+      - US_FreeNode.me_99
       - US_FreeNode.me_100
-      - AM_FreeNode.me_101
-      - CN_FreeNode.me_102
-      - US_FreeNode.me_103
+      - US_FreeNode.me_101
+      - US_FreeNode.me_102
       - US_FreeNode.me_104
-      - CN_FreeNode.me_105
-      - CA_FreeNode.me_106
-      - US_FreeNode.me_107
-      - US_FreeNode.me_108
-      - CN_FreeNode.me_109
+      - US_FreeNode.me_105
+      - CN_FreeNode.me_107
+      - BZ_FreeNode.me_108
+      - US_FreeNode.me_109
+      - BZ_FreeNode.me_110
       - US_FreeNode.me_111
       - US_FreeNode.me_112
-      - AU_FreeNode.me_113
+      - US_FreeNode.me_113
       - US_FreeNode.me_114
       - CN_FreeNode.me_115
-      - CA_FreeNode.me_116
+      - US_FreeNode.me_116
       - US_FreeNode.me_117
-      - US_FreeNode.me_118
-      - GB_FreeNode.me_119
-      - DE_FreeNode.me_120
+      - CN_FreeNode.me_118
+      - CN_FreeNode.me_119
+      - CN_FreeNode.me_120
       - CN_FreeNode.me_121
-      - CN_FreeNode.me_122
-      - CN_FreeNode.me_123
+      - US_FreeNode.me_122
+      - US_FreeNode.me_123
       - CN_FreeNode.me_124
-      - CN_FreeNode.me_125
-      - CN_FreeNode.me_126
-      - CN_FreeNode.me_127
-      - CN_FreeNode.me_128
-      - BZ_FreeNode.me_129
+      - US_FreeNode.me_125
+      - UN_FreeNode.me_126
+      - AM_FreeNode.me_127
+      - NL_FreeNode.me_128
+      - CN_FreeNode.me_129
       - CN_FreeNode.me_130
-      - CN_FreeNode.me_131
-      - CN_FreeNode.me_132
-      - CN_FreeNode.me_133
-      - CN_FreeNode.me_134
-      - CN_FreeNode.me_135
+      - US_FreeNode.me_131
+      - US_FreeNode.me_132
+      - US_FreeNode.me_133
+      - US_FreeNode.me_134
+      - US_FreeNode.me_135
       - US_FreeNode.me_136
-      - CN_FreeNode.me_137
+      - US_FreeNode.me_137
       - US_FreeNode.me_138
       - US_FreeNode.me_139
-      - CN_FreeNode.me_140
-      - CN_FreeNode.me_141
-      - US_FreeNode.me_142
-      - US_FreeNode.me_143
-      - US_FreeNode.me_144
+      - US_FreeNode.me_140
+      - US_FreeNode.me_141
+      - CN_FreeNode.me_143
+      - CN_FreeNode.me_144
       - CN_FreeNode.me_145
-      - CN_FreeNode.me_146
-      - US_FreeNode.me_147
-      - CA_FreeNode.me_148
-      - US_FreeNode.me_149
-      - CN_FreeNode.me_150
-      - CN_FreeNode.me_151
-      - CN_FreeNode.me_152
-      - CA_FreeNode.me_153
-      - US_FreeNode.me_154
-      - US_FreeNode.me_155
-      - US_FreeNode.me_156
-      - US_FreeNode.me_157
-      - CN_FreeNode.me_158
-      - US_FreeNode.me_159
-      - US_FreeNode.me_160
-      - US_FreeNode.me_161
-      - CN_FreeNode.me_162
-      - US_FreeNode.me_163
-      - US_FreeNode.me_164
-      - CA_FreeNode.me_165
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
