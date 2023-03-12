@@ -5,357 +5,372 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_FreeNode.me_1, server: 103.21.244.222, port: 80, type: vmess, uuid: 735ff430-9d1a-4f57-fb66-e43a26a76f70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ccpp, headers: {Host: ccpp.91pan.one}}}
-  - {name: US_FreeNode.me_2, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_3, server: germany1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /XQ2WCa29jfDMGBcbnQ, headers: {Host: germany1.yj2022.ga}}}
-  - {name: US_FreeNode.me_4, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: CN_FreeNode.me_5, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_6, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 1f8fdfd4-2df2-4d16-88c4-02666ae72416, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
-  - {name: US_FreeNode.me_7, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}}
-  - {name: US_FreeNode.me_8, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_9, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bc08be42-471a-4149-b622-06df0862734d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}}
-  - {name: CN_FreeNode.me_10, server: hnm.xiaohouzi.club, port: 49353, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $a89.xiaohouzi.club, skip-cert-verify: false}
-  - {name: BZ_FreeNode.me_11, server: 203.30.191.6, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_12, server: 172.64.155.90, port: 80, type: vmess, uuid: 34ff6bca-3f4e-4d30-d6d2-dfc8efb0cf9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 212us.zikkcc.ga}}}
-  - {name: US_FreeNode.me_13, server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
-  - {name: US_FreeNode.me_14, server: cdn.imnibaba.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us3.imnibaba.tk}}}
-  - {name: US_FreeNode.me_15, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
-  - {name: US_FreeNode.me_16, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
-  - {name: US_FreeNode.me_17, server: finland2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /yWJGGBHoVpr3DbNuVycP, headers: {Host: finland2.yj2022.ga}}}
-  - {name: US_FreeNode.me_18, server: 103.21.244.173, port: 80, type: vmess, uuid: f7738290-ba04-4dd1-b4f3-e6863a9e1c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zzsg.nmsl.pics}}}
-  - {name: US_FreeNode.me_19, server: dp2.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
-  - {name: US_FreeNode.me_20, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}}
-  - {name: UN_FreeNode.me_21, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxuk.fovi.tk}}}
-  - {name: US_FreeNode.me_22, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
-  - {name: US_FreeNode.me_23, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
-  - {name: US_FreeNode.me_24, server: doinb.ml, port: 443, type: vmess, uuid: c2f89bc3-e151-411c-a2ea-7f3ef63a5408, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ikidvws, headers: {Host: jp.lzgsm.tk}}}
-  - {name: BZ_FreeNode.me_25, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
-  - {name: US_FreeNode.me_26, server: lv1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_27, server: 172.67.201.14, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_28, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_29, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bc08be42-471a-4149-b622-06df0862734d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
-  - {name: US_FreeNode.me_30, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
-  - {name: US_FreeNode.me_31, server: 172.64.201.189, port: 2095, type: vmess, uuid: dfe8fe9d-7f04-4664-eb44-708aa6e82446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tg:@hkaa0, headers: {Host: r.hkaa0.tk}}}
-  - {name: US_FreeNode.me_32, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_33, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
-  - {name: US_FreeNode.me_34, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
-  - {name: UN_FreeNode.me_35, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}}
-  - {name: US_FreeNode.me_36, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
-  - {name: US_FreeNode.me_37, server: germany1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /XQ2WCa29jfDMGBcbnQ, headers: {Host: germany1.yj2022.ga}}}
-  - {name: US_FreeNode.me_38, server: 172.67.178.203, port: 80, type: vmess, uuid: 735ff430-9d1a-4f57-fb66-e43a26a76f70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ccpp, headers: {Host: ccpp.91pan.one}}}
-  - {name: CN_FreeNode.me_39, server: hn.xiaohouzi.club, port: 19024, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_40, server: 172.64.204.26, port: 2095, type: vmess, uuid: dfe8fe9d-7f04-4664-eb44-708aa6e82446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tg:@hkaa0, headers: {Host: r.hkaa0.tk}}}
-  - {name: US_FreeNode.me_41, server: cdn.imnibaba.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: woiden-de1.imnibaba.tk}}}
-  - {name: US_FreeNode.me_42, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
-  - {name: US_FreeNode.me_43, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
-  - {name: BZ_FreeNode.me_44, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: US_FreeNode.me_45, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
-  - {name: US_FreeNode.me_46, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}}
-  - {name: UN_FreeNode.me_47, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol2.fovi.tk}}}
-  - {name: US_FreeNode.me_48, server: 172.67.169.131, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_49, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_50, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
-  - {name: US_FreeNode.me_51, server: 172.67.201.204, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_52, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}}
-  - {name: US_FreeNode.me_53, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_54, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}}
-  - {name: US_FreeNode.me_55, server: new3.hucloud-dns.xyz, port: 443, type: vmess, uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: new3.hucloud-dns.xyz}}}
-  - {name: US_FreeNode.me_56, server: america1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vAambj4DgXrs5sfCFptMk, headers: {Host: america1.yj2022.ga}}}
-  - {name: US_FreeNode.me_57, server: lv1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: BZ_FreeNode.me_58, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: CN_FreeNode.me_59, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $$$siga03.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_60, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
-  - {name: US_FreeNode.me_61, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
-  - {name: FR_FreeNode.me_62, server: 173.245.49.8, port: 443, type: vmess, uuid: 9a18cbb1-81d2-4720-9f09-46ea276b6ddb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /huhublog, headers: {Host: zhuyong.hucloud-dns.xyz}}}
-  - {name: US_FreeNode.me_63, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}}
-  - {name: CY_FreeNode.me_64, server: 203.24.108.8, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_65, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
-  - {name: US_FreeNode.me_66, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: US_FreeNode.me_67, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}}
-  - {name: US_FreeNode.me_68, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: de1.scproxy.top}}}
-  - {name: US_FreeNode.me_69, server: cdn.imnibaba.tk, port: 80, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: vc-ca1.imnibaba.tk}}}
-  - {name: BZ_FreeNode.me_70, server: 203.30.190.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
-  - {name: US_FreeNode.me_71, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_72, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
-  - {name: US_FreeNode.me_73, server: cdn.imnibaba.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us4.imnibaba.tk}}}
-  - {name: US_FreeNode.me_75, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}}
-  - {name: US_FreeNode.me_76, server: usdo.tzccifq.ga, port: 443, type: vmess, uuid: 58eb724d-5a95-4b9c-851e-2cb3b408e85f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: usdo.tzccifq.ga}}}
-  - {name: CA_FreeNode.me_77, server: 23.227.38.21, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_78, server: 172.67.164.125, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_79, server: 172.67.132.15, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: ming2.kiwireich.com}}}
-  - {name: US_FreeNode.me_80, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_81, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
-  - {name: CA_FreeNode.me_82, server: 23.227.38.26, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_83, server: cdn.imnibaba.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: woiden-pl1.imnibaba.tk}}}
-  - {name: US_FreeNode.me_84, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
-  - {name: CN_FreeNode.me_85, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
-  - {name: BZ_FreeNode.me_86, server: 203.30.191.2, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_87, server: america1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vAambj4DgXrs5sfCFptMk, headers: {Host: america1.yj2022.ga}}}
-  - {name: US_FreeNode.me_88, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
-  - {name: CN_FreeNode.me_89, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
-  - {name: CN_FreeNode.me_90, server: hn.xiaohouzi.club, port: 18443, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $vutnkr03.xiaohouzi.club, skip-cert-verify: false}
-  - {name: US_FreeNode.me_91, server: cdn.imnibaba.tk, port: 80, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us3.imnibaba.tk}}}
-  - {name: CA_FreeNode.me_92, server: 23.227.38.22, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_93, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: US_FreeNode.me_94, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}}
-  - {name: US_FreeNode.me_95, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}}
-  - {name: US_FreeNode.me_96, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_97, server: cdn.imnibaba.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: woiden-uk1.imnibaba.tk}}}
-  - {name: US_FreeNode.me_98, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}}
-  - {name: US_FreeNode.me_99, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
-  - {name: JP_FreeNode.me_100, server: 85.208.108.22, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: US_FreeNode.me_101, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}}
-  - {name: US_FreeNode.me_102, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_103, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
-  - {name: AM_FreeNode.me_104, server: 185.162.228.110, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_105, server: lv1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_106, server: 172.67.201.204, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: US_FreeNode.me_107, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
-  - {name: BZ_FreeNode.me_108, server: 203.30.191.4, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: US_FreeNode.me_109, server: cdn.xia.me, port: 443, type: vmess, uuid: 68fe8d27-cbc8-4e72-90b7-70d3bb69dfd3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api, headers: {Host: us12.cachexy.ga}}}
-  - {name: US_FreeNode.me_110, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: US_FreeNode.me_111, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}}
-  - {name: US_FreeNode.me_112, server: cdn.imnibaba.tk, port: 80, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: woiden-pl1.imnibaba.tk}}}
-  - {name: US_FreeNode.me_113, server: cdn.imnibaba.tk, port: 443, type: vmess, uuid: c8e0f808-25d6-4911-833e-50b9f5050ba6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /c8e0f808-25d6-4911-833e-50b9f5050ba6, headers: {Host: hax-us1.imnibaba.tk}}}
-  - {name: US_FreeNode.me_114, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_20, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_60, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_71, server: 154.v2ray3.xyz, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
+  - {name: YouTube梦歌|低速节点_23, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|京港低速_78, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}}
+  - {name: YouTube梦歌_15, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_93, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu3.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港HGC|Netflix_117, server: hnm.xiaohouzi.club, port: 49353, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: $a89.xiaohouzi.club, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_56, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu7.misakano.ml}}}
+  - {name: YouTube梦歌_49, server: 54.212.155.149, port: 80, type: vmess, uuid: a6d981d3-fa6b-41a5-c5e8-ad935fb7c9c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 54.212.155.149}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_36, server: hn.xiaohouzi.club, port: 18735, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_82, server: finland2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /yWJGGBHoVpr3DbNuVycP, headers: {Host: finland2.yj2022.ga}}}
+  - {name: YouTube梦歌_40, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
+  - {name: YouTube梦歌_34, server: 2.58.87.142, port: 80, type: vmess, uuid: f2c71a9d-5d81-48b7-9243-55f87221a964, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: YouTube梦歌_25, server: 85.208.108.22, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇭🇰 YouTube梦歌|京港低速_61, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 1f8fdfd4-2df2-4d16-88c4-02666ae72416, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_90, server: 172.67.201.204, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_110, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}}
+  - {name: 🇺🇸 YouTube梦歌|美国04|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: lv1.sharecentrepro.org, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_62, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_102, server: 8.222.140.90, port: 2086, type: vmess, uuid: a9c64e79-0509-4eb8-bd73-042e38b61d21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /uitsrt, headers: {Host: freemaxkvm.argotus.live}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_63, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_76, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_89, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu2.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|京港低速_42, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bc08be42-471a-4149-b622-06df0862734d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_102, server: 172.64.204.26, port: 2095, type: vmess, uuid: dfe8fe9d-7f04-4664-eb44-708aa6e82446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tg:@hkaa0, headers: {Host: r.hkaa0.tk}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_1, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: in-jp-1.iivvppnn.info}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_41, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu4.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_79, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: vc-eu3.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_150, server: 172.67.164.125, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_59, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}}
+  - {name: 🇺🇸 YouTube梦歌|美国直连_59, server: 23.227.38.26, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_55, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eubest.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_58, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: vc-us1.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_70, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
+  - {name: YouTube梦歌|低速节点_62, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: YouTube梦歌_61, server: 172.64.155.90, port: 80, type: vmess, uuid: 34ff6bca-3f4e-4d30-d6d2-dfc8efb0cf9e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 212us.zikkcc.ga}}}
+  - {name: YouTube梦歌_54, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: YouTube梦歌|低速节点_67, server: 172.67.201.204, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: YouTube梦歌|低速节点_24, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_64, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
+  - {name: YouTube梦歌|低速节点_19, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_75, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: hax-eu3.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_84, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: vc-eu2.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_122, server: 203.30.191.6, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_45, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_40, server: america1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vAambj4DgXrs5sfCFptMk, headers: {Host: america1.yj2022.ga}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_59, server: de.strand21.xyz, port: 443, type: trojan, password: 14d52626-92ff-4860-9748-503169e45692, sni: dedede.maoka.one, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube梦歌|香港01|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk-hytron.ilovescp.com, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_121, server: 172.67.201.14, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_52, server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
+  - {name: 🇨🇦 YouTube梦歌|加拿大03|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: ca-nnc.ilovescp.com, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_99, server: us-sjc.okman.cf, port: 2096, type: trojan, password: f62b7fbe09, sni: us-sjc.okman.cf, skip-cert-verify: false}
+  - {name: 🇺🇸 YouTube梦歌|美国直连_40, server: 203.30.191.4, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_32, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: YouTube梦歌_19, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}}
+  - {name: YouTube梦歌|低速垃圾节点_93, server: 23.227.38.22, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: YouTube梦歌|低速节点_123, server: 172.67.145.166, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: YouTube梦歌_46, server: 185.162.228.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_46, server: us2.sanfen001.pics, port: 443, type: vmess, uuid: e7d09c21-31af-4c4b-b9db-ad60d7497a65, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: us1.sanfen001.pics}}}
+  - {name: YouTube梦歌_51, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: YouTube梦歌|低速节点_68, server: doinb.ml, port: 443, type: vmess, uuid: c2f89bc3-e151-411c-a2ea-7f3ef63a5408, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ikidvws, headers: {Host: jp.lzgsm.tk}}}
+  - {name: 🇺🇸 YouTube梦歌|美国直连_47, server: 203.30.191.2, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇯🇵 YouTube梦歌|日本01|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp1.sharecentrepro.com, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}}
+  - {name: 🇺🇸 YouTube梦歌|美国01|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: lv2.sharecentrepro.org, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_72, server: 144.34.165.33, port: 10512, type: vmess, uuid: 58781eee-baba-6666-baba-2ca0ada6568b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_135, server: 185.162.228.110, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇺🇸 YouTube梦歌|美国05|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dp2.scproxy.top, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_39, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_79, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: hax-eu1.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_48, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_86, server: 203.30.188.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL|Netflix_72, server: hn.xiaohouzi.club, port: 19024, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: hn.xiaohouzi.club, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_80, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: de1.scproxy.top}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_89, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_146, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_69, server: 203.30.190.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|京港低速_24, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bc08be42-471a-4149-b622-06df0862734d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_115, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_40, server: america1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vAambj4DgXrs5sfCFptMk, headers: {Host: america1.yj2022.ga}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_61, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bc08be42-471a-4149-b622-06df0862734d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}}
+  - {name: 🇺🇸 YouTube梦歌|美国直连_93, server: hnm.xiaohouzi.club, port: 27094, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: siga01.xiaohouzi.club, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_83, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_1, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: $$$siga03.xiaohouzi.club, skip-cert-verify: false}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_44, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}}
+  - {name: 🇰🇭 YouTube梦歌|柬埔寨01|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kh1.scproxy.top, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}}
+  - {name: 🇺🇸 YouTube梦歌|美国03|直连, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: dp1.scproxy.top, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_29, server: usdo.tzccifq.ga, port: 443, type: vmess, uuid: 58eb724d-5a95-4b9c-851e-2cb3b408e85f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: usdo.tzccifq.ga}}}
+  - {name: YouTube梦歌|低速节点_51, server: hnm.xiaohouzi.club, port: 49361, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: false}
+  - {name: YouTube梦歌_27, server: 23.227.38.21, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_47, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu5.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_34, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: vc-eu4.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_83, server: 172.67.169.131, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_68, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: YouTube梦歌|低速节点_16, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_117, server: 8.222.140.90, port: 8080, type: vmess, uuid: a9c64e79-0509-4eb8-bd73-042e38b61d21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /uitsrt, headers: {Host: freeoracle-a.argotus.live}}}
+  - {name: YouTube梦歌|低速节点_61, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_11, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_60, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP|Netflix_89, server: cdn.xia.me, port: 443, type: vmess, uuid: 68fe8d27-cbc8-4e72-90b7-70d3bb69dfd3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api, headers: {Host: us12.cachexy.ga}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_74, server: shopify.com, port: 443, type: vmess, uuid: 34f50a52-2e3f-4895-8751-5402e40d9593, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: vc-ca1.misakano.ml}}}
+  - {name: 🇭🇰 YouTube梦歌|京港低速_63, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}}
+  - {name: YouTube梦歌_43, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_97, server: ny1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}}
+  - {name: YouTube梦歌_41, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_65, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: 🇭🇰 YouTube梦歌|京港低速_70, server: 203.24.108.8, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_53, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: YouTube梦歌_31, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: bf599b4b-0330-4626-9f69-41e62681a052, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}}
+  - {name: YouTube梦歌_32, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}}
+  - {name: YouTube梦歌_7, server: 203.30.188.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_15, server: hk80.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: e7d09c21-31af-4c4b-b9db-ad60d7497a65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_77, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|广港BGP_87, server: 154.v2ray3.xyz, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
+  - {name: 🇭🇰 YouTube梦歌|京港低速_71, server: 172.67.132.15, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: ming2.kiwireich.com}}}
+  - {name: YouTube梦歌_42, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}}
+  - {name: 🇭🇰 YouTube梦歌|杭港BGP_68, server: 103.21.244.173, port: 80, type: vmess, uuid: f7738290-ba04-4dd1-b4f3-e6863a9e1c8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zzsg.nmsl.pics}}}
+  - {name: 🇭🇰 YouTube梦歌|广港IEPL_107, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - US_FreeNode.me_1
-      - US_FreeNode.me_2
-      - US_FreeNode.me_3
-      - US_FreeNode.me_4
-      - CN_FreeNode.me_5
-      - US_FreeNode.me_6
-      - US_FreeNode.me_7
-      - US_FreeNode.me_8
-      - US_FreeNode.me_9
-      - CN_FreeNode.me_10
-      - BZ_FreeNode.me_11
-      - US_FreeNode.me_12
-      - US_FreeNode.me_13
-      - US_FreeNode.me_14
-      - US_FreeNode.me_15
-      - US_FreeNode.me_16
-      - US_FreeNode.me_17
-      - US_FreeNode.me_18
-      - US_FreeNode.me_19
-      - US_FreeNode.me_20
-      - UN_FreeNode.me_21
-      - US_FreeNode.me_22
-      - US_FreeNode.me_23
-      - US_FreeNode.me_24
-      - BZ_FreeNode.me_25
-      - US_FreeNode.me_26
-      - US_FreeNode.me_27
-      - US_FreeNode.me_28
-      - US_FreeNode.me_29
-      - US_FreeNode.me_30
-      - US_FreeNode.me_31
-      - US_FreeNode.me_32
-      - US_FreeNode.me_33
-      - US_FreeNode.me_34
-      - UN_FreeNode.me_35
-      - US_FreeNode.me_36
-      - US_FreeNode.me_37
-      - US_FreeNode.me_38
-      - CN_FreeNode.me_39
-      - US_FreeNode.me_40
-      - US_FreeNode.me_41
-      - US_FreeNode.me_42
-      - US_FreeNode.me_43
-      - BZ_FreeNode.me_44
-      - US_FreeNode.me_45
-      - US_FreeNode.me_46
-      - UN_FreeNode.me_47
-      - US_FreeNode.me_48
-      - US_FreeNode.me_49
-      - US_FreeNode.me_50
-      - US_FreeNode.me_51
-      - US_FreeNode.me_52
-      - US_FreeNode.me_53
-      - US_FreeNode.me_54
-      - US_FreeNode.me_55
-      - US_FreeNode.me_56
-      - US_FreeNode.me_57
-      - BZ_FreeNode.me_58
-      - CN_FreeNode.me_59
-      - US_FreeNode.me_60
-      - US_FreeNode.me_61
-      - FR_FreeNode.me_62
-      - US_FreeNode.me_63
-      - CY_FreeNode.me_64
-      - US_FreeNode.me_65
-      - US_FreeNode.me_66
-      - US_FreeNode.me_67
-      - US_FreeNode.me_68
-      - US_FreeNode.me_69
-      - BZ_FreeNode.me_70
-      - US_FreeNode.me_71
-      - US_FreeNode.me_72
-      - US_FreeNode.me_73
-      - US_FreeNode.me_75
-      - US_FreeNode.me_76
-      - CA_FreeNode.me_77
-      - US_FreeNode.me_78
-      - US_FreeNode.me_79
-      - US_FreeNode.me_80
-      - US_FreeNode.me_81
-      - CA_FreeNode.me_82
-      - US_FreeNode.me_83
-      - US_FreeNode.me_84
-      - CN_FreeNode.me_85
-      - BZ_FreeNode.me_86
-      - US_FreeNode.me_87
-      - US_FreeNode.me_88
-      - CN_FreeNode.me_89
-      - CN_FreeNode.me_90
-      - US_FreeNode.me_91
-      - CA_FreeNode.me_92
-      - US_FreeNode.me_93
-      - US_FreeNode.me_94
-      - US_FreeNode.me_95
-      - US_FreeNode.me_96
-      - US_FreeNode.me_97
-      - US_FreeNode.me_98
-      - US_FreeNode.me_99
-      - JP_FreeNode.me_100
-      - US_FreeNode.me_101
-      - US_FreeNode.me_102
-      - US_FreeNode.me_103
-      - AM_FreeNode.me_104
-      - US_FreeNode.me_105
-      - US_FreeNode.me_106
-      - US_FreeNode.me_107
-      - BZ_FreeNode.me_108
-      - US_FreeNode.me_109
-      - US_FreeNode.me_110
-      - US_FreeNode.me_111
-      - US_FreeNode.me_112
-      - US_FreeNode.me_113
-      - US_FreeNode.me_114
+      - 🇭🇰 YouTube梦歌|杭港BGP_20
+      - 🇭🇰 YouTube梦歌|广港BGP_60
+      - 🇭🇰 YouTube梦歌|广港BGP_71
+      - YouTube梦歌|低速节点_23
+      - 🇭🇰 YouTube梦歌|京港低速_78
+      - YouTube梦歌_15
+      - 🇭🇰 YouTube梦歌|广港BGP_93
+      - 🇭🇰 YouTube梦歌|杭港HGC|Netflix_117
+      - 🇭🇰 YouTube梦歌|广港BGP_56
+      - YouTube梦歌_49
+      - 🇭🇰 YouTube梦歌|杭港BGP_36
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_82
+      - YouTube梦歌_40
+      - YouTube梦歌_34
+      - YouTube梦歌_25
+      - 🇭🇰 YouTube梦歌|京港低速_61
+      - 🇭🇰 YouTube梦歌|广港BGP_90
+      - 🇭🇰 YouTube梦歌|杭港BGP_110
+      - 🇺🇸 YouTube梦歌|美国04|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_62
+      - 🇭🇰 YouTube梦歌|广港IEPL_102
+      - 🇭🇰 YouTube梦歌|广港BGP_63
+      - 🇭🇰 YouTube梦歌|广港BGP_76
+      - 🇭🇰 YouTube梦歌|广港BGP_89
+      - 🇭🇰 YouTube梦歌|京港低速_42
+      - 🇭🇰 YouTube梦歌|杭港BGP_102
+      - 🇭🇰 YouTube梦歌|广港IEPL_1
+      - 🇭🇰 YouTube梦歌|广港BGP_41
+      - 🇭🇰 YouTube梦歌|广港BGP_79
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_150
+      - 🇭🇰 YouTube梦歌|杭港BGP_59
+      - 🇺🇸 YouTube梦歌|美国直连_59
+      - 🇭🇰 YouTube梦歌|广港BGP_55
+      - 🇭🇰 YouTube梦歌|广港BGP_58
+      - 🇭🇰 YouTube梦歌|广港BGP_70
+      - YouTube梦歌|低速节点_62
+      - YouTube梦歌_61
+      - YouTube梦歌_54
+      - YouTube梦歌|低速节点_67
+      - YouTube梦歌|低速节点_24
+      - 🇭🇰 YouTube梦歌|广港BGP_64
+      - YouTube梦歌|低速节点_19
+      - 🇭🇰 YouTube梦歌|广港BGP_75
+      - 🇭🇰 YouTube梦歌|广港BGP_84
+      - 🇭🇰 YouTube梦歌|杭港BGP_122
+      - 🇭🇰 YouTube梦歌|广港IEPL_45
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_40
+      - 🇭🇰 YouTube梦歌|广港BGP_59
+      - 🇭🇰 YouTube梦歌|香港01|直连
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_121
+      - 🇭🇰 YouTube梦歌|广港IEPL_52
+      - 🇨🇦 YouTube梦歌|加拿大03|直连
+      - 🇭🇰 YouTube梦歌|广港IEPL_99
+      - 🇺🇸 YouTube梦歌|美国直连_40
+      - 🇭🇰 YouTube梦歌|杭港BGP_32
+      - YouTube梦歌_19
+      - YouTube梦歌|低速垃圾节点_93
+      - YouTube梦歌|低速节点_123
+      - YouTube梦歌_46
+      - 🇭🇰 YouTube梦歌|广港BGP_46
+      - YouTube梦歌_51
+      - YouTube梦歌|低速节点_68
+      - 🇺🇸 YouTube梦歌|美国直连_47
+      - 🇯🇵 YouTube梦歌|日本01|直连
+      - 🇺🇸 YouTube梦歌|美国01|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_72
+      - 🇭🇰 YouTube梦歌|杭港BGP_135
+      - 🇺🇸 YouTube梦歌|美国05|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_39
+      - 🇭🇰 YouTube梦歌|广港IEPL_79
+      - 🇭🇰 YouTube梦歌|广港BGP_48
+      - 🇭🇰 YouTube梦歌|广港BGP_86
+      - 🇭🇰 YouTube梦歌|广港IEPL|Netflix_72
+      - 🇭🇰 YouTube梦歌|广港BGP_80
+      - 🇭🇰 YouTube梦歌|广港IEPL_89
+      - 🇭🇰 YouTube梦歌|杭港BGP_146
+      - 🇭🇰 YouTube梦歌|广港BGP_69
+      - 🇭🇰 YouTube梦歌|京港低速_24
+      - 🇭🇰 YouTube梦歌|广港IEPL_115
+      - 🇭🇰 YouTube梦歌|杭港BGP_40
+      - 🇭🇰 YouTube梦歌|广港BGP_61
+      - 🇺🇸 YouTube梦歌|美国直连_93
+      - 🇭🇰 YouTube梦歌|广港IEPL_83
+      - 🇭🇰 YouTube梦歌|杭港BGP_1
+      - 🇭🇰 YouTube梦歌|杭港BGP_44
+      - 🇰🇭 YouTube梦歌|柬埔寨01|直连
+      - 🇺🇸 YouTube梦歌|美国03|直连
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_29
+      - YouTube梦歌|低速节点_51
+      - YouTube梦歌_27
+      - 🇭🇰 YouTube梦歌|广港BGP_47
+      - 🇭🇰 YouTube梦歌|广港BGP_34
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_83
+      - 🇭🇰 YouTube梦歌|广港BGP_68
+      - YouTube梦歌|低速节点_16
+      - 🇭🇰 YouTube梦歌|广港IEPL_117
+      - YouTube梦歌|低速节点_61
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_11
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_60
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_89
+      - 🇭🇰 YouTube梦歌|广港BGP_74
+      - 🇭🇰 YouTube梦歌|京港低速_63
+      - YouTube梦歌_43
+      - 🇭🇰 YouTube梦歌|广港BGP_97
+      - YouTube梦歌_41
+      - 🇭🇰 YouTube梦歌|广港BGP_65
+      - 🇭🇰 YouTube梦歌|京港低速_70
+      - 🇭🇰 YouTube梦歌|广港BGP_53
+      - YouTube梦歌_31
+      - YouTube梦歌_32
+      - YouTube梦歌_7
+      - 🇭🇰 YouTube梦歌|广港BGP_15
+      - 🇭🇰 YouTube梦歌|广港BGP_77
+      - 🇭🇰 YouTube梦歌|广港BGP_87
+      - 🇭🇰 YouTube梦歌|京港低速_71
+      - YouTube梦歌_42
+      - 🇭🇰 YouTube梦歌|杭港BGP_68
+      - 🇭🇰 YouTube梦歌|广港IEPL_107
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - US_FreeNode.me_1
-      - US_FreeNode.me_2
-      - US_FreeNode.me_3
-      - US_FreeNode.me_4
-      - CN_FreeNode.me_5
-      - US_FreeNode.me_6
-      - US_FreeNode.me_7
-      - US_FreeNode.me_8
-      - US_FreeNode.me_9
-      - CN_FreeNode.me_10
-      - BZ_FreeNode.me_11
-      - US_FreeNode.me_12
-      - US_FreeNode.me_13
-      - US_FreeNode.me_14
-      - US_FreeNode.me_15
-      - US_FreeNode.me_16
-      - US_FreeNode.me_17
-      - US_FreeNode.me_18
-      - US_FreeNode.me_19
-      - US_FreeNode.me_20
-      - UN_FreeNode.me_21
-      - US_FreeNode.me_22
-      - US_FreeNode.me_23
-      - US_FreeNode.me_24
-      - BZ_FreeNode.me_25
-      - US_FreeNode.me_26
-      - US_FreeNode.me_27
-      - US_FreeNode.me_28
-      - US_FreeNode.me_29
-      - US_FreeNode.me_30
-      - US_FreeNode.me_31
-      - US_FreeNode.me_32
-      - US_FreeNode.me_33
-      - US_FreeNode.me_34
-      - UN_FreeNode.me_35
-      - US_FreeNode.me_36
-      - US_FreeNode.me_37
-      - US_FreeNode.me_38
-      - CN_FreeNode.me_39
-      - US_FreeNode.me_40
-      - US_FreeNode.me_41
-      - US_FreeNode.me_42
-      - US_FreeNode.me_43
-      - BZ_FreeNode.me_44
-      - US_FreeNode.me_45
-      - US_FreeNode.me_46
-      - UN_FreeNode.me_47
-      - US_FreeNode.me_48
-      - US_FreeNode.me_49
-      - US_FreeNode.me_50
-      - US_FreeNode.me_51
-      - US_FreeNode.me_52
-      - US_FreeNode.me_53
-      - US_FreeNode.me_54
-      - US_FreeNode.me_55
-      - US_FreeNode.me_56
-      - US_FreeNode.me_57
-      - BZ_FreeNode.me_58
-      - CN_FreeNode.me_59
-      - US_FreeNode.me_60
-      - US_FreeNode.me_61
-      - FR_FreeNode.me_62
-      - US_FreeNode.me_63
-      - CY_FreeNode.me_64
-      - US_FreeNode.me_65
-      - US_FreeNode.me_66
-      - US_FreeNode.me_67
-      - US_FreeNode.me_68
-      - US_FreeNode.me_69
-      - BZ_FreeNode.me_70
-      - US_FreeNode.me_71
-      - US_FreeNode.me_72
-      - US_FreeNode.me_73
-      - US_FreeNode.me_75
-      - US_FreeNode.me_76
-      - CA_FreeNode.me_77
-      - US_FreeNode.me_78
-      - US_FreeNode.me_79
-      - US_FreeNode.me_80
-      - US_FreeNode.me_81
-      - CA_FreeNode.me_82
-      - US_FreeNode.me_83
-      - US_FreeNode.me_84
-      - CN_FreeNode.me_85
-      - BZ_FreeNode.me_86
-      - US_FreeNode.me_87
-      - US_FreeNode.me_88
-      - CN_FreeNode.me_89
-      - CN_FreeNode.me_90
-      - US_FreeNode.me_91
-      - CA_FreeNode.me_92
-      - US_FreeNode.me_93
-      - US_FreeNode.me_94
-      - US_FreeNode.me_95
-      - US_FreeNode.me_96
-      - US_FreeNode.me_97
-      - US_FreeNode.me_98
-      - US_FreeNode.me_99
-      - JP_FreeNode.me_100
-      - US_FreeNode.me_101
-      - US_FreeNode.me_102
-      - US_FreeNode.me_103
-      - AM_FreeNode.me_104
-      - US_FreeNode.me_105
-      - US_FreeNode.me_106
-      - US_FreeNode.me_107
-      - BZ_FreeNode.me_108
-      - US_FreeNode.me_109
-      - US_FreeNode.me_110
-      - US_FreeNode.me_111
-      - US_FreeNode.me_112
-      - US_FreeNode.me_113
-      - US_FreeNode.me_114
+      - 🇭🇰 YouTube梦歌|杭港BGP_20
+      - 🇭🇰 YouTube梦歌|广港BGP_60
+      - 🇭🇰 YouTube梦歌|广港BGP_71
+      - YouTube梦歌|低速节点_23
+      - 🇭🇰 YouTube梦歌|京港低速_78
+      - YouTube梦歌_15
+      - 🇭🇰 YouTube梦歌|广港BGP_93
+      - 🇭🇰 YouTube梦歌|杭港HGC|Netflix_117
+      - 🇭🇰 YouTube梦歌|广港BGP_56
+      - YouTube梦歌_49
+      - 🇭🇰 YouTube梦歌|杭港BGP_36
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_82
+      - YouTube梦歌_40
+      - YouTube梦歌_34
+      - YouTube梦歌_25
+      - 🇭🇰 YouTube梦歌|京港低速_61
+      - 🇭🇰 YouTube梦歌|广港BGP_90
+      - 🇭🇰 YouTube梦歌|杭港BGP_110
+      - 🇺🇸 YouTube梦歌|美国04|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_62
+      - 🇭🇰 YouTube梦歌|广港IEPL_102
+      - 🇭🇰 YouTube梦歌|广港BGP_63
+      - 🇭🇰 YouTube梦歌|广港BGP_76
+      - 🇭🇰 YouTube梦歌|广港BGP_89
+      - 🇭🇰 YouTube梦歌|京港低速_42
+      - 🇭🇰 YouTube梦歌|杭港BGP_102
+      - 🇭🇰 YouTube梦歌|广港IEPL_1
+      - 🇭🇰 YouTube梦歌|广港BGP_41
+      - 🇭🇰 YouTube梦歌|广港BGP_79
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_150
+      - 🇭🇰 YouTube梦歌|杭港BGP_59
+      - 🇺🇸 YouTube梦歌|美国直连_59
+      - 🇭🇰 YouTube梦歌|广港BGP_55
+      - 🇭🇰 YouTube梦歌|广港BGP_58
+      - 🇭🇰 YouTube梦歌|广港BGP_70
+      - YouTube梦歌|低速节点_62
+      - YouTube梦歌_61
+      - YouTube梦歌_54
+      - YouTube梦歌|低速节点_67
+      - YouTube梦歌|低速节点_24
+      - 🇭🇰 YouTube梦歌|广港BGP_64
+      - YouTube梦歌|低速节点_19
+      - 🇭🇰 YouTube梦歌|广港BGP_75
+      - 🇭🇰 YouTube梦歌|广港BGP_84
+      - 🇭🇰 YouTube梦歌|杭港BGP_122
+      - 🇭🇰 YouTube梦歌|广港IEPL_45
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_40
+      - 🇭🇰 YouTube梦歌|广港BGP_59
+      - 🇭🇰 YouTube梦歌|香港01|直连
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_121
+      - 🇭🇰 YouTube梦歌|广港IEPL_52
+      - 🇨🇦 YouTube梦歌|加拿大03|直连
+      - 🇭🇰 YouTube梦歌|广港IEPL_99
+      - 🇺🇸 YouTube梦歌|美国直连_40
+      - 🇭🇰 YouTube梦歌|杭港BGP_32
+      - YouTube梦歌_19
+      - YouTube梦歌|低速垃圾节点_93
+      - YouTube梦歌|低速节点_123
+      - YouTube梦歌_46
+      - 🇭🇰 YouTube梦歌|广港BGP_46
+      - YouTube梦歌_51
+      - YouTube梦歌|低速节点_68
+      - 🇺🇸 YouTube梦歌|美国直连_47
+      - 🇯🇵 YouTube梦歌|日本01|直连
+      - 🇺🇸 YouTube梦歌|美国01|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_72
+      - 🇭🇰 YouTube梦歌|杭港BGP_135
+      - 🇺🇸 YouTube梦歌|美国05|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_39
+      - 🇭🇰 YouTube梦歌|广港IEPL_79
+      - 🇭🇰 YouTube梦歌|广港BGP_48
+      - 🇭🇰 YouTube梦歌|广港BGP_86
+      - 🇭🇰 YouTube梦歌|广港IEPL|Netflix_72
+      - 🇭🇰 YouTube梦歌|广港BGP_80
+      - 🇭🇰 YouTube梦歌|广港IEPL_89
+      - 🇭🇰 YouTube梦歌|杭港BGP_146
+      - 🇭🇰 YouTube梦歌|广港BGP_69
+      - 🇭🇰 YouTube梦歌|京港低速_24
+      - 🇭🇰 YouTube梦歌|广港IEPL_115
+      - 🇭🇰 YouTube梦歌|杭港BGP_40
+      - 🇭🇰 YouTube梦歌|广港BGP_61
+      - 🇺🇸 YouTube梦歌|美国直连_93
+      - 🇭🇰 YouTube梦歌|广港IEPL_83
+      - 🇭🇰 YouTube梦歌|杭港BGP_1
+      - 🇭🇰 YouTube梦歌|杭港BGP_44
+      - 🇰🇭 YouTube梦歌|柬埔寨01|直连
+      - 🇺🇸 YouTube梦歌|美国03|直连
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_29
+      - YouTube梦歌|低速节点_51
+      - YouTube梦歌_27
+      - 🇭🇰 YouTube梦歌|广港BGP_47
+      - 🇭🇰 YouTube梦歌|广港BGP_34
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_83
+      - 🇭🇰 YouTube梦歌|广港BGP_68
+      - YouTube梦歌|低速节点_16
+      - 🇭🇰 YouTube梦歌|广港IEPL_117
+      - YouTube梦歌|低速节点_61
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_11
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_60
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_89
+      - 🇭🇰 YouTube梦歌|广港BGP_74
+      - 🇭🇰 YouTube梦歌|京港低速_63
+      - YouTube梦歌_43
+      - 🇭🇰 YouTube梦歌|广港BGP_97
+      - YouTube梦歌_41
+      - 🇭🇰 YouTube梦歌|广港BGP_65
+      - 🇭🇰 YouTube梦歌|京港低速_70
+      - 🇭🇰 YouTube梦歌|广港BGP_53
+      - YouTube梦歌_31
+      - YouTube梦歌_32
+      - YouTube梦歌_7
+      - 🇭🇰 YouTube梦歌|广港BGP_15
+      - 🇭🇰 YouTube梦歌|广港BGP_77
+      - 🇭🇰 YouTube梦歌|广港BGP_87
+      - 🇭🇰 YouTube梦歌|京港低速_71
+      - YouTube梦歌_42
+      - 🇭🇰 YouTube梦歌|杭港BGP_68
+      - 🇭🇰 YouTube梦歌|广港IEPL_107
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -373,119 +388,124 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_FreeNode.me_1
-      - US_FreeNode.me_2
-      - US_FreeNode.me_3
-      - US_FreeNode.me_4
-      - CN_FreeNode.me_5
-      - US_FreeNode.me_6
-      - US_FreeNode.me_7
-      - US_FreeNode.me_8
-      - US_FreeNode.me_9
-      - CN_FreeNode.me_10
-      - BZ_FreeNode.me_11
-      - US_FreeNode.me_12
-      - US_FreeNode.me_13
-      - US_FreeNode.me_14
-      - US_FreeNode.me_15
-      - US_FreeNode.me_16
-      - US_FreeNode.me_17
-      - US_FreeNode.me_18
-      - US_FreeNode.me_19
-      - US_FreeNode.me_20
-      - UN_FreeNode.me_21
-      - US_FreeNode.me_22
-      - US_FreeNode.me_23
-      - US_FreeNode.me_24
-      - BZ_FreeNode.me_25
-      - US_FreeNode.me_26
-      - US_FreeNode.me_27
-      - US_FreeNode.me_28
-      - US_FreeNode.me_29
-      - US_FreeNode.me_30
-      - US_FreeNode.me_31
-      - US_FreeNode.me_32
-      - US_FreeNode.me_33
-      - US_FreeNode.me_34
-      - UN_FreeNode.me_35
-      - US_FreeNode.me_36
-      - US_FreeNode.me_37
-      - US_FreeNode.me_38
-      - CN_FreeNode.me_39
-      - US_FreeNode.me_40
-      - US_FreeNode.me_41
-      - US_FreeNode.me_42
-      - US_FreeNode.me_43
-      - BZ_FreeNode.me_44
-      - US_FreeNode.me_45
-      - US_FreeNode.me_46
-      - UN_FreeNode.me_47
-      - US_FreeNode.me_48
-      - US_FreeNode.me_49
-      - US_FreeNode.me_50
-      - US_FreeNode.me_51
-      - US_FreeNode.me_52
-      - US_FreeNode.me_53
-      - US_FreeNode.me_54
-      - US_FreeNode.me_55
-      - US_FreeNode.me_56
-      - US_FreeNode.me_57
-      - BZ_FreeNode.me_58
-      - CN_FreeNode.me_59
-      - US_FreeNode.me_60
-      - US_FreeNode.me_61
-      - FR_FreeNode.me_62
-      - US_FreeNode.me_63
-      - CY_FreeNode.me_64
-      - US_FreeNode.me_65
-      - US_FreeNode.me_66
-      - US_FreeNode.me_67
-      - US_FreeNode.me_68
-      - US_FreeNode.me_69
-      - BZ_FreeNode.me_70
-      - US_FreeNode.me_71
-      - US_FreeNode.me_72
-      - US_FreeNode.me_73
-      - US_FreeNode.me_75
-      - US_FreeNode.me_76
-      - CA_FreeNode.me_77
-      - US_FreeNode.me_78
-      - US_FreeNode.me_79
-      - US_FreeNode.me_80
-      - US_FreeNode.me_81
-      - CA_FreeNode.me_82
-      - US_FreeNode.me_83
-      - US_FreeNode.me_84
-      - CN_FreeNode.me_85
-      - BZ_FreeNode.me_86
-      - US_FreeNode.me_87
-      - US_FreeNode.me_88
-      - CN_FreeNode.me_89
-      - CN_FreeNode.me_90
-      - US_FreeNode.me_91
-      - CA_FreeNode.me_92
-      - US_FreeNode.me_93
-      - US_FreeNode.me_94
-      - US_FreeNode.me_95
-      - US_FreeNode.me_96
-      - US_FreeNode.me_97
-      - US_FreeNode.me_98
-      - US_FreeNode.me_99
-      - JP_FreeNode.me_100
-      - US_FreeNode.me_101
-      - US_FreeNode.me_102
-      - US_FreeNode.me_103
-      - AM_FreeNode.me_104
-      - US_FreeNode.me_105
-      - US_FreeNode.me_106
-      - US_FreeNode.me_107
-      - BZ_FreeNode.me_108
-      - US_FreeNode.me_109
-      - US_FreeNode.me_110
-      - US_FreeNode.me_111
-      - US_FreeNode.me_112
-      - US_FreeNode.me_113
-      - US_FreeNode.me_114
+      - 🇭🇰 YouTube梦歌|杭港BGP_20
+      - 🇭🇰 YouTube梦歌|广港BGP_60
+      - 🇭🇰 YouTube梦歌|广港BGP_71
+      - YouTube梦歌|低速节点_23
+      - 🇭🇰 YouTube梦歌|京港低速_78
+      - YouTube梦歌_15
+      - 🇭🇰 YouTube梦歌|广港BGP_93
+      - 🇭🇰 YouTube梦歌|杭港HGC|Netflix_117
+      - 🇭🇰 YouTube梦歌|广港BGP_56
+      - YouTube梦歌_49
+      - 🇭🇰 YouTube梦歌|杭港BGP_36
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_82
+      - YouTube梦歌_40
+      - YouTube梦歌_34
+      - YouTube梦歌_25
+      - 🇭🇰 YouTube梦歌|京港低速_61
+      - 🇭🇰 YouTube梦歌|广港BGP_90
+      - 🇭🇰 YouTube梦歌|杭港BGP_110
+      - 🇺🇸 YouTube梦歌|美国04|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_62
+      - 🇭🇰 YouTube梦歌|广港IEPL_102
+      - 🇭🇰 YouTube梦歌|广港BGP_63
+      - 🇭🇰 YouTube梦歌|广港BGP_76
+      - 🇭🇰 YouTube梦歌|广港BGP_89
+      - 🇭🇰 YouTube梦歌|京港低速_42
+      - 🇭🇰 YouTube梦歌|杭港BGP_102
+      - 🇭🇰 YouTube梦歌|广港IEPL_1
+      - 🇭🇰 YouTube梦歌|广港BGP_41
+      - 🇭🇰 YouTube梦歌|广港BGP_79
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_150
+      - 🇭🇰 YouTube梦歌|杭港BGP_59
+      - 🇺🇸 YouTube梦歌|美国直连_59
+      - 🇭🇰 YouTube梦歌|广港BGP_55
+      - 🇭🇰 YouTube梦歌|广港BGP_58
+      - 🇭🇰 YouTube梦歌|广港BGP_70
+      - YouTube梦歌|低速节点_62
+      - YouTube梦歌_61
+      - YouTube梦歌_54
+      - YouTube梦歌|低速节点_67
+      - YouTube梦歌|低速节点_24
+      - 🇭🇰 YouTube梦歌|广港BGP_64
+      - YouTube梦歌|低速节点_19
+      - 🇭🇰 YouTube梦歌|广港BGP_75
+      - 🇭🇰 YouTube梦歌|广港BGP_84
+      - 🇭🇰 YouTube梦歌|杭港BGP_122
+      - 🇭🇰 YouTube梦歌|广港IEPL_45
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_40
+      - 🇭🇰 YouTube梦歌|广港BGP_59
+      - 🇭🇰 YouTube梦歌|香港01|直连
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_121
+      - 🇭🇰 YouTube梦歌|广港IEPL_52
+      - 🇨🇦 YouTube梦歌|加拿大03|直连
+      - 🇭🇰 YouTube梦歌|广港IEPL_99
+      - 🇺🇸 YouTube梦歌|美国直连_40
+      - 🇭🇰 YouTube梦歌|杭港BGP_32
+      - YouTube梦歌_19
+      - YouTube梦歌|低速垃圾节点_93
+      - YouTube梦歌|低速节点_123
+      - YouTube梦歌_46
+      - 🇭🇰 YouTube梦歌|广港BGP_46
+      - YouTube梦歌_51
+      - YouTube梦歌|低速节点_68
+      - 🇺🇸 YouTube梦歌|美国直连_47
+      - 🇯🇵 YouTube梦歌|日本01|直连
+      - 🇺🇸 YouTube梦歌|美国01|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_72
+      - 🇭🇰 YouTube梦歌|杭港BGP_135
+      - 🇺🇸 YouTube梦歌|美国05|直连
+      - 🇭🇰 YouTube梦歌|广港BGP_39
+      - 🇭🇰 YouTube梦歌|广港IEPL_79
+      - 🇭🇰 YouTube梦歌|广港BGP_48
+      - 🇭🇰 YouTube梦歌|广港BGP_86
+      - 🇭🇰 YouTube梦歌|广港IEPL|Netflix_72
+      - 🇭🇰 YouTube梦歌|广港BGP_80
+      - 🇭🇰 YouTube梦歌|广港IEPL_89
+      - 🇭🇰 YouTube梦歌|杭港BGP_146
+      - 🇭🇰 YouTube梦歌|广港BGP_69
+      - 🇭🇰 YouTube梦歌|京港低速_24
+      - 🇭🇰 YouTube梦歌|广港IEPL_115
+      - 🇭🇰 YouTube梦歌|杭港BGP_40
+      - 🇭🇰 YouTube梦歌|广港BGP_61
+      - 🇺🇸 YouTube梦歌|美国直连_93
+      - 🇭🇰 YouTube梦歌|广港IEPL_83
+      - 🇭🇰 YouTube梦歌|杭港BGP_1
+      - 🇭🇰 YouTube梦歌|杭港BGP_44
+      - 🇰🇭 YouTube梦歌|柬埔寨01|直连
+      - 🇺🇸 YouTube梦歌|美国03|直连
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_29
+      - YouTube梦歌|低速节点_51
+      - YouTube梦歌_27
+      - 🇭🇰 YouTube梦歌|广港BGP_47
+      - 🇭🇰 YouTube梦歌|广港BGP_34
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_83
+      - 🇭🇰 YouTube梦歌|广港BGP_68
+      - YouTube梦歌|低速节点_16
+      - 🇭🇰 YouTube梦歌|广港IEPL_117
+      - YouTube梦歌|低速节点_61
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_11
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_60
+      - 🇭🇰 YouTube梦歌|杭港BGP|Netflix_89
+      - 🇭🇰 YouTube梦歌|广港BGP_74
+      - 🇭🇰 YouTube梦歌|京港低速_63
+      - YouTube梦歌_43
+      - 🇭🇰 YouTube梦歌|广港BGP_97
+      - YouTube梦歌_41
+      - 🇭🇰 YouTube梦歌|广港BGP_65
+      - 🇭🇰 YouTube梦歌|京港低速_70
+      - 🇭🇰 YouTube梦歌|广港BGP_53
+      - YouTube梦歌_31
+      - YouTube梦歌_32
+      - YouTube梦歌_7
+      - 🇭🇰 YouTube梦歌|广港BGP_15
+      - 🇭🇰 YouTube梦歌|广港BGP_77
+      - 🇭🇰 YouTube梦歌|广港BGP_87
+      - 🇭🇰 YouTube梦歌|京港低速_71
+      - YouTube梦歌_42
+      - 🇭🇰 YouTube梦歌|杭港BGP_68
+      - 🇭🇰 YouTube梦歌|广港IEPL_107
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -493,6 +513,7 @@ rules:
  - DOMAIN-SUFFIX,lan,🎯 全球直连
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - DOMAIN-SUFFIX,localhost,🎯 全球直连
+ - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
  - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
  - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
  - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
@@ -507,6 +528,7 @@ rules:
  - DOMAIN,instant.arubanetworks.com,🎯 全球直连
  - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
  - DOMAIN,router.asus.com,🎯 全球直连
+ - DOMAIN,www.asusrouter.com,🎯 全球直连
  - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
  - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
@@ -519,6 +541,7 @@ rules:
  - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
  - DOMAIN-SUFFIX,zte.home,🎯 全球直连
  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
+ - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
  - DOMAIN,dl.google.com,🎯 全球直连
@@ -549,7 +572,6 @@ rules:
  - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
  - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
  - DOMAIN-KEYWORD,adwords,🛑 全球拦截
- - DOMAIN-KEYWORD,analysis,🛑 全球拦截
  - DOMAIN-KEYWORD,applovin,🛑 全球拦截
  - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
  - DOMAIN-KEYWORD,domob,🛑 全球拦截
@@ -1655,7 +1677,6 @@ rules:
  - DOMAIN-SUFFIX,stat.pandora.xiaomi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,union.mi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,wtradv.market.xiaomi.com,🛑 全球拦截
- - DOMAIN-SUFFIX,xmpush.xiaomi.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ad.api.moji.com,🛑 全球拦截
  - DOMAIN-SUFFIX,app.moji001.com,🛑 全球拦截
  - DOMAIN-SUFFIX,cdn.moji002.com,🛑 全球拦截
@@ -1850,7 +1871,6 @@ rules:
  - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🛑 全球拦截
  - DOMAIN-SUFFIX,yads.yahoo.co.jp,🛑 全球拦截
  - DOMAIN-SUFFIX,ybp.yahoo.com,🛑 全球拦截
- - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🛑 全球拦截
  - DOMAIN-SUFFIX,shrek.6.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,simba.6.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,union.6.cn,🛑 全球拦截
@@ -2440,6 +2460,26 @@ rules:
  - DOMAIN-SUFFIX,dmc.nico,🚀 节点选择
  - DOMAIN-SUFFIX,nicovideo.jp,🚀 节点选择
  - DOMAIN-SUFFIX,nimg.jp,🚀 节点选择
+ - DOMAIN-KEYWORD,nivod,🚀 节点选择
+ - DOMAIN-SUFFIX,biggggg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,mudvod.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,nbys.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,nbys1.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,nbyy.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,newpppp.com,🚀 节点选择
+ - DOMAIN-SUFFIX,nivod.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,nivodi.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,nivodz.com,🚀 节点选择
+ - DOMAIN-SUFFIX,vod360.net,🚀 节点选择
+ - DOMAIN-KEYWORD,olevod,🚀 节点选择
+ - DOMAIN-SUFFIX,haiwaikan.com,🚀 节点选择
+ - DOMAIN-SUFFIX,iole.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,olehd.com,🚀 节点选择
+ - DOMAIN-SUFFIX,olelive.com,🚀 节点选择
+ - DOMAIN-SUFFIX,olevod.com,🚀 节点选择
+ - DOMAIN-SUFFIX,olevod.io,🚀 节点选择
+ - DOMAIN-SUFFIX,olevod.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,olevodtv.com,🚀 节点选择
  - DOMAIN-SUFFIX,pbs.org,🚀 节点选择
  - DOMAIN-SUFFIX,pandora.com,🚀 节点选择
  - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
@@ -2514,7 +2554,6 @@ rules:
  - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
  - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
- - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
  - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
  - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
  - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -2525,7 +2564,6 @@ rules:
  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
  - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
  - DOMAIN-SUFFIX,notion.so,🚀 节点选择
- - DOMAIN-SUFFIX,openai.com,🚀 节点选择
  - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
  - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
@@ -2539,7 +2577,6 @@ rules:
  - DOMAIN-SUFFIX,sg,🚀 节点选择
  - DOMAIN-SUFFIX,tw,🚀 节点选择
  - DOMAIN-SUFFIX,uk,🚀 节点选择
- - DOMAIN-SUFFIX,us,🚀 节点选择
  - DOMAIN-KEYWORD,1e100,🚀 节点选择
  - DOMAIN-KEYWORD,abema,🚀 节点选择
  - DOMAIN-KEYWORD,appledaily,🚀 节点选择
@@ -2806,6 +2843,9 @@ rules:
  - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
  - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
  - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+ - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ai.com,🚀 节点选择
  - DOMAIN-KEYWORD,1drv,🚀 节点选择
  - DOMAIN-KEYWORD,onedrive,🚀 节点选择
  - DOMAIN-KEYWORD,skydrive,🚀 节点选择
@@ -2943,7 +2983,6 @@ rules:
  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
  - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
- - DOMAIN-KEYWORD,-cn,🎯 全球直连
  - DOMAIN-KEYWORD,360buy,🎯 全球直连
  - DOMAIN-KEYWORD,alicdn,🎯 全球直连
  - DOMAIN-KEYWORD,alimama,🎯 全球直连
@@ -3293,10 +3332,10 @@ rules:
  - DOMAIN-SUFFIX,redacted.ch,🎯 全球直连
  - DOMAIN-SUFFIX,springsunday.net,🎯 全球直连
  - DOMAIN-SUFFIX,tjupt.org,🎯 全球直连
+ - DOMAIN-SUFFIX,tju.pt,🎯 全球直连
  - DOMAIN-SUFFIX,totheglory.im,🎯 全球直连
  - DOMAIN-SUFFIX,trontv.com,🎯 全球直连
  - DOMAIN-SUFFIX,teamviewer.com,🎯 全球直连
- - IP-CIDR,109.239.140.0/24,🎯 全球直连,no-resolve
  - IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
  - IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
  - IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
