@@ -15,81 +15,77 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {name: 🇺🇸 _US_美国, server: us.blazeppn.info, port: 443, client-fingerprint: chrome, type: trojan, password: xxoo, tfo: false, skip-cert-verify: false}
-  - {name: 🇹🇼 _TW_台湾->🇺🇸_US_美国, server: azgy001.xibai6.top, port: 20791, client-fingerprint: chrome, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, tfo: false, sni: ssl.ssl12.xyz, skip-cert-verify: false}
-  - {name: 🇫🇷 _FR_法国, server: t3.teslacdn2.live, port: 443, client-fingerprint: chrome, type: trojan, password: e1c12e6f-a555-4ff8-b071-1e09dd5d91e6, tfo: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 2, server: 172.67.203.162, port: 443, client-fingerprint: chrome, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: 🇺🇸 _CA_加拿大->🇺🇸_US_美国, server: 23.227.38.27, port: 443, client-fingerprint: chrome, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: 🇨🇾 _CY_塞浦路斯->🇫🇷_FR_法国, server: 203.24.108.2, port: 443, client-fingerprint: chrome, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: quran-audio5.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quran-audio5.xyz}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 2, server: quranweb29.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quranweb29.xyz}}}
-  - {name: 🇯🇵 _JP_日本, server: 85.208.108.60, port: 5601, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false}
-  - {name: 🇺🇸 _US_美国 3, server: www.damonhuang.top, port: 443, client-fingerprint: chrome, type: vmess, uuid: 3b6d199e-c090-4a82-8887-815929ba3aff, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.damonhuang.top}}}
-  - {name: 🇷🇴 _RO_罗马尼亚, server: leg.fastv2ray.eu.org, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran4.store}}}
-  - {name: 🇺🇸 _CA_加拿大->🇺🇸_US_美国 2, server: 23.227.38.26, port: 443, client-fingerprint: chrome, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}}
-  - {name: 🇯🇵 _JP_日本 2, server: 85.208.108.60, port: 3306, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, tfo: false}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 3, server: cf-topspeedoneplus.uk, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cf-topspeedoneplus.uk}}}
-  - {name: 🇸🇬 _SG_新加坡, server: 3.1.102.60, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇯🇵 _JP_日本 3, server: 85.208.108.60, port: 9102, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, tfo: false}
-  - {name: _BZ_伯利兹, server: 203.30.189.1, port: 443, client-fingerprint: chrome, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}}
-  - {name: 🇰🇷 _KR_韩国, server: 43.200.244.234, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇺🇸 _US_美国 4, server: holyquran3.store, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: holyquran3.store}}}
-  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国, server: holyquran19.store, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran19.store}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 4, server: quran-audio2.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio2.xyz}}}
-  - {name: 🇺🇸 _CR_哥斯达黎加->🇺🇸_US_美国, server: 190.93.245.1, port: 443, client-fingerprint: chrome, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}}
-  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国 2, server: quran-audio1.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio1.xyz}}}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 5, server: cf-topspeedv5.uk, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cf-topspeedv5.uk}}}
-  - {name: 🇺🇸 _US_美国 5, server: quranweb17.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quranweb17.xyz}}}
-  - {name: 🇹🇼 _TW_台湾->🇺🇸_US_美国 2, server: azgy001.xibai6.top, port: 20711, client-fingerprint: chrome, type: trojan, password: f23a8308-7cf3-3e69-976a-de7246b02a2d, tfo: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国 6, server: new3.hucloud-dns.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 1c8ad3f2-835c-4fda-b9b6-881d3cadfd8e, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: new3.hucloud-dns.xyz}}}
-  - {name: 🇰🇷 _KR_韩国 2, server: 43.201.60.60, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
-  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国 3, server: quranweb4.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quranweb4.xyz}}}
-  - {name: 🇹🇼 _TW_台湾->🇺🇸_US_美国 3, server: azgy001.xibai6.top, port: 20713, client-fingerprint: chrome, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, tfo: false, sni: ssl.ssl12.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 _JP_日本 4, server: 85.208.108.60, port: 8118, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, tfo: false}
-  - {name: 🇹🇼 _TW_台湾->🇺🇸_US_美国 4, server: azgy001.xibai6.top, port: 20790, client-fingerprint: chrome, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, tfo: false, sni: ssl.ssl12.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国 4, server: holyquran15.store, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}}
-  - {name: 🇺🇸 _US_美国 7, server: quran-audio7.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quran-audio7.xyz}}}
-  - {name: 🇸🇬 _SG_新加坡 2, server: 13.212.250.149, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇺🇸 _US_美国, server: quranweb19.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quranweb19.xyz}}}
+  - {name: 🇺🇸 _US_美国 2, server: 137.175.63.133, port: 50009, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 🇸🇬 _SG_新加坡, server: 54.169.160.39, port: 801, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: tvX1v#NSFP_LG_bJ, tfo: false}
+  - {name: 🇸🇬 _SG_新加坡 2, server: 13.215.159.170, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇯🇵 _JP_日本, server: 43.207.221.161, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇸🇬 _US_美国->🇸🇬_SG_新加坡, server: cf.noaries.de, port: 8880, client-fingerprint: chrome, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}}
+  - {name: 🇰🇷 _KR_韩国, server: 43.200.6.0, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: _BZ_伯利兹, server: 203.30.191.18, port: 443, client-fingerprint: chrome, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇺🇸 _US_美国 3, server: vuk1.0bad.com, port: 443, client-fingerprint: chrome, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vuk1.0bad.com}}}
+  - {name: 🇺🇸 _US_美国 4, server: 143.42.87.69, port: 443, client-fingerprint: chrome, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇦🇪 _AE_阿联酋, server: jp1117.ljydw.top, port: 80, client-fingerprint: chrome, type: trojan, password: fc6bf288-d672-46fa-9dcf-c005925ec3c8, tfo: false, sni: jp1117.ljydw.top, skip-cert-verify: false}
+  - {name: 🇰🇷 _KR_韩国 2, server: 43.201.148.126, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇰🇷 _KR_韩国 3, server: 43.201.60.60, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国, server: quranweb17.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb17.xyz}}}
+  - {name: 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦, server: justhost.739256.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 3a578e93-bce9-49d1-ebcd-901107f52739, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tg@aries, headers: {Host: justhost.739256.xyz}}}
+  - {name: 🇺🇸 _US_美国 5, server: quran-audio7.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quran-audio7.xyz}}}
+  - {name: 🇯🇵 _JP_日本 2, server: 85.208.108.60, port: 8118, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, tfo: false}
+  - {name: 🇯🇵 _JP_日本 3, server: 85.208.108.60, port: 2375, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, tfo: false}
+  - {name: _BZ_伯利兹 2, server: 203.30.191.19, port: 443, client-fingerprint: chrome, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
+  - {name: 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚, server: cf.noaries.de, port: 8080, client-fingerprint: chrome, type: vmess, uuid: 44ca94c0-b0c8-4e15-ab35-0a7947d7093b, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo.cloudflare.quest}}}
+  - {name: 🇺🇸 _US_美国 6, server: 143.42.206.230, port: 443, client-fingerprint: chrome, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: holyquran4.store, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran4.store}}}
+  - {name: 🇯🇵 _JP_日本 4, server: 43.207.110.173, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇺🇸 _US_美国 7, server: 142.4.101.19, port: 50222, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 8, server: lv1.sharecentrepro.org, port: 443, client-fingerprint: chrome, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lv1.sharecentrepro.org}}}
+  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国 2, server: quranweb9.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: quranweb9.xyz}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 2, server: cf-topspeedv4.uk, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedv4.uk}}}
+  - {name: 🇰🇷 _KR_韩国 4, server: 43.201.70.114, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇸🇬 _SG_新加坡 3, server: 0309tw.ljydw.top, port: 443, client-fingerprint: chrome, type: trojan, password: fc6bf288-d672-46fa-9dcf-c005925ec3c8, tfo: false, sni: 0309tw.ljydw.top, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国 9, server: dp1.scproxy.top, port: 443, client-fingerprint: chrome, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dp1.scproxy.top}}}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 3, server: holyquran10.store, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran10.store}}}
+  - {name: 🇺🇸 _US_美国 10, server: 38.63.0.83, port: 443, client-fingerprint: chrome, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇰🇷 _KR_韩国 5, server: 43.201.149.16, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - DIRECT
       - 🇺🇸 _US_美国
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国
-      - 🇫🇷 _FR_法国
       - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CA_加拿大->🇺🇸_US_美国
-      - 🇨🇾 _CY_塞浦路斯->🇫🇷_FR_法国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇯🇵 _JP_日本
-      - 🇺🇸 _US_美国 3
-      - 🇷🇴 _RO_罗马尼亚
-      - 🇺🇸 _CA_加拿大->🇺🇸_US_美国 2
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
       - 🇸🇬 _SG_新加坡
-      - 🇯🇵 _JP_日本 3
-      - _BZ_伯利兹
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _CR_哥斯达黎加->🇺🇸_US_美国
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国 2
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇺🇸 _US_美国 5
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国 6
-      - 🇰🇷 _KR_韩国 2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国 3
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国 3
-      - 🇯🇵 _JP_日本 4
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国 4
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国 4
-      - 🇺🇸 _US_美国 7
       - 🇸🇬 _SG_新加坡 2
+      - 🇯🇵 _JP_日本
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇰🇷 _KR_韩国
+      - _BZ_伯利兹
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇦🇪 _AE_阿联酋
+      - 🇰🇷 _KR_韩国 2
+      - 🇰🇷 _KR_韩国 3
+      - 🇺🇸 _US_美国->🇬🇧_GB_英国
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 5
+      - 🇯🇵 _JP_日本 2
+      - 🇯🇵 _JP_日本 3
+      - _BZ_伯利兹 2
+      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国->🇬🇧_GB_英国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
+      - 🇰🇷 _KR_韩国 4
+      - 🇸🇬 _SG_新加坡 3
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
+      - 🇺🇸 _US_美国 10
+      - 🇰🇷 _KR_韩国 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -106,40 +102,38 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇺🇸 _US_美国
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国
-      - 🇫🇷 _FR_法国
       - 🇺🇸 _US_美国 2
-      - 🇺🇸 _CA_加拿大->🇺🇸_US_美国
-      - 🇨🇾 _CY_塞浦路斯->🇫🇷_FR_法国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇯🇵 _JP_日本
-      - 🇺🇸 _US_美国 3
-      - 🇷🇴 _RO_罗马尼亚
-      - 🇺🇸 _CA_加拿大->🇺🇸_US_美国 2
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
       - 🇸🇬 _SG_新加坡
-      - 🇯🇵 _JP_日本 3
-      - _BZ_伯利兹
-      - 🇰🇷 _KR_韩国
-      - 🇺🇸 _US_美国 4
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 4
-      - 🇺🇸 _CR_哥斯达黎加->🇺🇸_US_美国
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国 2
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 5
-      - 🇺🇸 _US_美国 5
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国 2
-      - 🇺🇸 _US_美国 6
-      - 🇰🇷 _KR_韩国 2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国 3
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国 3
-      - 🇯🇵 _JP_日本 4
-      - 🇹🇼 _TW_台湾->🇺🇸_US_美国 4
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国 4
-      - 🇺🇸 _US_美国 7
       - 🇸🇬 _SG_新加坡 2
+      - 🇯🇵 _JP_日本
+      - 🇸🇬 _US_美国->🇸🇬_SG_新加坡
+      - 🇰🇷 _KR_韩国
+      - _BZ_伯利兹
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 _US_美国 4
+      - 🇦🇪 _AE_阿联酋
+      - 🇰🇷 _KR_韩国 2
+      - 🇰🇷 _KR_韩国 3
+      - 🇺🇸 _US_美国->🇬🇧_GB_英国
+      - 🇺🇸 _US_美国->🇷🇺_RU_俄罗斯联邦
+      - 🇺🇸 _US_美国 5
+      - 🇯🇵 _JP_日本 2
+      - 🇯🇵 _JP_日本 3
+      - _BZ_伯利兹 2
+      - 🇺🇸 _US_美国->🇦🇺_AU_澳大利亚
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 _US_美国->🇬🇧_GB_英国 2
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
+      - 🇰🇷 _KR_韩国 4
+      - 🇸🇬 _SG_新加坡 3
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
+      - 🇺🇸 _US_美国 10
+      - 🇰🇷 _KR_韩国 5
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
