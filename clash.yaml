@@ -21,7 +21,7 @@ mode: Rule
 proxy-providers:
   clashnodecom:
     type: http
-    url: 'https://ghproxy.com/https://github.com/isayme/clash-config-mirror/raw/gh-pages/clashnodecom.yaml'
+    url: 'https://ghproxy.com/https://github.com/shifft/clash-config-mirror/raw/gh-pages/clashnodecom.yaml'
     interval: 3600
     path: ./clashnodecom.yaml
     health-check:
@@ -32,7 +32,7 @@ proxy-providers:
 
   freenodeme:
     type: http
-    url: 'https://ghproxy.com/https://github.com/isayme/clash-config-mirror/raw/gh-pages/freenodeme.yaml'
+    url: 'https://ghproxy.com/https://github.com/shifft/clash-config-mirror/raw/gh-pages/freenodeme.yaml'
     interval: 3600
     path: ./freenodeme.yaml
     health-check:
