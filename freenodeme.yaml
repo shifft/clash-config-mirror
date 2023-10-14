@@ -5,243 +5,120 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 _US_美国_1, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
-  - {name: 🇺🇸 _US_美国_2, server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-diana.xyz, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /acetaffy, headers: {Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-diana.xyz}}}
-  - {name: 🇨🇷 _CR_哥斯达黎加_3, server: 190.93.246.241, port: 80, type: vmess, uuid: dd8068db-5cfb-43a9-ba23-b156a70fbb06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/@hopev2ray,@hopev2ray", headers: {Host: gb3vm.cdn-03.live}}}
-  - {name: 🇺🇸 _US_美国_4, server: 38.26.135.24, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696682720138, headers: {Host: www.39838266.xyz}}}
-  - {name: 🇺🇸 _US_美国_5, server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /acetaffy, headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz}}}
-  - {name: 🇺🇸 _US_美国_6, server: 104.16.68.38, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
-  - {name: 🇺🇸 _US_美国_7, server: mxc3.lbuy.top, port: 8080, type: vmess, uuid: 17edcd12-b00c-4635-a27d-9dc5cbbf0b33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us.tashancloud.link}}}
-  - {name: 🇫🇷 _FR_法国_8, server: 51.20.111.221, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_9, server: hefei.chiguayun.cc, port: 27144, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇺🇸 _US_美国_10, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v003.ssrsub.com}}}
-  - {name: 🇺🇸 _US_美国_11, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696251522438, headers: {Host: www.42077230.xyz}}}
-  - {name: 🇨🇳 _CN_中国_12, server: 112.29.156.248, port: 62001, type: vmess, uuid: d5332c81-161a-37ca-9a64-9e09c623b396, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: b.cn-db.top}}}
-  - {name: 🇺🇸 _US_美国_13, server: skk.moe, port: 8080, type: vmess, uuid: e7d59489-dd9b-494a-b7ce-f1ab54d4cd55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us2.tashancloud.link}}}
-  - {name: 🇭🇰 _HK_香港_14, server: hktddns.aikun.online, port: 80, type: vmess, uuid: ee484d37-3168-4a63-a0c3-72e96ea02508, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hkbn, headers: {Host: sanmao17.hkbn.n.optage.moe}}}
-  - {name: 🇺🇸 _US_美国_15, server: cf.yx.alue.link, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
-  - {name: 🇺🇸 _US_美国_16, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_17, server: foshan.chiguayun.cc, port: 27117, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇨🇳 _CN_中国_18, server: foshan.chiguayun.cc, port: 27142, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇨🇳 _CN_中国_19, server: ydyh.nanbei.info, port: 26901, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
-  - {name: 🇨🇳 _CN_中国_20, server: hefei.chiguayun.cc, port: 27137, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇨🇳 _CN_中国_21, server: foshan.chiguayun.cc, port: 27123, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇺🇸 _US_美国_22, server: 45.199.138.186, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696598013851, headers: {Host: www.19229362.xyz}}}
-  - {name: 🇺🇸 _US_美国_23, server: 162.159.128.91, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
-  - {name: 🇺🇸 _US_美国_24, server: 104.31.16.181, port: 443, type: vmess, uuid: 270c301a-7db6-4164-a0fd-d124ab6a94da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: gb2vm.cdn-03.live}}}
-  - {name: 🇫🇷 _FR_法国_25, server: 57.128.198.193, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: YzQwY}
-  - {name: 🇫🇷 _FR_法国_26, server: hdfy1d1.cpi2hidd.eu.org, port: 443, type: vmess, uuid: b2fbaeb0-e27b-4434-a8e3-9c5ad41885e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: kWNsYSByc82sNvvsPqovsnh, grpc-opts: {grpc-service-name: /}}
-  - {name: 🇺🇸 _US_美国_27, server: dx1.992688.xyz, port: 8080, type: vmess, uuid: e7d59489-dd9b-494a-b7ce-f1ab54d4cd55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us.tashancloud.link}}}
-  - {name: 🇨🇳 _CN_中国_28, server: hefei.chiguayun.cc, port: 27143, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇺🇸 _US_美国_29, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_30, server: ydyh.nanbei.info, port: 26905, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
-  - {name: 🇨🇳 _CN_中国_31, server: foshan.chiguayun.cc, port: 27137, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇨🇳 _CN_中国_32, server: ydyh.nanbei.info, port: 26902, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
-  - {name: 🇺🇸 _US_美国_33, server: dous.looooooongnet.lol, port: 443, type: vmess, uuid: 5d0e22b6-8d2c-41c7-a79f-eebdfcf233bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: dous.looooooongnet.lol, grpc-opts: {grpc-service-name: /}}
-  - {name: 🇺🇸 _US_美国_34, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}}
-  - {name: 🇳🇱 _NL_荷兰_35, server: 154.85.1.244, port: 30000, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696682720138, headers: {Host: www.28115361.xyz}}}
-  - {name: 🇺🇸 _US_美国_36, server: cf.yx.alue.link, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.wx.alue.link}}}
-  - {name: 🇺🇸 _US_美国_37, server: dx1.992688.xyz, port: 8080, type: vmess, uuid: 17edcd12-b00c-4635-a27d-9dc5cbbf0b33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us.tashancloud.link}}}
-  - {name: 🇨🇳 _CN_中国_38, server: 112.29.156.248, port: 62092, type: vmess, uuid: d5332c81-161a-37ca-9a64-9e09c623b396, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: e.cn-db.top}}}
-  - {name: 🇳🇱 _NL_荷兰_39, server: 154.85.1.244, port: 30000, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696944806961, headers: {Host: www.28115361.xyz}}}
-  - {name: 🇺🇸 _US_美国_40, server: yd1.992688.xyz, port: 8080, type: vmess, uuid: 17edcd12-b00c-4635-a27d-9dc5cbbf0b33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us.tashancloud.link}}}
-  - {name: 🇺🇸 _US_美国_41, server: 206.168.240.113, port: 35425, type: vmess, uuid: 78e34495-c417-48d9-e592-8625f26611c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jdbp606, headers: {Host: 206.168.240.113}}}
-  - {name: 🇨🇳 _CN_中国_42, server: ydyh.nanbei.info, port: 26904, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
-  - {name: 🇺🇸 _US_美国_43, server: yd1.992688.xyz, port: 8080, type: vmess, uuid: e7d59489-dd9b-494a-b7ce-f1ab54d4cd55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us.tashancloud.link}}}
-  - {name: 🇨🇳 _CN_中国_44, server: 112.29.156.248, port: 62005, type: vmess, uuid: d5332c81-161a-37ca-9a64-9e09c623b396, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: d.cn-db.top}}}
-  - {name: 🇺🇸 _US_美国_45, server: www.visa.com, port: 8080, type: vmess, uuid: 17edcd12-b00c-4635-a27d-9dc5cbbf0b33, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us2.tashancloud.link}}}
-  - {name: 🇨🇳 _CN_中国_46, server: hefei.chiguayun.cc, port: 27131, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇨🇳 _CN_中国_47, server: hefei.chiguayun.cc, port: 27135, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇨🇳 _CN_中国_48, server: shdx.donghui.tech, port: 12507, type: ss, cipher: aes-256-gcm, password: b883cd19-b6a7-42d6-8e4b-98a75531ee46}
-  - {name: 🇺🇸 _US_美国_49, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v003.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_50, server: hefei.chiguayun.cc, port: 27142, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇺🇸 _US_美国_51, server: 45.199.138.222, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696251693048, headers: {Host: www.19229362.xyz}}}
-  - {name: 🇨🇳 _CN_中国_52, server: hefei.chiguayun.cc, port: 27127, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇺🇸 _US_美国_53, server: v138a.ai88888.top, port: 2052, type: vmess, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /526-ddxDMRvLdlt, headers: {Host: v138a.ai88888.top}}}
-  - {name: 🇺🇸 _US_美国_54, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_55, server: 39.164.141.70, port: 52052, type: vmess, uuid: d5332c81-161a-37ca-9a64-9e09c623b396, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: c.cn-db.top}}}
-  - {name: 🇨🇳 _CN_中国_56, server: foshan.chiguayun.cc, port: 27121, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇺🇸 _US_美国_57, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696598013851, headers: {Host: www.42077230.xyz}}}
-  - {name: 🇨🇳 _CN_中国_58, server: zjcm.xcone.xyz, port: 48244, type: vmess, uuid: 2acc4a16-c916-4f69-ba73-90ff1d06cb77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_59, server: 162.159.137.9, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.wx.alue.link}}}
-  - {name: 🇨🇳 _CN_中国_60, server: ydyh.nanbei.info, port: 26907, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
-  - {name: 🇺🇸 _US_美国_61, server: 162.159.152.6, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
-  - {name: 🇬🇧 _GB_英国_62, server: douk.looooooongnet.lol, port: 443, type: vmess, uuid: 5d0e22b6-8d2c-41c7-a79f-eebdfcf233bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: grpc, servername: douk.looooooongnet.lol, grpc-opts: {grpc-service-name: /}}
-  - {name: 🇨🇳 _CN_中国_63, server: jscm01.celerlink.one, port: 41027, type: ss, cipher: chacha20-ietf-poly1305, password: 2739ce85d3b9e145}
-  - {name: 🇺🇸 _US_美国_64, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
-  - {name: 🇺🇸 _US_美国_65, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696682720138, headers: {Host: www.42077230.xyz}}}
-  - {name: 🇺🇸 _US_美国_66, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_67, server: 112.29.156.248, port: 62014, type: vmess, uuid: d5332c81-161a-37ca-9a64-9e09c623b396, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: a.cn-db.top}}}
-  - {name: 🇨🇳 _CN_中国_68, server: hefei.chiguayun.cc, port: 27123, type: ss, cipher: chacha20-ietf-poly1305, password: d376f270-1807-4522-9f92-b499658a2678}
-  - {name: 🇺🇸 _US_美国_69, server: 156.225.67.104, port: 30000, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696944806961, headers: {Host: www.41758112.xyz}}}
-  - {name: 🇺🇸 _US_美国_70, server: sfmomastore.com, port: 80, type: vmess, uuid: 0580abe6-9aaf-40e2-ba33-0bc9f3b6ef2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ee1.xv2ray.net}}}
-  - {name: 🇺🇸 _US_美国_71, server: 162.159.140.6, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
-  - {name: 🇺🇸 _US_美国_72, server: www.visa.com, port: 8080, type: vmess, uuid: e7d59489-dd9b-494a-b7ce-f1ab54d4cd55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/v?ed=2048", headers: {Host: us2.tashancloud.link}}}
-  - {name: 🇺🇸 _US_美国_73, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
-  - {name: 🇬🇧 _GB_英国_74, server: 35.179.36.3, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_75, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v003.ssrsub.com}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享), server: ydyh.nanbei.info, port: 26902, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 2, server: ydyh.nanbei.info, port: 26904, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 3, server: ydyh.nanbei.info, port: 26907, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 4, server: ydyh.nanbei.info, port: 26901, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 5, server: ydyh.nanbei.info, port: 26905, type: ss, cipher: chacha20-ietf-poly1305, password: add56d8f-eeef-4531-ba20-f9a30f0f021e}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 6, server: 142.0.129.249, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1695652618025, headers: {Host: www.64830206.xyz}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 7, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 8, server: 141.148.149.116, port: 20353, type: vmess, uuid: 0672c1be-77a9-43a9-8d32-6be8c3cba84a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: microsoft.com}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 9, server: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-diana.xyz, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /acetaffy, headers: {Host: b62a948c-faa2-4e8a-bf8a-3ff3121c875a.asoul-diana.xyz}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 10, server: 162.159.137.9, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.wx.alue.link}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 11, server: cf.yx.alue.link, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us.wx.alue.link}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 12, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
+  - {name: 🇰🇷 韩国(玉豆免费节点 yudou66.com), server: 130.162.154.209, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ophelia.mom:443/linkvws, headers: {Host: cf.tonyluk.link}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com), server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 2, server: 45.199.138.222, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696251693048, headers: {Host: www.19229362.xyz}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 13, server: 206.168.240.113, port: 35425, type: vmess, uuid: 78e34495-c417-48d9-e592-8625f26611c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jdbp606, headers: {Host: 206.168.240.113}}}
+  - {name: 🇳🇱 荷兰(玉豆免费节点 yudou66.com), server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696251522438, headers: {Host: www.42077230.xyz}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 3, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696598013851, headers: {Host: www.42077230.xyz}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 14, server: 38.26.135.24, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696682720138, headers: {Host: www.39838266.xyz}}}
+  - {name: 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 2, server: 154.85.1.244, port: 30000, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696682720138, headers: {Host: www.28115361.xyz}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 4, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 5, server: sfmomastore.com, port: 80, type: vmess, uuid: 0580abe6-9aaf-40e2-ba33-0bc9f3b6ef2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ee1.xv2ray.net}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 6, server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /acetaffy, headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-diana.xyz}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 7, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696682720138, headers: {Host: www.42077230.xyz}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 8, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 15, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 16, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v003.ssrsub.com}}}
+  - {name: 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 3, server: 154.85.1.244, port: 30000, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696944806961, headers: {Host: www.28115361.xyz}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 9, server: 206.168.240.113, port: 35425, type: vmess, uuid: 78e34495-c417-48d9-e592-8625f26611c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /jdbp606}}
+  - {name: 🇺🇸 US美国(mibei77.com 米贝节点分享) 17, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v003.ssrsub.com}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 10, server: 162.159.152.6, port: 2052, type: vmess, uuid: fe5edf04-c2af-4ac5-84ee-16d43024decb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lu.wx.alue.link}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 11, server: 156.225.67.104, port: 30000, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696944806961, headers: {Host: www.41758112.xyz}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 12, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}}
+  - {name: 🇺🇸 美国(玉豆免费节点 yudou66.com) 13, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国_2
-      - 🇨🇷 _CR_哥斯达黎加_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国_7
-      - 🇫🇷 _FR_法国_8
-      - 🇨🇳 _CN_中国_9
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇨🇳 _CN_中国_12
-      - 🇺🇸 _US_美国_13
-      - 🇭🇰 _HK_香港_14
-      - 🇺🇸 _US_美国_15
-      - 🇺🇸 _US_美国_16
-      - 🇨🇳 _CN_中国_17
-      - 🇨🇳 _CN_中国_18
-      - 🇨🇳 _CN_中国_19
-      - 🇨🇳 _CN_中国_20
-      - 🇨🇳 _CN_中国_21
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 _US_美国_23
-      - 🇺🇸 _US_美国_24
-      - 🇫🇷 _FR_法国_25
-      - 🇫🇷 _FR_法国_26
-      - 🇺🇸 _US_美国_27
-      - 🇨🇳 _CN_中国_28
-      - 🇺🇸 _US_美国_29
-      - 🇨🇳 _CN_中国_30
-      - 🇨🇳 _CN_中国_31
-      - 🇨🇳 _CN_中国_32
-      - 🇺🇸 _US_美国_33
-      - 🇺🇸 _US_美国_34
-      - 🇳🇱 _NL_荷兰_35
-      - 🇺🇸 _US_美国_36
-      - 🇺🇸 _US_美国_37
-      - 🇨🇳 _CN_中国_38
-      - 🇳🇱 _NL_荷兰_39
-      - 🇺🇸 _US_美国_40
-      - 🇺🇸 _US_美国_41
-      - 🇨🇳 _CN_中国_42
-      - 🇺🇸 _US_美国_43
-      - 🇨🇳 _CN_中国_44
-      - 🇺🇸 _US_美国_45
-      - 🇨🇳 _CN_中国_46
-      - 🇨🇳 _CN_中国_47
-      - 🇨🇳 _CN_中国_48
-      - 🇺🇸 _US_美国_49
-      - 🇨🇳 _CN_中国_50
-      - 🇺🇸 _US_美国_51
-      - 🇨🇳 _CN_中国_52
-      - 🇺🇸 _US_美国_53
-      - 🇺🇸 _US_美国_54
-      - 🇨🇳 _CN_中国_55
-      - 🇨🇳 _CN_中国_56
-      - 🇺🇸 _US_美国_57
-      - 🇨🇳 _CN_中国_58
-      - 🇺🇸 _US_美国_59
-      - 🇨🇳 _CN_中国_60
-      - 🇺🇸 _US_美国_61
-      - 🇬🇧 _GB_英国_62
-      - 🇨🇳 _CN_中国_63
-      - 🇺🇸 _US_美国_64
-      - 🇺🇸 _US_美国_65
-      - 🇺🇸 _US_美国_66
-      - 🇨🇳 _CN_中国_67
-      - 🇨🇳 _CN_中国_68
-      - 🇺🇸 _US_美国_69
-      - 🇺🇸 _US_美国_70
-      - 🇺🇸 _US_美国_71
-      - 🇺🇸 _US_美国_72
-      - 🇺🇸 _US_美国_73
-      - 🇬🇧 _GB_英国_74
-      - 🇺🇸 _US_美国_75
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 12
+      - 🇰🇷 韩国(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 13
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 14
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 2
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 4
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 5
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 6
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 7
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 15
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 16
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 3
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 17
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 10
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 11
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 12
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国_2
-      - 🇨🇷 _CR_哥斯达黎加_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国_7
-      - 🇫🇷 _FR_法国_8
-      - 🇨🇳 _CN_中国_9
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇨🇳 _CN_中国_12
-      - 🇺🇸 _US_美国_13
-      - 🇭🇰 _HK_香港_14
-      - 🇺🇸 _US_美国_15
-      - 🇺🇸 _US_美国_16
-      - 🇨🇳 _CN_中国_17
-      - 🇨🇳 _CN_中国_18
-      - 🇨🇳 _CN_中国_19
-      - 🇨🇳 _CN_中国_20
-      - 🇨🇳 _CN_中国_21
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 _US_美国_23
-      - 🇺🇸 _US_美国_24
-      - 🇫🇷 _FR_法国_25
-      - 🇫🇷 _FR_法国_26
-      - 🇺🇸 _US_美国_27
-      - 🇨🇳 _CN_中国_28
-      - 🇺🇸 _US_美国_29
-      - 🇨🇳 _CN_中国_30
-      - 🇨🇳 _CN_中国_31
-      - 🇨🇳 _CN_中国_32
-      - 🇺🇸 _US_美国_33
-      - 🇺🇸 _US_美国_34
-      - 🇳🇱 _NL_荷兰_35
-      - 🇺🇸 _US_美国_36
-      - 🇺🇸 _US_美国_37
-      - 🇨🇳 _CN_中国_38
-      - 🇳🇱 _NL_荷兰_39
-      - 🇺🇸 _US_美国_40
-      - 🇺🇸 _US_美国_41
-      - 🇨🇳 _CN_中国_42
-      - 🇺🇸 _US_美国_43
-      - 🇨🇳 _CN_中国_44
-      - 🇺🇸 _US_美国_45
-      - 🇨🇳 _CN_中国_46
-      - 🇨🇳 _CN_中国_47
-      - 🇨🇳 _CN_中国_48
-      - 🇺🇸 _US_美国_49
-      - 🇨🇳 _CN_中国_50
-      - 🇺🇸 _US_美国_51
-      - 🇨🇳 _CN_中国_52
-      - 🇺🇸 _US_美国_53
-      - 🇺🇸 _US_美国_54
-      - 🇨🇳 _CN_中国_55
-      - 🇨🇳 _CN_中国_56
-      - 🇺🇸 _US_美国_57
-      - 🇨🇳 _CN_中国_58
-      - 🇺🇸 _US_美国_59
-      - 🇨🇳 _CN_中国_60
-      - 🇺🇸 _US_美国_61
-      - 🇬🇧 _GB_英国_62
-      - 🇨🇳 _CN_中国_63
-      - 🇺🇸 _US_美国_64
-      - 🇺🇸 _US_美国_65
-      - 🇺🇸 _US_美国_66
-      - 🇨🇳 _CN_中国_67
-      - 🇨🇳 _CN_中国_68
-      - 🇺🇸 _US_美国_69
-      - 🇺🇸 _US_美国_70
-      - 🇺🇸 _US_美国_71
-      - 🇺🇸 _US_美国_72
-      - 🇺🇸 _US_美国_73
-      - 🇬🇧 _GB_英国_74
-      - 🇺🇸 _US_美国_75
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 12
+      - 🇰🇷 韩国(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 13
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 14
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 2
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 4
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 5
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 6
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 7
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 15
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 16
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 3
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 17
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 10
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 11
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 12
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -259,81 +136,40 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国_2
-      - 🇨🇷 _CR_哥斯达黎加_3
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国_7
-      - 🇫🇷 _FR_法国_8
-      - 🇨🇳 _CN_中国_9
-      - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇨🇳 _CN_中国_12
-      - 🇺🇸 _US_美国_13
-      - 🇭🇰 _HK_香港_14
-      - 🇺🇸 _US_美国_15
-      - 🇺🇸 _US_美国_16
-      - 🇨🇳 _CN_中国_17
-      - 🇨🇳 _CN_中国_18
-      - 🇨🇳 _CN_中国_19
-      - 🇨🇳 _CN_中国_20
-      - 🇨🇳 _CN_中国_21
-      - 🇺🇸 _US_美国_22
-      - 🇺🇸 _US_美国_23
-      - 🇺🇸 _US_美国_24
-      - 🇫🇷 _FR_法国_25
-      - 🇫🇷 _FR_法国_26
-      - 🇺🇸 _US_美国_27
-      - 🇨🇳 _CN_中国_28
-      - 🇺🇸 _US_美国_29
-      - 🇨🇳 _CN_中国_30
-      - 🇨🇳 _CN_中国_31
-      - 🇨🇳 _CN_中国_32
-      - 🇺🇸 _US_美国_33
-      - 🇺🇸 _US_美国_34
-      - 🇳🇱 _NL_荷兰_35
-      - 🇺🇸 _US_美国_36
-      - 🇺🇸 _US_美国_37
-      - 🇨🇳 _CN_中国_38
-      - 🇳🇱 _NL_荷兰_39
-      - 🇺🇸 _US_美国_40
-      - 🇺🇸 _US_美国_41
-      - 🇨🇳 _CN_中国_42
-      - 🇺🇸 _US_美国_43
-      - 🇨🇳 _CN_中国_44
-      - 🇺🇸 _US_美国_45
-      - 🇨🇳 _CN_中国_46
-      - 🇨🇳 _CN_中国_47
-      - 🇨🇳 _CN_中国_48
-      - 🇺🇸 _US_美国_49
-      - 🇨🇳 _CN_中国_50
-      - 🇺🇸 _US_美国_51
-      - 🇨🇳 _CN_中国_52
-      - 🇺🇸 _US_美国_53
-      - 🇺🇸 _US_美国_54
-      - 🇨🇳 _CN_中国_55
-      - 🇨🇳 _CN_中国_56
-      - 🇺🇸 _US_美国_57
-      - 🇨🇳 _CN_中国_58
-      - 🇺🇸 _US_美国_59
-      - 🇨🇳 _CN_中国_60
-      - 🇺🇸 _US_美国_61
-      - 🇬🇧 _GB_英国_62
-      - 🇨🇳 _CN_中国_63
-      - 🇺🇸 _US_美国_64
-      - 🇺🇸 _US_美国_65
-      - 🇺🇸 _US_美国_66
-      - 🇨🇳 _CN_中国_67
-      - 🇨🇳 _CN_中国_68
-      - 🇺🇸 _US_美国_69
-      - 🇺🇸 _US_美国_70
-      - 🇺🇸 _US_美国_71
-      - 🇺🇸 _US_美国_72
-      - 🇺🇸 _US_美国_73
-      - 🇬🇧 _GB_英国_74
-      - 🇺🇸 _US_美国_75
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享)
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 4
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 5
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 6
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 7
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 10
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 11
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 12
+      - 🇰🇷 韩国(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 2
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 13
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com)
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 3
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 14
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 2
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 4
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 5
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 6
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 7
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 8
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 15
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 16
+      - 🇳🇱 荷兰(玉豆免费节点 yudou66.com) 3
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 9
+      - 🇺🇸 US美国(mibei77.com 米贝节点分享) 17
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 10
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 11
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 12
+      - 🇺🇸 美国(玉豆免费节点 yudou66.com) 13
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
