@@ -5,543 +5,195 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 _US_美国_1, server: wnd2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wnd2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_2, server: db5.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db5.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_3, server: hefei.chiguayun.cc, port: 27125, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_4, server: lt1.992688.xyz, port: 2052, type: vmess, uuid: b63efdd5-bdb8-4eb4-f918-9846cd7321e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}}
-  - {name: 🇨🇳 _CN_中国_5, server: hefei.chiguayun.cc, port: 27147, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_6, server: foshan.chiguayun.cc, port: 27133, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_7, server: 156.225.67.104, port: 30000, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1697184716677, headers: {Host: www.41758112.xyz}}}
-  - {name: 🇺🇸 _US_美国_8, server: ml3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ml3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_9, server: ydyh.nanbei.info, port: 26913, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇺🇸 _US_美国_10, server: jd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_11, server: mm3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mm3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_12, server: fs.xianyuwangluo.cyou, port: 27207, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_13, server: 38.121.43.51, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇸 _US_美国_14, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}}
-  - {name: 🇺🇸 _US_美国_15, server: db5.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db5.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_16, server: tg_mfbpn_d4.52vpn.eu.org, port: 11004, type: vmess, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_17, server: hefei.chiguayun.cc, port: 27146, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_18, server: hefei.chiguayun.cc, port: 27133, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_19, server: hdlb3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hdlb3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_20, server: fhc2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fhc2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_21, server: db4.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db4.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_22, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_23, server: jh.xianyuwangluo.cyou, port: 27210, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_24, server: tg_mfbpn_d4.52vpn.eu.org, port: 11005, type: vmess, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_25, server: se4.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_26, server: foshan.chiguayun.cc, port: 27123, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_27, server: foshan.chiguayun.cc, port: 27141, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_28, server: b.baozinet.top, port: 25004, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_29, server: se4.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_30, server: yd.qianggewangluo.buzz, port: 10804, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_31, server: a.baozinet.top, port: 25009, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_32, server: yd.qianggewangluo.buzz, port: 10816, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_33, server: jp.kunlun-ppg.com, port: 10816, type: trojan, password: 47d27c60-d159-4e8d-8df5-f698a7a053fa, sni: alibaba-node.cn, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_34, server: fs.xianyuwangluo.cyou, port: 27208, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_35, server: ydyh.nanbei.info, port: 26907, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇺🇸 _US_美国_36, server: flkf2.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: flkf2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_37, server: yhnsb3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yhnsb3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_38, server: foshan.chiguayun.cc, port: 27116, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_39, server: hefei.chiguayun.cc, port: 27119, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_40, server: yd.qianggewangluo.buzz, port: 10813, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_41, server: foshan.chiguayun.cc, port: 27131, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_42, server: hefei.chiguayun.cc, port: 27141, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_43, server: yd.qianggewangluo.buzz, port: 10814, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_44, server: foshan.chiguayun.cc, port: 27118, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_45, server: jh.xianyuwangluo.cyou, port: 27208, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_46, server: b.baozinet.top, port: 25002, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_47, server: hefei.chiguayun.cc, port: 27132, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_48, server: a.baozinet.top, port: 25005, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_49, server: 104.20.231.210, port: 80, type: vmess, uuid: 72d46152-ee0b-4610-efb1-ffb0f786b848, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: my.designlion.buzz}}}
-  - {name: 🇨🇳 _CN_中国_50, server: ydyh.nanbei.info, port: 26912, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇺🇸 _US_美国_51, server: sbl3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_52, server: foshan.chiguayun.cc, port: 27126, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_53, server: hdlb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hdlb2.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_54, server: data-hk-v2.shwjfkw.cn, port: 50206, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-hk-v2.shwjfkw.cn}}}
-  - {name: 🇺🇸 _US_美国_55, server: jd2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_56, server: 162.159.134.234, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_57, server: yd.qianggewangluo.buzz, port: 10815, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_58, server: foshan.chiguayun.cc, port: 27139, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_59, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696251522438, headers: {Host: www.42077230.xyz}}}
-  - {name: 🇺🇸 _US_美国_60, server: xjp2.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: xjp2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_61, server: 162.159.130.234, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db5.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_62, server: ydyh.nanbei.info, port: 26905, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇨🇳 _CN_中国_63, server: jh.xianyuwangluo.cyou, port: 27203, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_64, server: sbl4.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_65, server: jh.xianyuwangluo.cyou, port: 27204, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_66, server: hefei.chiguayun.cc, port: 27118, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_67, server: jh.xianyuwangluo.cyou, port: 27202, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_68, server: fs.xianyuwangluo.cyou, port: 27201, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_69, server: ydyh.nanbei.info, port: 26903, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇺🇸 _US_美国_70, server: 45.199.138.186, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1697376782879, headers: {Host: www.19229362.xyz}}}
-  - {name: 🇨🇳 _CN_中国_71, server: ydyh.nanbei.info, port: 26902, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇨🇳 _CN_中国_72, server: jh.xianyuwangluo.cyou, port: 27201, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_73, server: yhnsb2.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yhnsb2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_74, server: db4.shabijichang.com, port: 80, type: vmess, uuid: dd965564-8dae-402c-b15c-9eb808cfeee6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_75, server: 120.233.43.40, port: 11005, type: vmess, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_76, server: hdlb3.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hdlb3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_77, server: hdlb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hdlb2.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_78, server: yd.qianggewangluo.buzz, port: 10818, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇺🇸 _US_美国_79, server: 162.159.130.234, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se4.shabijichang.com}}}
-  - {name: 🇰🇷 _KR_韩国_80, server: hk2-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 50414, type: trojan, password: 75110959-c7dd-4ee5-8a51-cd0e21c3111d, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_81, server: a.baozinet.top, port: 25003, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_82, server: ydyh.nanbei.info, port: 26910, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇺🇸 _US_美国_83, server: se5.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se5.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_84, server: se5.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se5.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_85, server: yd.qianggewangluo.buzz, port: 10807, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_86, server: yd.qianggewangluo.buzz, port: 10806, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_87, server: fs.xianyuwangluo.cyou, port: 27202, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_88, server: sbl3.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_89, server: hdlb3.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hdlb3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_90, server: 104.17.27.2, port: 80, type: vmess, uuid: 72d46152-ee0b-4610-efb1-ffb0f786b848, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: my2.gamedaylion.buzz}}}
-  - {name: 🇺🇸 _US_美国_91, server: xjp3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: xjp3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_92, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v001.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_93, server: b.baozinet.top, port: 25006, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇳 _CN_中国_94, server: foshan.chiguayun.cc, port: 27108, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_95, server: sbl3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_96, server: hefei.chiguayun.cc, port: 27130, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_97, server: foshan.chiguayun.cc, port: 27145, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_98, server: foshan.chiguayun.cc, port: 27134, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_99, server: mm3.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mm3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_100, server: ydyh.nanbei.info, port: 26914, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇨🇳 _CN_中国_101, server: jh.xianyuwangluo.cyou, port: 27206, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_102, server: yhnsb3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yhnsb3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_103, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v001.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_104, server: hefei.chiguayun.cc, port: 27138, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_105, server: yhnsb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yhnsb2.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_106, server: foshan.chiguayun.cc, port: 27143, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_107, server: se4.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se4.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_108, server: jd2.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_109, server: db4.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db4.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_110, server: 104.17.27.2, port: 80, type: vmess, uuid: 72d46152-ee0b-4610-efb1-ffb0f786b848, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: my2.gamedaylion.buzz}}}
-  - {name: 🇨🇳 _CN_中国_111, server: hefei.chiguayun.cc, port: 27140, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_112, server: jd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_113, server: foshan.chiguayun.cc, port: 27142, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_114, server: fs.xianyuwangluo.cyou, port: 27203, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_115, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
-  - {name: 🇺🇸 _US_美国_116, server: ld2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_117, server: 104.20.231.210, port: 80, type: vmess, uuid: 72d46152-ee0b-4610-efb1-ffb0f786b848, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: my.designlion.buzz}}}
-  - {name: 🇺🇸 _US_美国_118, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v003.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_119, server: fs.xianyuwangluo.cyou, port: 27206, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_120, server: hefei.chiguayun.cc, port: 27143, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_121, server: yd.qianggewangluo.buzz, port: 10808, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_122, server: foshan.chiguayun.cc, port: 27144, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_123, server: db4.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_124, server: yd.qianggewangluo.buzz, port: 10803, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_125, server: ydyh.nanbei.info, port: 26906, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇨🇳 _CN_中国_126, server: us01.shawbrothersstudio.com, port: 19922, type: ss, cipher: chacha20-ietf-poly1305, password: Lam6mgI0ZnIqT459CTTOJR}
-  - {name: 🇨🇳 _CN_中国_127, server: foshan.chiguayun.cc, port: 27124, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_128, server: yd.qianggewangluo.buzz, port: 10809, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇺🇸 _US_美国_129, server: xjp2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: xjp2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_130, server: wnd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wnd3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_131, server: fs.xianyuwangluo.cyou, port: 27209, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_132, server: lt1.992688.xyz, port: 2052, type: vmess, uuid: fa5fc74f-0f0b-4221-82ba-dc7cd24e24e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vcus2.vpn66.eu.org}}}
-  - {name: 🇨🇳 _CN_中国_133, server: fs.xianyuwangluo.cyou, port: 27204, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇨🇳 _CN_中国_134, server: fs.xianyuwangluo.cyou, port: 27210, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_135, server: ml3.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ml3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_136, server: fhc2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fhc2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_137, server: 172.64.87.47, port: 2052, type: vmess, uuid: b63efdd5-bdb8-4eb4-f918-9846cd7321e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}}
-  - {name: 🇺🇸 _US_美国_138, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_139, server: yd.qianggewangluo.buzz, port: 10817, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇺🇸 _US_美国_140, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_141, server: ydyh.nanbei.info, port: 26901, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇨🇳 _CN_中国_142, server: ydyh.nanbei.info, port: 26908, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇨🇳 _CN_中国_143, server: hefei.chiguayun.cc, port: 27126, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_144, server: sbl4.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_145, server: foshan.chiguayun.cc, port: 27125, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_146, server: sbl3.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl3.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_147, server: hefei.chiguayun.cc, port: 27116, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇺🇸 _US_美国_148, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v003.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_149, server: ydyh.nanbei.info, port: 26904, type: ss, cipher: chacha20-ietf-poly1305, password: 029fdb8d-ab45-4eec-9b7b-d67089785905}
-  - {name: 🇺🇸 _US_美国_150, server: xjp3.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: xjp3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_151, server: 156.225.67.104, port: 30000, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1697288722266, headers: {Host: www.41758112.xyz}}}
-  - {name: 🇺🇸 _US_美国_152, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}}
-  - {name: 🇺🇸 _US_美国_153, server: ld2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_154, server: wnd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wnd3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_155, server: 156.225.67.104, port: 30000, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696944806961, headers: {Host: www.41758112.xyz}}}
-  - {name: 🇺🇸 _US_美国_156, server: 104.17.18.26, port: 80, type: vmess, uuid: 5180444a-4756-43b4-960b-49eb9052e4e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.109420.xyz}}}
-  - {name: 🇨🇳 _CN_中国_157, server: a.baozinet.top, port: 25007, type: vmess, uuid: 50b479e6-888d-42bb-b0dd-0ea9935f7a7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_158, server: xjp2.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: xjp2.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_159, server: yd.qianggewangluo.buzz, port: 10802, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_160, server: foshan.chiguayun.cc, port: 27103, type: ss, cipher: chacha20-ietf-poly1305, password: df0f916b-0380-43b7-829c-9f9f97a23eb2}
-  - {name: 🇨🇳 _CN_中国_161, server: jh.xianyuwangluo.cyou, port: 27209, type: ss, cipher: chacha20-ietf-poly1305, password: ae17e407-e1ac-4955-b5b2-4d34d2b6d1d7}
-  - {name: 🇺🇸 _US_美国_162, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}}
-  - {name: 🇨🇳 _CN_中国_163, server: yd.qianggewangluo.buzz, port: 10811, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_164, server: yd.qianggewangluo.buzz, port: 10801, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇨🇳 _CN_中国_165, server: 120.233.43.40, port: 11004, type: vmess, uuid: 14538fc3-08d1-36b5-8fa2-d5557efe01ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_166, server: dx1.992688.xyz, port: 2052, type: vmess, uuid: b63efdd5-bdb8-4eb4-f918-9846cd7321e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}}
-  - {name: 🇺🇸 _US_美国_167, server: se5.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se5.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_168, server: jd2.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_169, server: se4.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: se4.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_170, server: yd.qianggewangluo.buzz, port: 10810, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
-  - {name: 🇺🇸 _US_美国_171, server: yd1.992688.xyz, port: 2052, type: vmess, uuid: b63efdd5-bdb8-4eb4-f918-9846cd7321e6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}}
-  - {name: 🇺🇸 _US_美国_172, server: 104.21.75.246, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl4.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_173, server: db5.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db5.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_174, server: asb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: asb2.shabijichang.com}}}
-  - {name: 🇨🇳 _CN_中国_175, server: yd.qianggewangluo.buzz, port: 10812, type: ss, cipher: chacha20-ietf-poly1305, password: 64a61e15-6935-4617-8973-b3894ea95c4d}
+  - {name: 🇫🇷 _FR_法国_1, server: 13.36.108.252, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_2, server: mrb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mrb2.shabijichang.com}}}
+  - {name: 🇬🇧 _GB_英国_3, server: 18.168.65.173, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇸🇪 _SE_瑞典_4, server: 16.16.125.138, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇪🇸 _ES_西班牙_5, server: 185.214.103.50, port: 443, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: e.cn-db.top}}}
+  - {name: 🇪🇸 _ES_西班牙_6, server: 185.214.103.249, port: 8003, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: c.cn-db.top}}}
+  - {name: 🇺🇸 _US_美国_7, server: db5.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db5.shabijichang.com}}}
+  - {name: 🇮🇪 _IE_爱尔兰_8, server: 52.215.170.185, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇮🇪 _IE_爱尔兰_9, server: 34.242.251.75, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_10, server: 52.88.96.195, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇸🇪 _SE_瑞典_11, server: 13.53.213.6, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇪🇸 _ES_西班牙_12, server: 185.214.103.156, port: 34601, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: a.cn-db.top}}}
+  - {name: 🇺🇸 _US_美国_13, server: jd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd3.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_14, server: hdlb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hdlb2.shabijichang.com}}}
+  - {name: 🇵🇰 _PK_巴基斯坦_15, server: jp1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: a3f221f8-43d6-4363-8624-ce62d3db0202, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇪🇸 _ES_西班牙_16, server: 185.214.103.245, port: 30800, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: b.cn-db.top}}}
+  - {name: 🇺🇸 _US_美国_17, server: ml3.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ml3.shabijichang.com}}}
+  - {name: 🇬🇧 _GB_英国_18, server: 18.171.30.191, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_19, server: asb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: asb2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_20, server: ld2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_21, server: singapore.com, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}}
+  - {name: 🇩🇪 _DE_德国_22, server: 5.104.107.143, port: 443, type: trojan, password: 3ed4d5f3-68e9-42fc-978a-22afc2523e5a, sni: de1.xn--mes358a9urctx.com, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_23, server: 45.199.138.186, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1697376782879, headers: {Host: www.19229362.xyz}}}
+  - {name: 🇺🇸 _US_美国_24, server: 45.199.138.191, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696251522438, headers: {Host: www.42077230.xyz}}}
+  - {name: 🇺🇸 _US_美国_25, server: jd2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_26, server: asb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: asb2.shabijichang.com}}}
+  - {name: 🇸🇪 _SE_瑞典_27, server: 13.51.83.133, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_28, server: 162.159.134.52, port: 2052, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: b.cn-db.top}}}
+  - {name: 🇺🇸 _US_美国_29, server: mm2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mm2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_30, server: mm2.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mm2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_31, server: wnd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wnd3.shabijichang.com}}}
+  - {name: 🇵🇰 _PK_巴基斯坦_32, server: hk1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: a3f221f8-43d6-4363-8624-ce62d3db0202, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_33, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
+  - {name: 🇺🇸 _US_美国_34, server: 156.225.67.104, port: 30000, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696944806961, headers: {Host: www.41758112.xyz}}}
+  - {name: 🇺🇸 _US_美国_35, server: flkf2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: flkf2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_36, server: wnd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wnd3.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_37, server: sbl3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl3.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_38, server: lt1.992688.xyz, port: 2052, type: vmess, uuid: fa5fc74f-0f0b-4221-82ba-dc7cd24e24e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vcus2.vpn66.eu.org}}}
+  - {name: 🇵🇰 _PK_巴基斯坦_39, server: us1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: a3f221f8-43d6-4363-8624-ce62d3db0202, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_40, server: mm3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mm3.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_41, server: yhnsb3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yhnsb3.shabijichang.com}}}
+  - {name: 🇨🇳 _CN_中国_42, server: other.kunlun-ppg.com, port: 10842, type: trojan, password: d2d45dca-4878-4e2e-b264-c204ff84b5a5, sni: alibaba-node.cn, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_43, server: yhnsb3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yhnsb3.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_44, server: sbl3.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl3.shabijichang.com}}}
+  - {name: 🇨🇦 _CA_加拿大_45, server: ca-000.xiaoxiaobujidao.xyz, port: 56301, type: vmess, uuid: ffbd4a77-297b-3ec8-8631-b592334aafac, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: ca-000.xiaoxiaobujidao.xyz}}}
+  - {name: 🇨🇳 _CN_中国_46, server: us.kunlun-ppg.com, port: 10821, type: trojan, password: 82594e27-42be-4de5-946d-905a9cf72eac, sni: alibaba-node.cn, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_47, server: 104.21.75.246, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_48, server: mrb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mrb2.shabijichang.com}}}
+  - {name: 🇪🇸 _ES_西班牙_49, server: 185.214.103.194, port: 9001, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: c.cn-db.top}}}
+  - {name: 🇺🇸 _US_美国_50, server: 45.199.138.186, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1696682720138, headers: {Host: www.19229362.xyz}}}
+  - {name: 🇩🇪 _DE_德国_51, server: 35.157.165.217, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇺🇸 _US_美国_52, server: wnd2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: wnd2.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_53, server: db4.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: db4.shabijichang.com}}}
+  - {name: 🇺🇸 _US_美国_54, server: fhc2.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fhc2.shabijichang.com}}}
+  - {name: 🇸🇪 _SE_瑞典_55, server: 13.48.87.145, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trj.rollingnext.co.uk, skip-cert-verify: false}
+  - {name: 🇪🇸 _ES_西班牙_56, server: 185.214.103.249, port: 8001, type: vmess, uuid: 26726b2c-a280-356a-a452-4be0bd46ec1e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: d.cn-db.top}}}
+  - {name: 🇨🇳 _CN_中国_57, server: other.kunlun-ppg.com, port: 10844, type: trojan, password: d2d45dca-4878-4e2e-b264-c204ff84b5a5, sni: alibaba-node.cn, skip-cert-verify: false}
+  - {name: 🇨🇳 _CN_中国_58, server: other.kunlun-ppg.com, port: 10848, type: trojan, password: d2d45dca-4878-4e2e-b264-c204ff84b5a5, sni: alibaba-node.cn, skip-cert-verify: false}
+  - {name: 🇵🇰 _PK_巴基斯坦_59, server: jp1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: e5c65270-bef7-4d38-b8c1-03274edf545f, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 _US_美国_1
+      - 🇫🇷 _FR_法国_1
       - 🇺🇸 _US_美国_2
-      - 🇨🇳 _CN_中国_3
-      - 🇺🇸 _US_美国_4
-      - 🇨🇳 _CN_中国_5
-      - 🇨🇳 _CN_中国_6
+      - 🇬🇧 _GB_英国_3
+      - 🇸🇪 _SE_瑞典_4
+      - 🇪🇸 _ES_西班牙_5
+      - 🇪🇸 _ES_西班牙_6
       - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
-      - 🇨🇳 _CN_中国_9
+      - 🇮🇪 _IE_爱尔兰_8
+      - 🇮🇪 _IE_爱尔兰_9
       - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇨🇳 _CN_中国_12
+      - 🇸🇪 _SE_瑞典_11
+      - 🇪🇸 _ES_西班牙_12
       - 🇺🇸 _US_美国_13
       - 🇺🇸 _US_美国_14
-      - 🇺🇸 _US_美国_15
-      - 🇨🇳 _CN_中国_16
-      - 🇨🇳 _CN_中国_17
-      - 🇨🇳 _CN_中国_18
+      - 🇵🇰 _PK_巴基斯坦_15
+      - 🇪🇸 _ES_西班牙_16
+      - 🇺🇸 _US_美国_17
+      - 🇬🇧 _GB_英国_18
       - 🇺🇸 _US_美国_19
       - 🇺🇸 _US_美国_20
       - 🇺🇸 _US_美国_21
-      - 🇺🇸 _US_美国_22
-      - 🇨🇳 _CN_中国_23
-      - 🇨🇳 _CN_中国_24
+      - 🇩🇪 _DE_德国_22
+      - 🇺🇸 _US_美国_23
+      - 🇺🇸 _US_美国_24
       - 🇺🇸 _US_美国_25
-      - 🇨🇳 _CN_中国_26
-      - 🇨🇳 _CN_中国_27
-      - 🇨🇳 _CN_中国_28
+      - 🇺🇸 _US_美国_26
+      - 🇸🇪 _SE_瑞典_27
+      - 🇺🇸 _US_美国_28
       - 🇺🇸 _US_美国_29
-      - 🇨🇳 _CN_中国_30
-      - 🇨🇳 _CN_中国_31
-      - 🇨🇳 _CN_中国_32
-      - 🇨🇳 _CN_中国_33
-      - 🇨🇳 _CN_中国_34
-      - 🇨🇳 _CN_中国_35
+      - 🇺🇸 _US_美国_30
+      - 🇺🇸 _US_美国_31
+      - 🇵🇰 _PK_巴基斯坦_32
+      - 🇺🇸 _US_美国_33
+      - 🇺🇸 _US_美国_34
+      - 🇺🇸 _US_美国_35
       - 🇺🇸 _US_美国_36
       - 🇺🇸 _US_美国_37
-      - 🇨🇳 _CN_中国_38
-      - 🇨🇳 _CN_中国_39
-      - 🇨🇳 _CN_中国_40
-      - 🇨🇳 _CN_中国_41
+      - 🇺🇸 _US_美国_38
+      - 🇵🇰 _PK_巴基斯坦_39
+      - 🇺🇸 _US_美国_40
+      - 🇺🇸 _US_美国_41
       - 🇨🇳 _CN_中国_42
-      - 🇨🇳 _CN_中国_43
-      - 🇨🇳 _CN_中国_44
-      - 🇨🇳 _CN_中国_45
+      - 🇺🇸 _US_美国_43
+      - 🇺🇸 _US_美国_44
+      - 🇨🇦 _CA_加拿大_45
       - 🇨🇳 _CN_中国_46
-      - 🇨🇳 _CN_中国_47
-      - 🇨🇳 _CN_中国_48
-      - 🇺🇸 _US_美国_49
-      - 🇨🇳 _CN_中国_50
-      - 🇺🇸 _US_美国_51
-      - 🇨🇳 _CN_中国_52
+      - 🇺🇸 _US_美国_47
+      - 🇺🇸 _US_美国_48
+      - 🇪🇸 _ES_西班牙_49
+      - 🇺🇸 _US_美国_50
+      - 🇩🇪 _DE_德国_51
+      - 🇺🇸 _US_美国_52
       - 🇺🇸 _US_美国_53
-      - 🇨🇳 _CN_中国_54
-      - 🇺🇸 _US_美国_55
-      - 🇺🇸 _US_美国_56
+      - 🇺🇸 _US_美国_54
+      - 🇸🇪 _SE_瑞典_55
+      - 🇪🇸 _ES_西班牙_56
       - 🇨🇳 _CN_中国_57
       - 🇨🇳 _CN_中国_58
-      - 🇺🇸 _US_美国_59
-      - 🇺🇸 _US_美国_60
-      - 🇺🇸 _US_美国_61
-      - 🇨🇳 _CN_中国_62
-      - 🇨🇳 _CN_中国_63
-      - 🇺🇸 _US_美国_64
-      - 🇨🇳 _CN_中国_65
-      - 🇨🇳 _CN_中国_66
-      - 🇨🇳 _CN_中国_67
-      - 🇨🇳 _CN_中国_68
-      - 🇨🇳 _CN_中国_69
-      - 🇺🇸 _US_美国_70
-      - 🇨🇳 _CN_中国_71
-      - 🇨🇳 _CN_中国_72
-      - 🇺🇸 _US_美国_73
-      - 🇺🇸 _US_美国_74
-      - 🇨🇳 _CN_中国_75
-      - 🇺🇸 _US_美国_76
-      - 🇺🇸 _US_美国_77
-      - 🇨🇳 _CN_中国_78
-      - 🇺🇸 _US_美国_79
-      - 🇰🇷 _KR_韩国_80
-      - 🇨🇳 _CN_中国_81
-      - 🇨🇳 _CN_中国_82
-      - 🇺🇸 _US_美国_83
-      - 🇺🇸 _US_美国_84
-      - 🇨🇳 _CN_中国_85
-      - 🇨🇳 _CN_中国_86
-      - 🇨🇳 _CN_中国_87
-      - 🇺🇸 _US_美国_88
-      - 🇺🇸 _US_美国_89
-      - 🇺🇸 _US_美国_90
-      - 🇺🇸 _US_美国_91
-      - 🇺🇸 _US_美国_92
-      - 🇨🇳 _CN_中国_93
-      - 🇨🇳 _CN_中国_94
-      - 🇺🇸 _US_美国_95
-      - 🇨🇳 _CN_中国_96
-      - 🇨🇳 _CN_中国_97
-      - 🇨🇳 _CN_中国_98
-      - 🇺🇸 _US_美国_99
-      - 🇨🇳 _CN_中国_100
-      - 🇨🇳 _CN_中国_101
-      - 🇺🇸 _US_美国_102
-      - 🇺🇸 _US_美国_103
-      - 🇨🇳 _CN_中国_104
-      - 🇺🇸 _US_美国_105
-      - 🇨🇳 _CN_中国_106
-      - 🇺🇸 _US_美国_107
-      - 🇺🇸 _US_美国_108
-      - 🇺🇸 _US_美国_109
-      - 🇺🇸 _US_美国_110
-      - 🇨🇳 _CN_中国_111
-      - 🇺🇸 _US_美国_112
-      - 🇨🇳 _CN_中国_113
-      - 🇨🇳 _CN_中国_114
-      - 🇺🇸 _US_美国_115
-      - 🇺🇸 _US_美国_116
-      - 🇺🇸 _US_美国_117
-      - 🇺🇸 _US_美国_118
-      - 🇨🇳 _CN_中国_119
-      - 🇨🇳 _CN_中国_120
-      - 🇨🇳 _CN_中国_121
-      - 🇨🇳 _CN_中国_122
-      - 🇺🇸 _US_美国_123
-      - 🇨🇳 _CN_中国_124
-      - 🇨🇳 _CN_中国_125
-      - 🇨🇳 _CN_中国_126
-      - 🇨🇳 _CN_中国_127
-      - 🇨🇳 _CN_中国_128
-      - 🇺🇸 _US_美国_129
-      - 🇺🇸 _US_美国_130
-      - 🇨🇳 _CN_中国_131
-      - 🇺🇸 _US_美国_132
-      - 🇨🇳 _CN_中国_133
-      - 🇨🇳 _CN_中国_134
-      - 🇺🇸 _US_美国_135
-      - 🇺🇸 _US_美国_136
-      - 🇺🇸 _US_美国_137
-      - 🇺🇸 _US_美国_138
-      - 🇨🇳 _CN_中国_139
-      - 🇺🇸 _US_美国_140
-      - 🇨🇳 _CN_中国_141
-      - 🇨🇳 _CN_中国_142
-      - 🇨🇳 _CN_中国_143
-      - 🇺🇸 _US_美国_144
-      - 🇨🇳 _CN_中国_145
-      - 🇺🇸 _US_美国_146
-      - 🇨🇳 _CN_中国_147
-      - 🇺🇸 _US_美国_148
-      - 🇨🇳 _CN_中国_149
-      - 🇺🇸 _US_美国_150
-      - 🇺🇸 _US_美国_151
-      - 🇺🇸 _US_美国_152
-      - 🇺🇸 _US_美国_153
-      - 🇺🇸 _US_美国_154
-      - 🇺🇸 _US_美国_155
-      - 🇺🇸 _US_美国_156
-      - 🇨🇳 _CN_中国_157
-      - 🇺🇸 _US_美国_158
-      - 🇨🇳 _CN_中国_159
-      - 🇨🇳 _CN_中国_160
-      - 🇨🇳 _CN_中国_161
-      - 🇺🇸 _US_美国_162
-      - 🇨🇳 _CN_中国_163
-      - 🇨🇳 _CN_中国_164
-      - 🇨🇳 _CN_中国_165
-      - 🇺🇸 _US_美国_166
-      - 🇺🇸 _US_美国_167
-      - 🇺🇸 _US_美国_168
-      - 🇺🇸 _US_美国_169
-      - 🇨🇳 _CN_中国_170
-      - 🇺🇸 _US_美国_171
-      - 🇺🇸 _US_美国_172
-      - 🇺🇸 _US_美国_173
-      - 🇺🇸 _US_美国_174
-      - 🇨🇳 _CN_中国_175
+      - 🇵🇰 _PK_巴基斯坦_59
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 _US_美国_1
+      - 🇫🇷 _FR_法国_1
       - 🇺🇸 _US_美国_2
-      - 🇨🇳 _CN_中国_3
-      - 🇺🇸 _US_美国_4
-      - 🇨🇳 _CN_中国_5
-      - 🇨🇳 _CN_中国_6
+      - 🇬🇧 _GB_英国_3
+      - 🇸🇪 _SE_瑞典_4
+      - 🇪🇸 _ES_西班牙_5
+      - 🇪🇸 _ES_西班牙_6
       - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
-      - 🇨🇳 _CN_中国_9
+      - 🇮🇪 _IE_爱尔兰_8
+      - 🇮🇪 _IE_爱尔兰_9
       - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇨🇳 _CN_中国_12
+      - 🇸🇪 _SE_瑞典_11
+      - 🇪🇸 _ES_西班牙_12
       - 🇺🇸 _US_美国_13
       - 🇺🇸 _US_美国_14
-      - 🇺🇸 _US_美国_15
-      - 🇨🇳 _CN_中国_16
-      - 🇨🇳 _CN_中国_17
-      - 🇨🇳 _CN_中国_18
+      - 🇵🇰 _PK_巴基斯坦_15
+      - 🇪🇸 _ES_西班牙_16
+      - 🇺🇸 _US_美国_17
+      - 🇬🇧 _GB_英国_18
       - 🇺🇸 _US_美国_19
       - 🇺🇸 _US_美国_20
       - 🇺🇸 _US_美国_21
-      - 🇺🇸 _US_美国_22
-      - 🇨🇳 _CN_中国_23
-      - 🇨🇳 _CN_中国_24
+      - 🇩🇪 _DE_德国_22
+      - 🇺🇸 _US_美国_23
+      - 🇺🇸 _US_美国_24
       - 🇺🇸 _US_美国_25
-      - 🇨🇳 _CN_中国_26
-      - 🇨🇳 _CN_中国_27
-      - 🇨🇳 _CN_中国_28
+      - 🇺🇸 _US_美国_26
+      - 🇸🇪 _SE_瑞典_27
+      - 🇺🇸 _US_美国_28
       - 🇺🇸 _US_美国_29
-      - 🇨🇳 _CN_中国_30
-      - 🇨🇳 _CN_中国_31
-      - 🇨🇳 _CN_中国_32
-      - 🇨🇳 _CN_中国_33
-      - 🇨🇳 _CN_中国_34
-      - 🇨🇳 _CN_中国_35
+      - 🇺🇸 _US_美国_30
+      - 🇺🇸 _US_美国_31
+      - 🇵🇰 _PK_巴基斯坦_32
+      - 🇺🇸 _US_美国_33
+      - 🇺🇸 _US_美国_34
+      - 🇺🇸 _US_美国_35
       - 🇺🇸 _US_美国_36
       - 🇺🇸 _US_美国_37
-      - 🇨🇳 _CN_中国_38
-      - 🇨🇳 _CN_中国_39
-      - 🇨🇳 _CN_中国_40
-      - 🇨🇳 _CN_中国_41
+      - 🇺🇸 _US_美国_38
+      - 🇵🇰 _PK_巴基斯坦_39
+      - 🇺🇸 _US_美国_40
+      - 🇺🇸 _US_美国_41
       - 🇨🇳 _CN_中国_42
-      - 🇨🇳 _CN_中国_43
-      - 🇨🇳 _CN_中国_44
-      - 🇨🇳 _CN_中国_45
+      - 🇺🇸 _US_美国_43
+      - 🇺🇸 _US_美国_44
+      - 🇨🇦 _CA_加拿大_45
       - 🇨🇳 _CN_中国_46
-      - 🇨🇳 _CN_中国_47
-      - 🇨🇳 _CN_中国_48
-      - 🇺🇸 _US_美国_49
-      - 🇨🇳 _CN_中国_50
-      - 🇺🇸 _US_美国_51
-      - 🇨🇳 _CN_中国_52
+      - 🇺🇸 _US_美国_47
+      - 🇺🇸 _US_美国_48
+      - 🇪🇸 _ES_西班牙_49
+      - 🇺🇸 _US_美国_50
+      - 🇩🇪 _DE_德国_51
+      - 🇺🇸 _US_美国_52
       - 🇺🇸 _US_美国_53
-      - 🇨🇳 _CN_中国_54
-      - 🇺🇸 _US_美国_55
-      - 🇺🇸 _US_美国_56
+      - 🇺🇸 _US_美国_54
+      - 🇸🇪 _SE_瑞典_55
+      - 🇪🇸 _ES_西班牙_56
       - 🇨🇳 _CN_中国_57
       - 🇨🇳 _CN_中国_58
-      - 🇺🇸 _US_美国_59
-      - 🇺🇸 _US_美国_60
-      - 🇺🇸 _US_美国_61
-      - 🇨🇳 _CN_中国_62
-      - 🇨🇳 _CN_中国_63
-      - 🇺🇸 _US_美国_64
-      - 🇨🇳 _CN_中国_65
-      - 🇨🇳 _CN_中国_66
-      - 🇨🇳 _CN_中国_67
-      - 🇨🇳 _CN_中国_68
-      - 🇨🇳 _CN_中国_69
-      - 🇺🇸 _US_美国_70
-      - 🇨🇳 _CN_中国_71
-      - 🇨🇳 _CN_中国_72
-      - 🇺🇸 _US_美国_73
-      - 🇺🇸 _US_美国_74
-      - 🇨🇳 _CN_中国_75
-      - 🇺🇸 _US_美国_76
-      - 🇺🇸 _US_美国_77
-      - 🇨🇳 _CN_中国_78
-      - 🇺🇸 _US_美国_79
-      - 🇰🇷 _KR_韩国_80
-      - 🇨🇳 _CN_中国_81
-      - 🇨🇳 _CN_中国_82
-      - 🇺🇸 _US_美国_83
-      - 🇺🇸 _US_美国_84
-      - 🇨🇳 _CN_中国_85
-      - 🇨🇳 _CN_中国_86
-      - 🇨🇳 _CN_中国_87
-      - 🇺🇸 _US_美国_88
-      - 🇺🇸 _US_美国_89
-      - 🇺🇸 _US_美国_90
-      - 🇺🇸 _US_美国_91
-      - 🇺🇸 _US_美国_92
-      - 🇨🇳 _CN_中国_93
-      - 🇨🇳 _CN_中国_94
-      - 🇺🇸 _US_美国_95
-      - 🇨🇳 _CN_中国_96
-      - 🇨🇳 _CN_中国_97
-      - 🇨🇳 _CN_中国_98
-      - 🇺🇸 _US_美国_99
-      - 🇨🇳 _CN_中国_100
-      - 🇨🇳 _CN_中国_101
-      - 🇺🇸 _US_美国_102
-      - 🇺🇸 _US_美国_103
-      - 🇨🇳 _CN_中国_104
-      - 🇺🇸 _US_美国_105
-      - 🇨🇳 _CN_中国_106
-      - 🇺🇸 _US_美国_107
-      - 🇺🇸 _US_美国_108
-      - 🇺🇸 _US_美国_109
-      - 🇺🇸 _US_美国_110
-      - 🇨🇳 _CN_中国_111
-      - 🇺🇸 _US_美国_112
-      - 🇨🇳 _CN_中国_113
-      - 🇨🇳 _CN_中国_114
-      - 🇺🇸 _US_美国_115
-      - 🇺🇸 _US_美国_116
-      - 🇺🇸 _US_美国_117
-      - 🇺🇸 _US_美国_118
-      - 🇨🇳 _CN_中国_119
-      - 🇨🇳 _CN_中国_120
-      - 🇨🇳 _CN_中国_121
-      - 🇨🇳 _CN_中国_122
-      - 🇺🇸 _US_美国_123
-      - 🇨🇳 _CN_中国_124
-      - 🇨🇳 _CN_中国_125
-      - 🇨🇳 _CN_中国_126
-      - 🇨🇳 _CN_中国_127
-      - 🇨🇳 _CN_中国_128
-      - 🇺🇸 _US_美国_129
-      - 🇺🇸 _US_美国_130
-      - 🇨🇳 _CN_中国_131
-      - 🇺🇸 _US_美国_132
-      - 🇨🇳 _CN_中国_133
-      - 🇨🇳 _CN_中国_134
-      - 🇺🇸 _US_美国_135
-      - 🇺🇸 _US_美国_136
-      - 🇺🇸 _US_美国_137
-      - 🇺🇸 _US_美国_138
-      - 🇨🇳 _CN_中国_139
-      - 🇺🇸 _US_美国_140
-      - 🇨🇳 _CN_中国_141
-      - 🇨🇳 _CN_中国_142
-      - 🇨🇳 _CN_中国_143
-      - 🇺🇸 _US_美国_144
-      - 🇨🇳 _CN_中国_145
-      - 🇺🇸 _US_美国_146
-      - 🇨🇳 _CN_中国_147
-      - 🇺🇸 _US_美国_148
-      - 🇨🇳 _CN_中国_149
-      - 🇺🇸 _US_美国_150
-      - 🇺🇸 _US_美国_151
-      - 🇺🇸 _US_美国_152
-      - 🇺🇸 _US_美国_153
-      - 🇺🇸 _US_美国_154
-      - 🇺🇸 _US_美国_155
-      - 🇺🇸 _US_美国_156
-      - 🇨🇳 _CN_中国_157
-      - 🇺🇸 _US_美国_158
-      - 🇨🇳 _CN_中国_159
-      - 🇨🇳 _CN_中国_160
-      - 🇨🇳 _CN_中国_161
-      - 🇺🇸 _US_美国_162
-      - 🇨🇳 _CN_中国_163
-      - 🇨🇳 _CN_中国_164
-      - 🇨🇳 _CN_中国_165
-      - 🇺🇸 _US_美国_166
-      - 🇺🇸 _US_美国_167
-      - 🇺🇸 _US_美国_168
-      - 🇺🇸 _US_美国_169
-      - 🇨🇳 _CN_中国_170
-      - 🇺🇸 _US_美国_171
-      - 🇺🇸 _US_美国_172
-      - 🇺🇸 _US_美国_173
-      - 🇺🇸 _US_美国_174
-      - 🇨🇳 _CN_中国_175
+      - 🇵🇰 _PK_巴基斯坦_59
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -559,181 +211,65 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 _US_美国_1
+      - 🇫🇷 _FR_法国_1
       - 🇺🇸 _US_美国_2
-      - 🇨🇳 _CN_中国_3
-      - 🇺🇸 _US_美国_4
-      - 🇨🇳 _CN_中国_5
-      - 🇨🇳 _CN_中国_6
+      - 🇬🇧 _GB_英国_3
+      - 🇸🇪 _SE_瑞典_4
+      - 🇪🇸 _ES_西班牙_5
+      - 🇪🇸 _ES_西班牙_6
       - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
-      - 🇨🇳 _CN_中国_9
+      - 🇮🇪 _IE_爱尔兰_8
+      - 🇮🇪 _IE_爱尔兰_9
       - 🇺🇸 _US_美国_10
-      - 🇺🇸 _US_美国_11
-      - 🇨🇳 _CN_中国_12
+      - 🇸🇪 _SE_瑞典_11
+      - 🇪🇸 _ES_西班牙_12
       - 🇺🇸 _US_美国_13
       - 🇺🇸 _US_美国_14
-      - 🇺🇸 _US_美国_15
-      - 🇨🇳 _CN_中国_16
-      - 🇨🇳 _CN_中国_17
-      - 🇨🇳 _CN_中国_18
+      - 🇵🇰 _PK_巴基斯坦_15
+      - 🇪🇸 _ES_西班牙_16
+      - 🇺🇸 _US_美国_17
+      - 🇬🇧 _GB_英国_18
       - 🇺🇸 _US_美国_19
       - 🇺🇸 _US_美国_20
       - 🇺🇸 _US_美国_21
-      - 🇺🇸 _US_美国_22
-      - 🇨🇳 _CN_中国_23
-      - 🇨🇳 _CN_中国_24
+      - 🇩🇪 _DE_德国_22
+      - 🇺🇸 _US_美国_23
+      - 🇺🇸 _US_美国_24
       - 🇺🇸 _US_美国_25
-      - 🇨🇳 _CN_中国_26
-      - 🇨🇳 _CN_中国_27
-      - 🇨🇳 _CN_中国_28
+      - 🇺🇸 _US_美国_26
+      - 🇸🇪 _SE_瑞典_27
+      - 🇺🇸 _US_美国_28
       - 🇺🇸 _US_美国_29
-      - 🇨🇳 _CN_中国_30
-      - 🇨🇳 _CN_中国_31
-      - 🇨🇳 _CN_中国_32
-      - 🇨🇳 _CN_中国_33
-      - 🇨🇳 _CN_中国_34
-      - 🇨🇳 _CN_中国_35
+      - 🇺🇸 _US_美国_30
+      - 🇺🇸 _US_美国_31
+      - 🇵🇰 _PK_巴基斯坦_32
+      - 🇺🇸 _US_美国_33
+      - 🇺🇸 _US_美国_34
+      - 🇺🇸 _US_美国_35
       - 🇺🇸 _US_美国_36
       - 🇺🇸 _US_美国_37
-      - 🇨🇳 _CN_中国_38
-      - 🇨🇳 _CN_中国_39
-      - 🇨🇳 _CN_中国_40
-      - 🇨🇳 _CN_中国_41
+      - 🇺🇸 _US_美国_38
+      - 🇵🇰 _PK_巴基斯坦_39
+      - 🇺🇸 _US_美国_40
+      - 🇺🇸 _US_美国_41
       - 🇨🇳 _CN_中国_42
-      - 🇨🇳 _CN_中国_43
-      - 🇨🇳 _CN_中国_44
-      - 🇨🇳 _CN_中国_45
+      - 🇺🇸 _US_美国_43
+      - 🇺🇸 _US_美国_44
+      - 🇨🇦 _CA_加拿大_45
       - 🇨🇳 _CN_中国_46
-      - 🇨🇳 _CN_中国_47
-      - 🇨🇳 _CN_中国_48
-      - 🇺🇸 _US_美国_49
-      - 🇨🇳 _CN_中国_50
-      - 🇺🇸 _US_美国_51
-      - 🇨🇳 _CN_中国_52
+      - 🇺🇸 _US_美国_47
+      - 🇺🇸 _US_美国_48
+      - 🇪🇸 _ES_西班牙_49
+      - 🇺🇸 _US_美国_50
+      - 🇩🇪 _DE_德国_51
+      - 🇺🇸 _US_美国_52
       - 🇺🇸 _US_美国_53
-      - 🇨🇳 _CN_中国_54
-      - 🇺🇸 _US_美国_55
-      - 🇺🇸 _US_美国_56
+      - 🇺🇸 _US_美国_54
+      - 🇸🇪 _SE_瑞典_55
+      - 🇪🇸 _ES_西班牙_56
       - 🇨🇳 _CN_中国_57
       - 🇨🇳 _CN_中国_58
-      - 🇺🇸 _US_美国_59
-      - 🇺🇸 _US_美国_60
-      - 🇺🇸 _US_美国_61
-      - 🇨🇳 _CN_中国_62
-      - 🇨🇳 _CN_中国_63
-      - 🇺🇸 _US_美国_64
-      - 🇨🇳 _CN_中国_65
-      - 🇨🇳 _CN_中国_66
-      - 🇨🇳 _CN_中国_67
-      - 🇨🇳 _CN_中国_68
-      - 🇨🇳 _CN_中国_69
-      - 🇺🇸 _US_美国_70
-      - 🇨🇳 _CN_中国_71
-      - 🇨🇳 _CN_中国_72
-      - 🇺🇸 _US_美国_73
-      - 🇺🇸 _US_美国_74
-      - 🇨🇳 _CN_中国_75
-      - 🇺🇸 _US_美国_76
-      - 🇺🇸 _US_美国_77
-      - 🇨🇳 _CN_中国_78
-      - 🇺🇸 _US_美国_79
-      - 🇰🇷 _KR_韩国_80
-      - 🇨🇳 _CN_中国_81
-      - 🇨🇳 _CN_中国_82
-      - 🇺🇸 _US_美国_83
-      - 🇺🇸 _US_美国_84
-      - 🇨🇳 _CN_中国_85
-      - 🇨🇳 _CN_中国_86
-      - 🇨🇳 _CN_中国_87
-      - 🇺🇸 _US_美国_88
-      - 🇺🇸 _US_美国_89
-      - 🇺🇸 _US_美国_90
-      - 🇺🇸 _US_美国_91
-      - 🇺🇸 _US_美国_92
-      - 🇨🇳 _CN_中国_93
-      - 🇨🇳 _CN_中国_94
-      - 🇺🇸 _US_美国_95
-      - 🇨🇳 _CN_中国_96
-      - 🇨🇳 _CN_中国_97
-      - 🇨🇳 _CN_中国_98
-      - 🇺🇸 _US_美国_99
-      - 🇨🇳 _CN_中国_100
-      - 🇨🇳 _CN_中国_101
-      - 🇺🇸 _US_美国_102
-      - 🇺🇸 _US_美国_103
-      - 🇨🇳 _CN_中国_104
-      - 🇺🇸 _US_美国_105
-      - 🇨🇳 _CN_中国_106
-      - 🇺🇸 _US_美国_107
-      - 🇺🇸 _US_美国_108
-      - 🇺🇸 _US_美国_109
-      - 🇺🇸 _US_美国_110
-      - 🇨🇳 _CN_中国_111
-      - 🇺🇸 _US_美国_112
-      - 🇨🇳 _CN_中国_113
-      - 🇨🇳 _CN_中国_114
-      - 🇺🇸 _US_美国_115
-      - 🇺🇸 _US_美国_116
-      - 🇺🇸 _US_美国_117
-      - 🇺🇸 _US_美国_118
-      - 🇨🇳 _CN_中国_119
-      - 🇨🇳 _CN_中国_120
-      - 🇨🇳 _CN_中国_121
-      - 🇨🇳 _CN_中国_122
-      - 🇺🇸 _US_美国_123
-      - 🇨🇳 _CN_中国_124
-      - 🇨🇳 _CN_中国_125
-      - 🇨🇳 _CN_中国_126
-      - 🇨🇳 _CN_中国_127
-      - 🇨🇳 _CN_中国_128
-      - 🇺🇸 _US_美国_129
-      - 🇺🇸 _US_美国_130
-      - 🇨🇳 _CN_中国_131
-      - 🇺🇸 _US_美国_132
-      - 🇨🇳 _CN_中国_133
-      - 🇨🇳 _CN_中国_134
-      - 🇺🇸 _US_美国_135
-      - 🇺🇸 _US_美国_136
-      - 🇺🇸 _US_美国_137
-      - 🇺🇸 _US_美国_138
-      - 🇨🇳 _CN_中国_139
-      - 🇺🇸 _US_美国_140
-      - 🇨🇳 _CN_中国_141
-      - 🇨🇳 _CN_中国_142
-      - 🇨🇳 _CN_中国_143
-      - 🇺🇸 _US_美国_144
-      - 🇨🇳 _CN_中国_145
-      - 🇺🇸 _US_美国_146
-      - 🇨🇳 _CN_中国_147
-      - 🇺🇸 _US_美国_148
-      - 🇨🇳 _CN_中国_149
-      - 🇺🇸 _US_美国_150
-      - 🇺🇸 _US_美国_151
-      - 🇺🇸 _US_美国_152
-      - 🇺🇸 _US_美国_153
-      - 🇺🇸 _US_美国_154
-      - 🇺🇸 _US_美国_155
-      - 🇺🇸 _US_美国_156
-      - 🇨🇳 _CN_中国_157
-      - 🇺🇸 _US_美国_158
-      - 🇨🇳 _CN_中国_159
-      - 🇨🇳 _CN_中国_160
-      - 🇨🇳 _CN_中国_161
-      - 🇺🇸 _US_美国_162
-      - 🇨🇳 _CN_中国_163
-      - 🇨🇳 _CN_中国_164
-      - 🇨🇳 _CN_中国_165
-      - 🇺🇸 _US_美国_166
-      - 🇺🇸 _US_美国_167
-      - 🇺🇸 _US_美国_168
-      - 🇺🇸 _US_美国_169
-      - 🇨🇳 _CN_中国_170
-      - 🇺🇸 _US_美国_171
-      - 🇺🇸 _US_美国_172
-      - 🇺🇸 _US_美国_173
-      - 🇺🇸 _US_美国_174
-      - 🇨🇳 _CN_中国_175
+      - 🇵🇰 _PK_巴基斯坦_59
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -770,6 +306,24 @@ rules:
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
   - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+  - DOMAIN,dl.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+  - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+  - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+  - DOMAIN,fairplay.l.qq.com,🎯 全球直连
+  - DOMAIN,livew.l.qq.com,🎯 全球直连
+  - DOMAIN,vd.l.qq.com,🎯 全球直连
+  - DOMAIN,errlog.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umeng.com,🎯 全球直连
+  - DOMAIN,msg.umengcloud.com,🎯 全球直连
+  - DOMAIN,tracking.miui.com,🎯 全球直连
+  - DOMAIN,app.adjust.com,🎯 全球直连
+  - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+  - DOMAIN,rewards.hypixel.net,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
+  - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
